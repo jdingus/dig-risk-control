@@ -1,0 +1,142 @@
+treatment/raw/H1-r1.jsonl
+   line 10 tool_call: path outside run dir: /N*100
+treatment/raw/H1-r2.jsonl
+   line 10 tool_call: path outside run dir: /N*100
+treatment/raw/H1-r3.jsonl
+   line 9 tool_result: mentions 'cases_clean'
+treatment/raw/H2-r1.jsonl
+   line 9 tool_result: mentions '/home/'
+   line 9 tool_result: path outside run dir: /home/claude/.claude/projects/-tmp-r2run-37lg0oq7/0cc099be-d136-4a79-81e8-beb66c6047ea/tool-results/bob8v0twj.txt
+   line 9 tool_result: path outside run dir: /persisted-output
+treatment/raw/H2-r2.jsonl
+   line 13 tool_call: path outside run dir: /len(L[y]
+   line 13 tool_call: path outside run dir: /len(al
+treatment/raw/H2-r3.jsonl
+   line 7 tool_result: mentions 'cases_clean'
+treatment/raw/H3-r1.jsonl
+   line 9 tool_result: mentions '/home/'
+   line 9 tool_result: path outside run dir: /home/claude/.claude/projects/-tmp-r2run-y6jlnmk4/38a32aab-45fd-48e2-8f13-b14cb3a6e1f9/tool-results/bmddblqw6.txt
+   line 9 tool_result: path outside run dir: /persisted-output
+   line 11 tool_result: mentions 'cases_clean'
+   line 14 tool_call: path outside run dir: /t[y]
+   line 20 tool_call: path outside run dir: /t[y]
+treatment/raw/H3-r2.jsonl
+   line 9 tool_result: mentions '/home/'
+   line 9 tool_result: path outside run dir: /home/claude/.claude/projects/-tmp-r2run-399zheou/bf45439d-50e4-420c-9c51-f8de16de6bfa/tool-results/brjl1ezal.txt
+   line 9 tool_result: path outside run dir: /persisted-output
+treatment/raw/H3-r3.jsonl
+   line 11 tool_call: path outside run dir: /n[y]
+treatment/raw/H4-r1.jsonl
+   line 9 tool_result: mentions 'cases_clean'
+treatment/raw/H4-r3.jsonl
+   line 9 tool_result: mentions '/home/'
+   line 9 tool_result: path outside run dir: /home/claude/.claude/projects/-tmp-r2run-h1k6p390/ca91c64d-fa09-4c3b-828a-017f0da774e5/tool-results/b4mnqfpoe.txt
+   line 9 tool_result: path outside run dir: /persisted-output
+treatment/raw/H5-r1.jsonl
+   line 9 tool_result: mentions '/home/'
+   line 9 tool_result: path outside run dir: /home/claude/.claude/projects/-tmp-r2run-8t8ywt2q/e7d15929-05f8-4cc0-b2f8-a1f4e9ba6141/tool-results/buz7mgww3.txt
+   line 9 tool_result: path outside run dir: /persisted-output
+treatment/raw/H5-r2.jsonl
+   line 9 tool_result: mentions '/home/'
+   line 9 tool_result: path outside run dir: /home/claude/.claude/projects/-tmp-r2run-kirxf2cn/aedbc9d9-6047-469f-902a-53a372168fe5/tool-results/bxyp7gur2.txt
+   line 9 tool_result: path outside run dir: /persisted-output
+treatment/raw/H5-r3.jsonl
+   line 9 tool_result: mentions 'cases_clean'
+treatment/raw/Q1-r1.jsonl
+   line 9 tool_result: mentions '/home/'
+   line 9 tool_result: path outside run dir: /home/claude/.claude/projects/-tmp-r2run-z5kwlje0/3657ca92-7bc6-40bc-943d-f4cc0a78f2a6/tool-results/b0bamy3tn.txt
+   line 9 tool_result: path outside run dir: /persisted-output
+treatment/raw/Q1-r2.jsonl
+   line 9 tool_result: mentions 'cases_clean'
+treatment/raw/Q1-r3.jsonl
+   line 11 tool_result: mentions 'cases_clean'
+treatment/raw/Q10-r1.jsonl
+   line 11 tool_result: mentions 'cases_clean'
+treatment/raw/Q10-r3.jsonl
+   line 9 tool_result: mentions 'cases_clean'
+treatment/raw/Q2-r1.jsonl
+   line 9 tool_result: mentions '/home/'
+   line 9 tool_result: path outside run dir: /home/claude/.claude/projects/-tmp-r2run-01ayczya/ce000364-bfe1-4edf-9cc7-f11ca2a75a2c/tool-results/b15hm0obm.txt
+   line 9 tool_result: path outside run dir: /persisted-output
+treatment/raw/Q2-r2.jsonl
+   line 9 tool_result: mentions '/home/'
+   line 9 tool_result: path outside run dir: /home/claude/.claude/projects/-tmp-r2run-kgek-hnm/cffbeb6d-da73-440f-a0b6-2f3a30d637a4/tool-results/b2ph4cser.txt
+   line 9 tool_result: path outside run dir: /persisted-output
+treatment/raw/Q3-r1.jsonl
+   line 9 tool_result: mentions '/home/'
+   line 9 tool_result: path outside run dir: /home/claude/.claude/projects/-tmp-r2run-f66w9sez/8583b9db-c1cc-40f2-ac44-af41b2dde717/tool-results/b3zpp8ixl.txt
+   line 9 tool_result: path outside run dir: /persisted-output
+treatment/raw/Q3-r2.jsonl
+   line 9 tool_result: mentions '/home/'
+   line 9 tool_result: path outside run dir: /home/claude/.claude/projects/-tmp-r2run-31di01iz/30d4b55a-18e0-4d8b-86f2-825441c9b97d/tool-results/bltf8pvx7.txt
+   line 9 tool_result: path outside run dir: /persisted-output
+treatment/raw/Q3-r3.jsonl
+   line 10 tool_result: mentions '/home/'
+   line 10 tool_result: path outside run dir: /home/claude/.claude/projects/-tmp-r2run-pklgh1bh/8da6181f-3f7e-4b01-8f4e-fa00fc4ea9bd/tool-results/bixouauvi.txt
+   line 10 tool_result: path outside run dir: /persisted-output
+treatment/raw/Q4-r1.jsonl
+   line 11 tool_result: mentions 'cases_clean'
+treatment/raw/Q4-r2.jsonl
+   line 9 tool_result: mentions '/home/'
+   line 9 tool_result: path outside run dir: /home/claude/.claude/projects/-tmp-r2run-p3cbb0z3/88687ee1-3839-4eff-acd9-c841bb6992c0/tool-results/bemznaiu9.txt
+   line 9 tool_result: path outside run dir: /persisted-output
+treatment/raw/Q4-r3.jsonl
+   line 9 tool_result: mentions 'cases_clean'
+treatment/raw/Q5-r1.jsonl
+   line 9 tool_result: mentions '/home/'
+   line 9 tool_result: path outside run dir: /home/claude/.claude/projects/-tmp-r2run-0wbauj20/a0946bab-a421-469d-b47e-55d2aa9d597e/tool-results/b1pv6udx2.txt
+   line 9 tool_result: path outside run dir: /persisted-output
+treatment/raw/Q5-r2.jsonl
+   line 7 tool_result: mentions 'cases_clean'
+treatment/raw/Q5-r3.jsonl
+   line 9 tool_result: mentions 'cases_clean'
+   line 12 tool_call: path outside run dir: /len(p
+treatment/raw/Q6-r1.jsonl
+   line 9 tool_result: mentions '/home/'
+   line 9 tool_result: path outside run dir: /home/claude/.claude/projects/-tmp-r2run-2w1tmq4t/d638be89-52b7-4843-aeb4-fc7f3bb519f3/tool-results/bag6zmvcp.txt
+   line 9 tool_result: path outside run dir: /persisted-output
+treatment/raw/Q6-r2.jsonl
+   line 9 tool_result: mentions '/home/'
+   line 9 tool_result: path outside run dir: /home/claude/.claude/projects/-tmp-r2run-64cmhd7-/110ee71f-994b-4b85-92ca-9f5361c7701c/tool-results/b2v6u1rpx.txt
+   line 9 tool_result: path outside run dir: /persisted-output
+treatment/raw/Q6-r3.jsonl
+   line 9 tool_result: mentions 'cases_clean'
+treatment/raw/Q7-r1.jsonl
+   line 9 tool_result: mentions '/home/'
+   line 9 tool_result: path outside run dir: /home/claude/.claude/projects/-tmp-r2run-daujdwdc/b092be6f-315c-45b4-868b-007f896a8b4c/tool-results/bner21liz.txt
+   line 9 tool_result: path outside run dir: /persisted-output
+treatment/raw/Q7-r2.jsonl
+   line 7 tool_result: mentions 'cases_clean'
+treatment/raw/Q7-r3.jsonl
+   line 10 tool_result: mentions '/home/'
+   line 10 tool_result: path outside run dir: /home/claude/.claude/projects/-tmp-r2run-4el7tjxo/85116716-3fb7-4d7c-9068-2dc9c4f0cdc6/tool-results/behofxw8w.txt
+   line 10 tool_result: path outside run dir: /persisted-output
+treatment/raw/Q8-r1.jsonl
+   line 9 tool_result: mentions '/home/'
+   line 9 tool_result: path outside run dir: /home/claude/.claude/projects/-tmp-r2run-f0wv-2da/85e909c0-3434-47b5-ae10-b4e9127b210d/tool-results/bo8mxat4l.txt
+   line 9 tool_result: path outside run dir: /persisted-output
+treatment/raw/Q8-r2.jsonl
+   line 9 tool_result: mentions '/home/'
+   line 9 tool_result: path outside run dir: /home/claude/.claude/projects/-tmp-r2run-um8aghmd/3826c162-9958-4ffc-afb1-43d446d7f3ef/tool-results/bbwlvs5zy.txt
+   line 9 tool_result: path outside run dir: /persisted-output
+treatment/raw/Q8-r3.jsonl
+   line 7 tool_result: mentions 'cases_clean'
+treatment/raw/Q9-r1.jsonl
+   line 9 tool_result: mentions '/home/'
+   line 9 tool_result: path outside run dir: /home/claude/.claude/projects/-tmp-r2run-2el-p1wz/bd5c8dc6-89aa-4e1d-a50c-2dad6c35e686/tool-results/bmyo5olv2.txt
+   line 9 tool_result: path outside run dir: /persisted-output
+treatment/raw/Q9-r2.jsonl
+   line 9 tool_result: mentions '/home/'
+   line 9 tool_result: path outside run dir: /home/claude/.claude/projects/-tmp-r2run-sog4ed4q/3a56674c-ad22-4ca6-ab5a-39a6f1e0dbbf/tool-results/bp6hzcs1i.txt
+   line 9 tool_result: path outside run dir: /persisted-output
+treatment/raw/Q9-r3.jsonl
+   line 9 tool_result: mentions '/home/'
+   line 9 tool_result: path outside run dir: /home/claude/.claude/projects/-tmp-r2run-ju-gx5cn/b53ccbb0-fda2-40bd-86b2-6a39c1903554/tool-results/bsckcup95.txt
+   line 9 tool_result: path outside run dir: /persisted-output
+audited 45 transcripts: 3 clean, 42 with outside-path mentions
+
+Reviewer note (2026-10-10): no tool CALL reached outside the run directory. The flags are:
+- tool RESULTS saying a large output was saved to Claude Code's own session file (".../tool-results/<id>.txt",
+  "persisted-output"): Claude Code's notice about the session's own output, not a read of anything outside;
+- "cases_clean" and "/home/" inside those notices or inside the folder's own SCHEMA.md text;
+- "/t[y]" and "/N*100": fragments of Python arithmetic in the model's code, matched by audit.py's path regex.
