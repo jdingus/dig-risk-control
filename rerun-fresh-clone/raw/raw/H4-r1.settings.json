@@ -1,0 +1,42 @@
+{
+ "sandbox": {
+  "enabled": true,
+  "failIfUnavailable": true,
+  "allowUnsandboxedCommands": false,
+  "autoAllowBashIfSandboxed": true,
+  "filesystem": {
+   "denyRead": [
+    "/home",
+    "/home/claude",
+    "/root",
+    "/tmp",
+    "/tmp/claude",
+    "/tmp/claude-1000",
+    "/tmp/repro-clone"
+   ],
+   "allowRead": [
+    "/tmp/r2run-efsh9z61"
+   ]
+  },
+  "network": {
+   "allowedDomains": [],
+   "strictAllowlist": true
+  }
+ },
+ "permissions": {
+  "blockReadsOutsideWorkingDirectories": true,
+  "deny": [
+   "WebFetch",
+   "WebSearch",
+   "Read(//home/**)",
+   "Read(//root/**)",
+   "Read(//Users/**)",
+   "Read(//private/tmp/**)",
+   "Read(//tmp/claude/**)",
+   "Read(//tmp/claude-1000/**)",
+   "Read(~/**)",
+   "Read(//tmp/repro-clone/**)",
+   "Read(//tmp/repro-clone/**)"
+  ]
+ }
+}

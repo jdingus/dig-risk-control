@@ -13,7 +13,11 @@ import random
 import re
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
+import os
 ARM_DIRS = {"control": "control/raw", "raw": "raw-files/raw", "folder": "treatment/raw"}
+if os.environ.get("ARMS"):  # e.g. ARMS="folder-v2=treatment-v2/raw,rerun-raw=rerun-fresh-clone/raw/raw" OUT=grading-2
+    ARM_DIRS = dict(x.split("=", 1) for x in os.environ["ARMS"].split(","))
+OUT = os.environ.get("OUT", "grading")
 rng = random.Random(14)
 
 qtext = {}
@@ -34,7 +38,7 @@ def final_answer(path):
     return (res[-1].get("result") or "").strip() if res else "(no final answer)"
 
 
-out = ROOT / "grading" / "by-question"
+out = ROOT / OUT / "by-question"
 out.mkdir(parents=True, exist_ok=True)
 key = {}
 for qid, text in qtext.items():
@@ -53,5 +57,5 @@ for qid, text in qtext.items():
         key[label] = {"arm": arm, "run": stem}
         lines += [f"## Answer {label}", "", ans, ""]
     (out / f"{qid}.md").write_text("\n".join(lines))
-(ROOT / "grading" / "key.json").write_text(json.dumps(key, indent=1))
+(ROOT / OUT / "key.json").write_text(json.dumps(key, indent=1))
 print(len(key), "answers in", len(qtext), "packets")
