@@ -1,0 +1,42 @@
+{
+ "sandbox": {
+  "enabled": true,
+  "failIfUnavailable": true,
+  "allowUnsandboxedCommands": false,
+  "autoAllowBashIfSandboxed": true,
+  "filesystem": {
+   "denyRead": [
+    "/home",
+    "/home/claude",
+    "/home/claude/projects/dig-risk-control",
+    "/root",
+    "/tmp",
+    "/tmp/claude",
+    "/tmp/claude-1000"
+   ],
+   "allowRead": [
+    "/tmp/r2run-qtlqeyzs"
+   ]
+  },
+  "network": {
+   "allowedDomains": [],
+   "strictAllowlist": true
+  }
+ },
+ "permissions": {
+  "blockReadsOutsideWorkingDirectories": true,
+  "deny": [
+   "WebFetch",
+   "WebSearch",
+   "Read(//home/**)",
+   "Read(//root/**)",
+   "Read(//Users/**)",
+   "Read(//private/tmp/**)",
+   "Read(//tmp/claude/**)",
+   "Read(//tmp/claude-1000/**)",
+   "Read(~/**)",
+   "Read(//home/claude/projects/dig-risk-control/**)",
+   "Read(//home/claude/projects/dig-risk-control/**)"
+  ]
+ }
+}
