@@ -1,0 +1,850 @@
+=== page 1
+IC 8-1-26 Chapter 26. Damage to Underground Facilities
+8-1-26-1 Application of chapter
+8-1-26-1.3 "Account"
+8-1-26-1.5 "Advisory committee"
+8-1-26-2 "Approximate location"
+8-1-26-3 "Association"
+8-1-26-3.5 "Communications service"
+8-1-26-4 "Damage"
+8-1-26-5 "Demolish"
+8-1-26-5.2 "Design information notice"
+8-1-26-6 "Excavate"
+8-1-26-7 "Facility"
+8-1-26-8 "Imminent danger to life, health, property, or loss of service"
+8-1-26-9 "Mechanized equipment"
+8-1-26-10 "Operator"
+8-1-26-11 "Person"
+8-1-26-11.2 "Pipeline facilities"
+8-1-26-11.3 "Prevailing time"
+8-1-26-11.4 "Tolerance zone"
+8-1-26-11.5 "White lining"
+8-1-26-12 "Working day"
+8-1-26-13 Permit authorizing excavation or demolition; compliance with chapter
+8-1-26-14 Excavation or demolition of structure served by underground facility; location
+of affected structures
+8-1-26-15 Recording location of underground facilities; updating information;
+association membership; penalty
+8-1-26-15.5 Repealed
+8-1-26-16 Notice to excavate or demolish; duty to perform white lining; notice contents
+and expiration; civil penalties
+8-1-26-16.5 Design information notice; duty to perform white lining; timing; association's
+duties on receipt; commencement of work; design information notice contents;
+operator's duties on receipt; grounds for rejection; effect
+8-1-26-17 Association membership; board of directors; association's duties
+8-1-26-18 Operator's duties; notice of intent; design information notice; electronic
+positive response and acknowledging receipt; color coding of markings;
+pipeline facilities; alteration of markings; notice of operator's inability to
+locate and mark facilities
+8-1-26-18.5 Installation of new or replacement facilities after June 30, 2020; detection
+from above ground level
+8-1-26-19 Emergency excavation or demolition; notice requirements; penalties
+8-1-26-20 Duties of excavator; facilities in or under pavement; use of mechanized
+equipment; civil penalties
+8-1-26-21 Demolition or excavation resulting in damage to underground facility; escape
+of flammable, toxic, or corrosive gas or liquid; duties of operator
+8-1-26-22 Pecuniary loss suffered by operator; civil action; damages; defenses;
+injunction
+8-1-26-23 Underground plant protection advisory committee established; membership;
+duties and powers
+8-1-26-24 Underground plant protection account
+8-1-26-25 Penalties under IC 8-1-22.5 for pipeline operators
+8-1-26-26 Authority of commission to adopt rules
+IC 8-1-26-1 Application of chapter
+Sec. 1. (a) Except as provided by this section, this chapter does not apply to the following:
+(1) Excavation that is performed:
+(A) only with a hand tool;
+(B) on property owned or controlled by the person performing the excavation; and
+(C) to a depth not greater than twelve (12) inches.
+(2) Excavation using only animals.
+Indiana Code 2025
+=== page 2
+(3) Tilling of soil for agricultural purposes, such as plowing, planting, and combining.
+(4) Surface coal mining and reclamation operations conducted under a permit issued
+by the natural resources commission under IC 14-34.
+(5) Railroad right-of-way maintenance or operations.
+(6) Underground probing to determine the extent of gas migration.
+(b) This chapter does apply to blasting, setting drainage tile, subsoiling, and other
+subsurface activities.
+(c) Sections 16, 19, 20, and 22 of this chapter apply to the construction and installation
+of railroad signal facilities and drainage facilities at public grade crossings.
+As added by P.L.69-1990, SEC.2. Amended by P.L.1-1995, SEC.55; P.L.62-2009, SEC.2.
+IC 8-1-26-1.3 "Account"
+Sec. 1.3. As used in this chapter, "account" refers to the underground plant protection
+account established by section 24 of this chapter.
+As added by P.L.62-2009, SEC.3.
+IC 8-1-26-1.5 "Advisory committee"
+Sec. 1.5. As used in this chapter, "advisory committee" refers to the underground plant
+protection advisory committee established by section 23 of this chapter.
+As added by P.L.62-2009, SEC.4.
+IC 8-1-26-2 "Approximate location"
+Sec. 2. As used in this chapter, "approximate location" means a strip of land at least four
+(4) feet wide but not wider than the width of the underground facility plus two (2) feet on
+either side of the outer limits of the physical plant.
+As added by P.L.69-1990, SEC.2. Amended by P.L.54-1994, SEC.1.
+IC 8-1-26-3 "Association"
+Sec. 3. As used in this chapter, "association" means an organization that is:
+(1) formed in Indiana to provide for mutual receipt of notice of excavation or
+demolition for the organization's members;
+(2) known as the Indiana Underground Plant Protection Service (or its successor
+organization); and
+(3) accessed by dialing the abbreviated dialing code 811, as designated by the Federal
+Communications Commission as the nationwide toll free number to be used by state
+One Call systems.
+As added by P.L.69-1990, SEC.2. Amended by P.L.62-2009, SEC.5.
+IC 8-1-26-3.5 "Communications service"
+Sec. 3.5. As used in this chapter, "communications service" has the meaning set forth in
+IC 8-1-32.5-3.
+As added by P.L.200-2014, SEC.1.
+IC 8-1-26-4 "Damage"
+Sec. 4. As used in this chapter, "damage" means:
+(1) the substantial weakening of structural or lateral support of an underground facility;
+(2) the penetration or destruction of a protective coating, a housing, or another
+protective device of an underground facility;
+(3) the partial or complete severance of an underground facility; or
+(4) rendering any underground facility inaccessible.
+As added by P.L.69-1990, SEC.2.
+IC 8-1-26-5 "Demolish"
+Indiana Code 2025
+=== page 3
+Sec. 5. As used in this chapter, "demolish" means an operation in which a structure or
+mass of material is wrecked, raised, rendered, moved, or removed by means of tools,
+equipment, or discharge of explosives.
+As added by P.L.69-1990, SEC.2.
+IC 8-1-26-5.2 "Design information notice"
+Sec. 5.2. As used in this chapter, "design information notice" means a notification that:
+(1) is voluntarily submitted to the association under section 16.5 of this chapter by a
+person providing professional services in connection with:
+(A) a construction project; or
+(B) any other project or operation;
+that will involve an excavation or demolition operation described in section 14 of this
+chapter;
+(2) is made in preparation for bidding, preconstruction engineering, or other advance
+planning efforts in connection with the project or operation described in subdivision
+(1); and
+(3) is separate from and does not supplant the notice required under section 16 of this
+chapter before the commencement of the excavation or demolition operation.
+As added by P.L.122-2017, SEC.1.
+IC 8-1-26-6 "Excavate"
+Sec. 6. As used in this chapter, "excavate" means an operation for the movement,
+placement, or removal of earth, rock, or other materials in or on the ground by use of tools
+or mechanized equipment or by discharge of explosives, including augering, backfilling,
+boring, digging, ditching, drilling, driving, grading, jacking, plowing in, pulling in, ripping,
+scraping, trenching, and tunneling.
+As added by P.L.69-1990, SEC.2. Amended by P.L.62-2009, SEC.6.
+IC 8-1-26-7 "Facility"
+Sec. 7. As used in this chapter, "facility" means a line or system used for producing,
+storing, conveying, transmitting, or distributing communication, information, electricity, gas,
+petroleum, petroleum products, hazardous liquids, carbon dioxide fluids, water, steam, or
+sewerage. The term includes pipeline facilities.
+As added by P.L.69-1990, SEC.2. Amended by P.L.62-2009, SEC.7.
+IC 8-1-26-8 "Imminent danger to life, health, property, or loss of service"
+Sec. 8. As used in this chapter, "imminent danger to life, health, property, or loss of
+service" means there is a substantial likelihood that loss of life, health, property, or service
+will result before the procedures under sections 16 and 18 of this chapter can be completed.
+As added by P.L.69-1990, SEC.2.
+IC 8-1-26-9 "Mechanized equipment"
+Sec. 9. As used in this chapter, "mechanized equipment" means equipment operated by
+means of mechanical power, including:
+(1) trenchers;
+(2) bulldozers;
+(3) power shovels;
+(4) augers;
+(5) backhoes;
+(6) scrapers;
+(7) drills;
+(8) cable and pipe plows;
+(9) hydraulic excavators; and
+Indiana Code 2025
+=== page 4
+(10) other equipment that may cause damage to underground facilities.
+As added by P.L.69-1990, SEC.2. Amended by P.L.200-2014, SEC.2.
+IC 8-1-26-10 "Operator"
+Sec. 10. As used in this chapter, "operator" means a person who owns or operates an
+underground facility, other than an underground facility that:
+(1) is located on real property that the person owns or occupies; and
+(2) the person operates for the person's benefits.
+As added by P.L.69-1990, SEC.2. Amended by P.L.62-2009, SEC.8.
+IC 8-1-26-11 "Person"
+Sec. 11. As used in this chapter, "person" means an individual, a corporation, a
+partnership, a limited liability company, an association, or other entity organized under the
+laws of any state. The term includes state, local, and federal agencies. The term does not
+include the association.
+As added by P.L.69-1990, SEC.2. Amended by P.L.8-1993, SEC.131; P.L.62-2009, SEC.9.
+IC 8-1-26-11.2 "Pipeline facilities"
+Sec. 11.2. As used in this chapter, "pipeline facilities" has the meaning set forth in
+IC 8-1-22.5-1(d).
+As added by P.L.62-2009, SEC.10.
+IC 8-1-26-11.3 "Prevailing time"
+Sec. 11.3. As used in this chapter, "prevailing time" means the time observed in
+Indianapolis, Indiana.
+As added by P.L.53-2024, SEC.1.
+IC 8-1-26-11.4 "Tolerance zone"
+Sec. 11.4. As used in this chapter, "tolerance zone", with respect to a physical plant,
+means an area extending not less than:
+(1) the width of the underground facilities of the physical plant; plus
+(2) two (2) feet;
+above, below, and in a full radius surrounding all outer limits of both the underground and
+aboveground facilities of the physical plant.
+As added by P.L.53-2024, SEC.2.
+IC 8-1-26-11.5 "White lining"
+Sec. 11.5. As used in this chapter, "white lining" means the act of marking the route or
+boundary of a proposed excavation or demolition:
+(1) by means of white paint, flags, or stakes or by electronic means approved by the
+association; or
+(2) through a combination of the means described in subdivision (1);
+before the excavation or demolition.
+As added by P.L.62-2009, SEC.11. Amended by P.L.53-2024, SEC.3.
+IC 8-1-26-12 "Working day"
+Sec. 12. As used in this chapter, "working day" means every day, except Saturday,
+Sunday, and state and national legal holidays, from 7 a.m. to 6 p.m. prevailing time.
+As added by P.L.69-1990, SEC.2. Amended by P.L.53-2024, SEC.4.
+IC 8-1-26-13 Permit authorizing excavation or demolition; compliance with
+chapter
+Sec. 13. A permit issued in accordance with a law authorizing excavation or demolition
+Indiana Code 2025
+=== page 5
+operations does not relieve a person from the responsibility of complying with this chapter.
+As added by P.L.69-1990, SEC.2.
+IC 8-1-26-14 Excavation or demolition of structure served by underground
+facility; location of affected structures
+Sec. 14. Except as provided in section 19 of this chapter, a person may not excavate real
+property or demolish a structure that is served or was previously served by an underground
+facility without first ascertaining in the manner prescribed by sections 16 and 18 of this
+chapter the location of all underground facilities in the area affected by the proposed
+excavation or demolition.
+As added by P.L.69-1990, SEC.2.
+IC 8-1-26-15 Recording location of underground facilities; updating
+information; association membership; penalty
+Sec. 15. (a) An operator that has underground facilities located in Indiana must become
+a member of the association and shall provide the following information to the association:
+(1) The name of each township and county in which the operator has underground
+facilities, including those facilities that have been abandoned in place by the operator
+but not yet physically removed.
+(2) The name of the operator.
+(3) The name, title, address, and telephone number of the operator's representative
+designated to receive:
+(A) notices of intent required by section 16 of this chapter; and
+(B) design information notices under section 16.5 of this chapter.
+(b) An operator shall report any changes in the information contained in the list recorded
+under subsection (a) with the association within thirty (30) calendar days of the change. The
+document reflecting the changes shall be cross-referenced to the original information
+reported under subsection (a).
+(c) A person other than an operator may be a member of the association.
+(d) A person that is required, but fails, to maintain membership in the association after
+December 31, 2009, may be subject to a civil penalty in an amount recommended by the
+advisory committee and approved by the commission, not to exceed one hundred dollars
+($100). Each day that a person that is required, but fails, to maintain membership in the
+association constitutes a separate violation for purposes of imposing a fine under this
+subsection.
+As added by P.L.69-1990, SEC.2. Amended by P.L.114-2003, SEC.1; P.L.62-2009, SEC.12;
+P.L.122-2017, SEC.2.
+IC 8-1-26-15.5 Repealed
+As added by P.L.114-2003, SEC.2. Repealed by P.L.62-2009, SEC.23.
+IC 8-1-26-16 Notice to excavate or demolish; duty to perform white lining;
+notice contents and expiration; civil penalties
+Sec. 16. (a) Except as provided in section 19 of this chapter, before commencing an
+excavation or demolition operation described in section 14 of this chapter, each person
+responsible for the excavation or demolition shall:
+(1) serve notice on the association of the person's intent to excavate or demolish; and
+(2) perform white lining at the site of the excavation or demolition if the person
+responsible for the excavation or demolition is unable to provide to the association the
+physical location of the proposed excavation or demolition by one (1) of the following
+means:
+(A) A street address.
+(B) A legal description of the location.
+Indiana Code 2025
+=== page 6
+(C) A highway location using highway mile markers or cross streets.
+The notice required under subdivision (1) must be received at least two (2) full working days
+but not more than ten (10) calendar days before the commencement of the work. Notice is
+considered received for purposes of this section at the prevailing time the association receives
+the notice from the person responsible for the excavation or demolition.
+(b) Upon receiving a notice under subsection (a), the association immediately shall
+provide notice of the proposed excavation or demolition to each member operator that has
+underground facilities located in the proposed area of excavation or demolition.
+(c) A person responsible for excavation or demolition may not commence work before
+7 a.m. prevailing time on the next working day that follows the elapse of two (2) full working
+days after the time of receipt of the person's notice under subsection (a). However, a person
+responsible for excavation or demolition may commence work before 7 a.m. prevailing time
+on the next working day that follows the elapse of two (2) full working days after the time
+of receipt of the person's notice under subsection (a) if all affected operators have provided
+to the association an electronic positive response indicating that the location of all the
+affected operators' facilities have been marked or that the affected operators have no facilities
+in the location of the proposed excavation or demolition.
+(d) A person responsible for demolition must give an operator a reasonable amount of
+time, as mutually determined by the operator, the person responsible for demolition, and the
+project owner, to remove or protect the operator's facilities before demolition of the structure
+is commenced.
+(e) The notice required by subsection (a) must contain the following information:
+(1) The name, address, and telephone number of the person serving the notice, and, if
+different, the person responsible for the excavation or demolition.
+(2) The:
+(A) starting date and time, if known;
+(B) anticipated duration; and
+(C) type;
+of the excavation or demolition operation to be conducted. The starting date and time
+of the excavation or demolition may not be later than ten (10) days after the time of
+receipt of the notice.
+(3) The location of the proposed excavation or demolition.
+(4) Whether or not explosives or blasting are to be used.
+(5) The approximate depth of excavation.
+(6) Whether the person responsible for the proposed excavation or demolition intends
+to perform white lining at the site of the proposed excavation or demolition.
+(f) The person responsible for the excavation or demolition shall submit a separate locate
+request along with the notice provided under subsection (e)(3) to the association as follows:
+(1) Within an incorporated area, for each one thousand five hundred (1,500) linear feet
+of proposed excavation or demolition.
+(2) In an unincorporated area, for at least each two thousand six hundred forty (2,640)
+linear feet of proposed excavation or demolition.
+(g) A notice provided under this section by a person responsible for an excavation or
+demolition expires at 11:59 p.m. prevailing time twenty (20) days after the date the notice
+is received by the association under subsection (a). If, at the conclusion of the twenty (20)
+day period described in this subsection, any part of the excavation or demolition is not
+complete at any part of the site for which the original notice was submitted, the person
+responsible for the excavation or demolition may not continue or resume the excavation or
+demolition at any part of the site for which the original notice was submitted until:
+(1) the person responsible for the excavation or demolition submits to the association
+a new locate request, along with a notice that complies with subsection (e), with respect
+to that part of the site for which the excavation or demolition is not complete; and
+(2) each affected operator provides facility locate markings in compliance with section
+Indiana Code 2025
+=== page 7
+18 of this chapter for that part of the site for which the new locate request and notice
+are submitted under subdivision (1).
+(h) The association shall maintain an adequate record of each notice required by this
+section for seven (7) years to document compliance with this chapter. A copy of the record
+shall be furnished to the person giving notice to excavate or demolish upon written request.
+(i) A person that:
+(1) causes damage to a pipeline facility located in an area of excavation or demolition;
+(2) is required to provide notice under this section for the excavation or demolition; and
+(3) fails to provide the notice;
+may be subject to a civil penalty in an amount recommended by the advisory committee and
+approved by the commission, not to exceed ten thousand dollars ($10,000).
+(j) A person that:
+(1) causes damage to a pipeline facility located in an area of excavation or demolition;
+(2) is required to perform white lining under subsection (a)(2); and
+(3) fails to perform white lining before an operator of a pipeline facility arrives at the
+site of the proposed excavation or demolition to mark the operator's pipeline facilities;
+may be subject to a civil penalty in an amount recommended by the advisory committee and
+approved by the commission, not to exceed ten thousand dollars ($10,000).
+As added by P.L.69-1990, SEC.2. Amended by P.L.54-1994, SEC.2; P.L.114-2003, SEC.3;
+P.L.62-2009, SEC.13; P.L.200-2014, SEC.3; P.L.122-2017, SEC.3; P.L.53-2024, SEC.5.
+IC 8-1-26-16.5 Design information notice; duty to perform white lining;
+timing; association's duties on receipt; commencement of
+work; design information notice contents; operator's duties on
+receipt; grounds for rejection; effect
+Sec. 16.5. (a) A person responsible for:
+(1) a construction project; or
+(2) any other project or operation;
+that will involve an excavation or demolition operation described in section 14 of this chapter
+may voluntarily, before commencing preliminary engineering studies or construction
+planning activities in the project area that will be affected by the excavation or demolition,
+serve a design information notice on the association of the person's intent to conduct the
+preliminary engineering studies or construction planning activities. However, not more than
+two (2) design information notices for the same project and from the same person or source
+may be submitted in any given one hundred eighty (180) day period.
+(b) A person that serves a design information notice on the association under this section
+shall ensure that white lining is performed in the project area that will be affected by the
+proposed excavation or demolition if the person is unable to provide to the association the
+physical location of the proposed excavation or demolition by one (1) of the following
+means:
+(1) A street address.
+(2) A legal description of the location.
+(3) A highway location using highway mile markers or cross streets.
+(c) A design information notice under this section must be received by the association at
+least ten (10) full working days but not more than twenty (20) calendar days before the
+commencement of the preliminary engineering studies or construction planning activities. A
+design information notice is considered received for purposes of this section at the prevailing
+time the association receives the design information notice from the person that serves the
+design information notice under subsection (a). Upon receiving the design information notice,
+the association shall immediately:
+(1) provide notice to each member operator that has underground facilities located in
+the project area that will be affected by the proposed excavation or demolition; and
+(2) provide the person serving the design information notice a list of the identified
+Indiana Code 2025
+=== page 8
+operators receiving the notice under subdivision (1).
+A person responsible for conducting the preliminary engineering studies or construction
+planning activities may not commence work before 7 a.m. prevailing time on the next
+working day that follows the elapse of ten (10) full working days after the time of receipt of
+the design information notice by the association under this subsection. However, a person
+responsible for conducting the preliminary engineering studies or construction planning
+activities may commence work before 7 a.m. prevailing time on the next working day that
+follows the elapse of ten (10) full working days after the time of receipt of the design
+information notice by the association under this subsection if all affected operators have
+provided to the association an electronic positive response indicating that the location of all
+the affected operators' facilities have been marked or that the affected operators have no
+facilities in the project area that will be affected by the proposed excavation or demolition.
+(d) A design information notice under this section must contain the following information:
+(1) The name, address, and telephone number of the person serving the notice and, if
+different, contact information for the person responsible for the preliminary engineering
+studies or construction planning activities.
+(2) The name of and contact information for the person that will perform the proposed
+excavation or demolition in connection with the project, if known.
+(3) The starting date, anticipated duration, and type of engineering studies or
+construction planning activities, if known.
+(4) The location of the proposed excavation or demolition within the project area.
+(5) Whether white lining will be performed at the site of the proposed excavation or
+demolition within the project area.
+(e) Subject to subsection (f), upon receiving notice from the association under subsection
+(c), an operator shall contact the person serving the design information notice within the time
+specified in section 18(d) of this chapter and shall do one (1) or more of the following:
+(1) Provide to the person serving the design information notice a description of all of
+the operator's underground facilities in the project area that will be affected by the
+proposed excavation or demolition, along with information as to the location of the
+facilities. The description and location information provided under this subdivision may
+include:
+(A) drawings marked with a scale;
+(B) dimensions;
+(C) reference points for underground facilities already existing in the area; or
+(D) other facility records that are maintained by the operator.
+(2) Allow:
+(A) the person serving the design information notice; or
+(B) another authorized person;
+to inspect, at a location that is acceptable to the operator, drawings or other records for
+all of the operator's underground facilities within the project area that will be affected
+by the proposed excavation or demolition.
+(3) Designate with temporary facility markers the location of all of the operator's
+underground facilities within the project area that will be affected by the proposed
+excavation or demolition, as identified in the design information notice.
+(f) An operator may reject a design information notice served under this section:
+(1) based upon security considerations; or
+(2) if producing the information set forth in subsection (e) will place the operator at a
+competitive disadvantage;
+pending the operator obtaining additional information concerning the legitimacy of the design
+information notice. If an operator rejects a design information notice under this subsection,
+the operator shall provide notice of the rejection to, and may request additional information
+from, the person serving the design information notice.
+(g) The submission of a design information notice under this section does not relieve a
+Indiana Code 2025
+=== page 9
+person responsible for the excavation or demolition operation involved in the project from
+providing the notice required under section 16 of this chapter before commencing the
+excavation or demolition operation.
+As added by P.L.122-2017, SEC.4. Amended by P.L.53-2024, SEC.6.
+IC 8-1-26-17 Association membership; board of directors; association's
+duties
+Sec. 17. (a) An operator that has underground facilities located in Indiana must be a
+member of the Indiana Underground Plant Protection Service or its successor organization.
+The articles of incorporation or the bylaws of the Indiana Underground Plant Protection
+Service or its successor organization shall do the following:
+(1) Provide that the board of directors of the Indiana Underground Plant Protection
+Service or its successor organization is composed of:
+(A) five (5) members representing electric utilities other than municipal electric
+utilities, including corporations organized or operating under IC 8-1-13 or
+corporations organized under IC 23-17, some of whose members are local district
+corporations (as described in IC 8-1-13-23);
+(B) five (5) members representing investor owned gas utilities, including pipelines;
+(C) five (5) members representing communications service providers, at least one (1)
+of whom is a provider of cable television service;
+(D) five (5) members representing water or sewer utilities other than municipal water
+or sewer utilities; and
+(E) five (5) members representing political subdivisions, including municipal
+utilities, which must include a member representing the largest waterworks utility in
+Indiana that is owned by:
+(i) a political subdivision; or
+(ii) a department of public utilities created by IC 8-1-11.1.
+(2) Require the affirmative vote of at least sixty percent (60%) of each category of
+members appointed under subdivision (1) to approve an increase, a decrease, or any
+other adjustment to the membership dues, rates, tariffs, locate fees, or any other charges
+imposed by the Indiana Underground Plant Protection Service or its successor
+organization.
+(b) The association shall provide for mutual receipt of:
+(1) notices of excavation or demolition operations under section 16 of this chapter; and
+(2) design information notices under section 16.5 of this chapter.
+(c) The association shall:
+(1) annually update the association's base map data, including street addresses; and
+(2) make reasonable efforts to reduce incorrect locate requests issued to the
+association's members.
+(d) The association shall develop and implement guidelines to provide notice to an
+operator under section 16 or 16.5 of this chapter at the prevailing time the association
+receives notice from the person responsible for an excavation or demolition.
+(e) The association shall develop and adopt policies and procedures for processing design
+information notices under section 16.5 of this chapter. The policies and procedures adopted
+under this subsection must require the association to do the following upon receiving a design
+information notice under section 16.5 of this chapter:
+(1) Immediately provide notice to each member operator that has underground facilities
+located in the project area that will be affected by the proposed excavation or
+demolition, in accordance with section 16.5(c) of this chapter.
+(2) Immediately provide the person serving the design information notice a list of the
+identified operators receiving the notice under subdivision (1), in accordance with
+section 16.5(c) of this chapter.
+As added by P.L.69-1990, SEC.2. Amended by P.L.114-2003, SEC.4; P.L.62-2009, SEC.14;
+Indiana Code 2025
+=== page 10
+P.L.200-2014, SEC.4; P.L.122-2017, SEC.5; P.L.53-2024, SEC.7.
+IC 8-1-26-18 Operator's duties; notice of intent; design information notice;
+electronic positive response and acknowledging receipt; color
+coding of markings; pipeline facilities; alteration of markings;
+notice of operator's inability to locate and mark facilities
+Sec. 18. (a) Subject to subsection (m), an operator to which the association provides a
+notice of intent under section 16 of this chapter shall comply with subsection (b) not later
+than:
+(1) 7 a.m. prevailing time on the next working day that follows the elapse of two (2)
+full working days after the operator receives the notice of intent; or
+(2) the starting date and time of the excavation or demolition stated in the notice of
+intent;
+whichever is later.
+(b) Subject to subsection (m), an operator to which the association provides a notice of
+intent under section 16 of this chapter shall do the following:
+(1) Supply to the person responsible for the excavation or demolition the following
+information:
+(A) The approximate location and a description of all the operator's underground
+facilities that may be damaged as a result of the excavation or demolition.
+(B) The location and description of all facility markers indicating the approximate
+location of the underground facilities.
+(C) Any other information that would assist that person in locating and avoiding
+damage to the underground facilities, including providing adequate temporary
+markings indicating the approximate location of the underground facility and
+locations where permanent facility markers do not exist.
+(2) Provide to the association an electronic positive response.
+(c) An operator that receives a notice of intent under section 16 of this chapter and that
+has underground facilities in the location of the proposed excavation or demolition shall
+provide an electronic positive response to the association, in the manner prescribed by the
+association, when the operator has provided the marking information required by this chapter.
+The association shall provide an operator's electronic positive response under this subsection
+to the person responsible for the excavation or demolition.
+(d) An operator to which the association provides notice under section 16.5 of this chapter
+of preliminary engineering studies or construction planning activities shall, not later than 7
+a.m. prevailing time on the next working day that follows the elapse of ten (10) full working
+days after the operator receives the notice, do the following:
+(1) Do one (1) or more of the following, in accordance with section 16.5(e) of this
+chapter:
+(A) Provide to the person serving the design information notice the approximate
+location and a description of all the operator's underground facilities that are located
+in the project area that will be affected by the proposed excavation or demolition.
+(B) Allow:
+(i) the person serving the design information notice; or
+(ii) another authorized person;
+to inspect, at a location that is acceptable to the operator, drawings or other records
+for all of the operator's underground facilities within the project area that will be
+affected by the proposed excavation or demolition.
+(C) Designate with temporary facility markers the location of all of the operator's
+underground facilities within the project area that will be affected by the proposed
+excavation or demolition, as identified in the design information notice.
+(2) Using maps when appropriate, provide to the person serving the design information
+notice the location and a description of all facility markers indicating the approximate
+Indiana Code 2025
+=== page 11
+location of the underground facilities, if applicable.
+(3) Using maps when appropriate, provide to the person serving the design information
+notice any other information that would assist a person in locating the underground
+facilities during the engineering studies or construction planning activities.
+(4) Provide an electronic positive response to the association.
+(e) Facility locate markings must consist of paint, flags, or stakes or any combination that
+mark the approximate location of the underground facilities. The method of marking must
+be appropriate for the location of the underground facilities.
+(f) Color coding of facility locate markings indicating the type of underground facility
+must conform to the following color coding:
+Facility and Type of Product Specific Group
+Identifying Color
+(1) Electric power distribution
+and transmission Safety red
+(2) Municipal electric systems Safety red
+(3) Gas distribution and
+transmission  High visibility
+safety yellow
+(4) Oil distribution and
+transmission  High visibility
+safety yellow
+(5) Dangerous materials, product
+lines, steam lines High visibility
+safety yellow
+(6) Communications service
+systems Safety alert orange
+(7) Cable television Safety alert orange
+(8) Police and fire
+communications Safety alert orange
+(9) Water systems Safety precaution blue
+(10) Sewer systems Safety green
+(11) Proposed excavation White
+(g) An operator to which the association provides a notice of intent under section 16 of
+this chapter and that has no underground facilities in the location of the proposed excavation
+or demolition shall, not later than:
+(1) 7 a.m. prevailing time on the next working day that follows the elapse of two (2)
+full working days after the operator receives the notice of intent; or
+(2) the starting date and time of the excavation or demolition stated in the notice of
+intent;
+whichever is later, provide an electronic positive response to the association indicating that
+the operator has no underground facilities in the location of the proposed excavation or
+demolition. The association shall provide the operator's electronic positive response to the
+person responsible for the excavation or demolition.
+(h) An operator to which the association provides notice under section 16.5 of this chapter
+of preliminary engineering studies or construction planning activities and that has no
+underground facilities located in the project area that will be affected by the proposed
+excavation or demolition shall, not later than 7 a.m. prevailing time on the next working day
+that follows the elapse of ten (10) full working days after the operator receives the notice,
+provide an electronic positive response to the association indicating that the operator has no
+underground facilities located in the project area that will be affected by the proposed
+Indiana Code 2025
+=== page 12
+excavation or demolition. The association shall provide the operator's electronic positive
+response to the person that served the design information notice.
+(i) This section does not apply to an operator making an emergency repair to its own
+underground facility.
+(j) This subsection applies if all of the following occur:
+(1) An operator of a pipeline facility is required to supply information, including
+facility locate markings, under subsection (b) to a person responsible for an excavation
+or demolition.
+(2) The operator of the pipeline facility fails to supply the:
+(A) information, including facility locate markings, under subsection (b) to a person
+responsible for an excavation or demolition; or
+(B) electronic positive response to the association under subsection (c).
+(3) The operator's pipeline facility is damaged during the excavation or demolition for
+which the operator was required to supply the information described in subdivision (1).
+The operator of the pipeline facility may be subject to a civil penalty in an amount
+recommended by the advisory committee and approved by the commission, not to exceed one
+thousand dollars ($1,000).
+(k) Subsection (j) does not apply to an operator that:
+(1) is repairing its own underground facilities; or
+(2) fails to supply required information or provide facility locate markings due to
+factors beyond the control of the operator.
+(l) A person that knowingly moves, removes, damages, or otherwise alters a facility locate
+marking supplied under this section may be subject to a civil penalty in an amount
+recommended by the advisory committee and approved by the commission, not to exceed ten
+thousand dollars ($10,000). This subsection does not apply to a person that moves, removes,
+damages, or otherwise alters a facility locate marking as part of the excavation or demolition
+for which the facility locate markings were supplied.
+(m) If an operator receives, under section 16 of this chapter, notice of an excavation or
+demolition and determines that the operator is unable to do either or both of the following,
+the operator shall notify the person responsible for the excavation or demolition of the
+operator's determination and shall provide additional information and, if requested, onsite
+assistance to the person responsible for the excavation or demolition:
+(1) Locate and mark the operator's affected underground facilities in the time required
+by subsection (a).
+(2) Mark the approximate location of the operator's affected underground facilities.
+(n) A person responsible for an excavation or demolition shall, before commencing the
+excavation or demolition, provide an affirmative response to the association, in the manner
+prescribed by the association, acknowledging the person's receipt of the information provided
+under subsections (c) and (g).
+(o) An operator to which the association provides notice under section 16 or 16.5 of this
+chapter shall provide to the association an electronic positive response:
+(1) in the manner prescribed by the association; and
+(2) including relevant codes detailing work status;
+acknowledging the operator's resolution of the notice. The association shall promptly provide
+the operator's electronic positive response to the person that served the notice under section
+16 or 16.5 of this chapter.
+As added by P.L.69-1990, SEC.2. Amended by P.L.62-2009, SEC.15; P.L.200-2014, SEC.5;
+P.L.122-2017, SEC.6; P.L.53-2024, SEC.8.
+IC 8-1-26-18.5 Installation of new or replacement facilities after June 30,
+2020; detection from above ground level
+Sec. 18.5. (a) This section applies to any new or replacement underground facility that
+an operator installs or causes to be installed after June 30, 2020, in any public right-of-way
+Indiana Code 2025
+=== page 13
+or on any private property.
+(b) Subject to any other applicable federal or state laws or regulations, for any new or
+replacement underground facility that an operator installs or causes to be installed, the
+operator shall ensure that:
+(1) the materials from which the facility is constructed are capable of being detected
+from above ground level using standard equipment and technologies used by the utility
+locating industry, such as electromagnetic locating equipment and electromagnetic
+induction surveys; or
+(2) if the materials from which the facility is constructed are not capable of being
+detected from above ground level using standard locating techniques, as described in
+subdivision (1), the facility is:
+(A) encased by conductive material; or
+(B) equipped with an electrically conducting wire or other means of locating the
+facility while it is underground.
+(c) The commission may adopt rules under IC 4-22-2 to implement this section.
+As added by P.L.46-2020, SEC.1. Amended by P.L.93-2024, SEC.69.
+IC 8-1-26-19 Emergency excavation or demolition; notice requirements;
+penalties
+Sec. 19. (a) A person responsible for emergency excavation or demolition to ameliorate
+an imminent danger to life, health, property, or loss of service is not required to comply with
+the notice requirements of section 16 of this chapter. However, that person shall:
+(1) as soon as practicable, give notice, in the manner prescribed by the association, of
+the emergency excavation or demolition to the association; and
+(2) request emergency assistance from each operator identified by the association as
+having underground facilities located in the area of the emergency excavation or
+demolition in locating and providing immediate protection to the operator's
+underground facilities.
+(b) This section applies to an operator making an emergency repair to its own
+underground facility.
+(c) A person that knowingly provides false notice of an emergency excavation or
+demolition to the association under subsection (a) may be subject to a civil penalty in an
+amount recommended by the advisory committee and approved by the commission, not to
+exceed one thousand dollars ($1,000).
+As added by P.L.69-1990, SEC.2. Amended by P.L.62-2009, SEC.16; P.L.53-2024, SEC.9.
+IC 8-1-26-20 Duties of excavator; facilities in or under pavement; use of
+mechanized equipment; civil penalties
+Sec. 20. (a) In addition to the notice required in section 16 of this chapter, a person
+responsible for an excavation or demolition operation under section 14 of this chapter shall
+do all of the following:
+(1) Plan the excavation or demolition to avoid damage to or minimize interference with
+underground facilities in and near the construction area.
+(2) Maintain a clearance between an underground facility, as marked by the operator,
+and the cutting edge or point of mechanized equipment equal to the tolerance zone of
+the physical plant. If the clearance is less than two (2) feet, or if an underground facility
+is located or contained in or under pavement or another manmade hard surface,
+exposure of the underground facility may be accomplished only as follows:
+(A) Only by the use of:
+(i) hand excavation;
+(ii) air cutting;
+(iii) vacuum excavation; or
+(iv) hydro vacuum excavation.
+Indiana Code 2025
+=== page 14
+(B) Mechanized equipment may not be used within the tolerance zone of the physical
+plant unless the person responsible for the excavation or demolition does the
+following:
+(i) Visually identifies the precise location of the underground facilities or visually
+confirms that no facility is present within the depth of the excavation.
+(ii) Takes reasonable precautions to avoid any substantial weakening of the
+underground facilities' structural or lateral support.
+(iii) Takes reasonable precautions to avoid penetration or destruction of the
+underground facilities, including their protective coatings.
+(iv) Requires an individual other than the equipment operator to visually monitor
+the excavation activity.
+(C) Mechanized equipment may be used for the initial penetration and removal of
+pavement or other manmade hard surfaces if an underground facility is located or
+contained in or under pavement or another manmade hard surface, or if there is
+pavement or another manmade hard surface extending up to the tolerance zone of the
+physical plant, subject to the following:
+(i) The person responsible for the excavation or demolition must plan the
+excavation to avoid damage to or minimize interference with the underground
+facilities, as required under subdivision (1).
+(ii) The person responsible for the excavation or demolition must take into account
+the known limits of control of the mechanized equipment's cutting edge or point.
+(iii) The mechanized equipment may be used only to the depth necessary to
+remove the pavement or other manmade hard surface.
+(3) Notify the association if:
+(A) there is evidence of an unmarked facility in the area of the excavation or
+demolition; or
+(B) the markings indicating the location of an underground facility have become
+illegible.
+(b) A person who:
+(1) violates subsection (a); and
+(2) causes damage to a pipeline facility in the area of the excavation or demolition;
+may be subject to a civil penalty in an amount recommended by the advisory committee and
+approved by the commission, not to exceed ten thousand dollars ($10,000).
+As added by P.L.69-1990, SEC.2. Amended by P.L.62-2009, SEC.17; P.L.200-2014, SEC.6;
+P.L.53-2024, SEC.10.
+IC 8-1-26-21 Demolition or excavation resulting in damage to underground
+facility; escape of flammable, toxic, or corrosive gas or liquid;
+duties of operator
+Sec. 21. (a) Except as provided in subsection (b), a person responsible for an excavation
+or a demolition operation under section 14 of this chapter that results in damage to an
+underground facility shall:
+(1) immediately upon discovery of the damage, notify the operator of the facility and
+the association of the location and nature of the damage; and
+(2) allow the operator of the facility reasonable time to accomplish necessary repairs
+before completing the excavation or demolition in the immediate area of the facility.
+(b) A person responsible for an excavation or a demolition operation under section 14 of
+this chapter that results in damage to an underground facility permitting the escape of
+flammable, toxic, or corrosive gas or liquid shall:
+(1) immediately upon discovery of the damage, notify the operator and the association
+and local police and fire departments having jurisdiction; and
+(2) take other action necessary to protect persons and property and to minimize the
+hazards until arrival of the operator's personnel or police and fire personnel.
+Indiana Code 2025
+=== page 15
+As added by P.L.69-1990, SEC.2. Amended by P.L.62-2009, SEC.18.
+IC 8-1-26-22 Pecuniary loss suffered by operator; civil action; damages;
+defenses; injunction
+Sec. 22. (a) If an operator suffers a pecuniary loss as a result of a violation of this chapter,
+the operator may bring a civil action against the person who caused the loss for the following:
+(1) An amount equal to the operator's actual damage to the facility.
+(2) The costs of the action.
+(3) A reasonable attorney's fee.
+(b) At the court's discretion, a court having jurisdiction may award punitive damages up
+to three (3) times the operator's actual damage.
+(c) It is a defense to an action brought under this chapter if an operator fails to comply
+with the duties imposed under this chapter.
+(d) In addition to the remedies described in subsection (a), an operator may bring an
+action to enjoin a person excavating or demolishing a structure in an area that includes the
+operator's facilities until that person complies with this chapter.
+As added by P.L.69-1990, SEC.2.
+IC 8-1-26-23 Underground plant protection advisory committee established;
+membership; duties and powers
+Sec. 23. (a) The underground plant protection advisory committee is established.
+(b) The advisory committee consists of the following seven (7) members appointed by the
+governor:
+(1) One (1) member representing the association.
+(2) One (1) member representing investor owned gas utilities.
+(3) One (1) member representing operators of pipeline facilities or pipelines.
+(4) One (1) member representing municipal gas utilities.
+(5) Two (2) members representing commercial excavators.
+(6) One (1) member representing providers of facility locate marking services.
+(c) The term of a member is four (4) years. A member of the advisory committee serves
+at the pleasure of the governor. The governor shall fill a vacancy in the membership of the
+advisory committee for the unexpired term of the vacating member.
+(d) The association and the commission shall provide staff support and meeting space to
+the advisory committee.
+(e) The members of the advisory committee shall elect a chairperson. The advisory
+committee shall meet at the call of the chairperson.
+(f) The affirmative vote of a majority of members appointed under subsection (b) is
+required to take action.
+(g) The pipeline safety division shall investigate alleged violations of this chapter. If the
+pipeline safety division finds that a person has violated this chapter, the pipeline safety
+division shall forward its finding to the advisory committee.
+(h) The advisory committee shall act in an advisory capacity to the commission
+concerning the implementation and enforcement of this chapter. In this capacity, and subject
+to subsections (i) and (j), the advisory committee may recommend the following penalties
+with respect to persons that the pipeline safety division has found to violate this chapter:
+(1) Civil penalties consistent with this chapter.
+(2) Participation in education or training programs developed and implemented by the
+commission.
+(3) Warning letters.
+(4) Development of a plan to avoid future violations of this chapter.
+Before making a recommendation under this subsection, the advisory committee shall
+provide notice to the person found to be in violation of this chapter of an opportunity to
+appear before the advisory committee with respect to the violation.
+Indiana Code 2025
+=== page 16
+(i) The advisory board may consider the following when making a recommendation under
+subsection (h):
+(1) Whether the person found to be in violation of this chapter is a first time or repeat
+violator.
+(2) Whether the person found to be in violation of this chapter is:
+(A) a homeowner or tenant performing excavation or demolition:
+(i) on the homeowner's or tenant's residential property; and
+(ii) outside an operator's easement or right of way; or
+(B) a business entity.
+(3) The severity of the violation.
+(j) If the advisory committee determines that:
+(1) the person found to be in violation of this chapter is a first time violator described
+in subsection (i)(2)(A); and
+(2) the violation did not result in physical harm to a person;
+the advisory committee may not recommend a penalty described in subsection (h)(1) or
+(h)(4).
+(k) Upon receiving a recommendation from the advisory committee under subsection (h),
+and after notice and opportunity for a public hearing, the commission shall do the following
+as applicable:
+(1) Uphold or reverse the finding of a violation by the pipeline safety division under
+subsection (g).
+(2) Approve or disapprove each recommendation of the advisory committee.
+(3) Collect any civil penalties and deposit the penalties in the underground plant
+protection account.
+As added by P.L.62-2009, SEC.19.
+IC 8-1-26-24 Underground plant protection account
+Sec. 24. (a) The underground plant protection account is established to provide funding
+for the following programs established and administered by the commission:
+(1) Public awareness programs concerning underground plant protection.
+(2) Training and educational programs for contractors, excavators, locators, operators,
+and other persons involved in underground plant protection.
+(3) Incentive programs for contractors, excavators, locators, operators, and other
+persons involved in underground plant protection to reduce the number of violations
+of this chapter.
+(b) The commission shall administer the account.
+(c) The treasurer of state shall invest money in the account not currently needed to meet
+the obligations of the account in the same manner as other public money may be invested.
+Interest that accrues from these investments shall be deposited in the account.
+(d) Money in the account at the end of a state fiscal year does not revert to the state
+general fund.
+(e) The expenses of administering the account shall be paid from money in the account.
+(f) The account consists of penalties deposited under section 23(k) of this chapter.
+As added by P.L.62-2009, SEC.20. Amended by P.L.1-2010, SEC.43.
+IC 8-1-26-25 Penalties under IC 8-1-22.5 for pipeline operators
+Sec. 25. An operator of a pipeline facility that violates this chapter may be subject to a
+civil penalty imposed by the commission under IC 8-1-22.5 in addition to a penalty or fine
+imposed under this chapter.
+As added by P.L.62-2009, SEC.21.
+IC 8-1-26-26 Authority of commission to adopt rules
+Sec. 26. The commission shall adopt rules under IC 4-22-2 to carry out its responsibilities
+Indiana Code 2025
+=== page 17
+under this chapter.
+As added by P.L.62-2009, SEC.22.
+Indiana Code 2025
