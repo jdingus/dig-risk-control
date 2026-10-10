@@ -166,3 +166,7 @@ mixed across the three Haiku arms (`grading-haiku/scores.md`).
 ## Run it yourself
 
 See README.md. One line per arm, about $1–5 of model usage per arm at list price, a few minutes each.
+
+## Errata
+
+- Commit 8432f08's message reads "/usr/bin/zsh.20" where it meant "$0.20": the shell expanded `$0` while committing. The files in that commit are correct. Rewriting a pushed commit would need a force-push, so it stays.
