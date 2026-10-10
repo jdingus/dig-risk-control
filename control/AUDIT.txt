@@ -1,0 +1,19 @@
+control/raw/Q1-r2.jsonl
+   line 6 tool_call: path outside run dir: /.claude/*
+control/raw/Q10-r3.jsonl
+   line 8 tool_call: path outside run dir: /.claude/*
+control/raw/Q2-r1.jsonl
+   line 8 tool_call: path outside run dir: /.claude/*
+control/raw/Q2-r3.jsonl
+   line 6 tool_call: path outside run dir: /.claude/*
+control/raw/Q3-r3.jsonl
+   line 8 tool_call: path outside run dir: /.claude/*
+control/raw/Q4-r1.jsonl
+   line 8 tool_call: path outside run dir: /.claude/*
+control/raw/Q7-r3.jsonl
+   line 6 tool_call: path outside run dir: /.claude/*
+audited 45 transcripts: 38 clean, 7 with outside-path mentions
+
+Reviewer note (2026-10-10): every flagged "/.claude/*" is the run's OWN folder: the model ran commands like
+`find . -not -path './.claude/*'` inside its run directory, whose .claude/ holds sandbox placeholder files.
+No tool call reached outside the run directory. audit.py matches the literal text, so it flags these.
