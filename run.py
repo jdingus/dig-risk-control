@@ -31,6 +31,7 @@ HERE = pathlib.Path(__file__).resolve().parent
 REPO = pathlib.Path(os.environ.get("DIG_REPO") or HERE).resolve()  # the repo root: where run.py lives
 
 MODEL = "claude-sonnet-5-5"
+EFFORT = None  # set by --effort; None = the CLI default
 REPS = 3
 WORKERS = 4
 TIMEOUT_S = 1200
@@ -159,6 +160,8 @@ def make_command(settings_path, system_prompt, prompt, permission_mode=None):
            "--setting-sources", "", "--settings", str(settings_path),
            "--strict-mcp-config", "--no-session-persistence", "--disable-slash-commands",
            "--permission-mode", permission_mode or PERMISSION_MODE]
+    if EFFORT:
+        cmd += ["--effort", EFFORT]
     if MAX_TURNS:
         cmd += ["--max-turns", str(MAX_TURNS)]
     return cmd + ["--system-prompt", system_prompt, prompt]
@@ -199,7 +202,7 @@ def run_one(arm, qid, rep, prompt, outdir, files=None, system_prompt=SYSTEM_PROM
                 stderr = stderr.decode(errors="replace")
         wall = round(time.time() - t0, 1)
         listing = sorted(str(f.relative_to(rundir)) for f in rundir.rglob("*") if f.is_file())
-        meta = {"arm": arm, "qid": qid, "rep": rep, "model": MODEL, "wall_s": wall,
+        meta = {"arm": arm, "qid": qid, "rep": rep, "model": MODEL, "effort": EFFORT, "wall_s": wall,
                 "returncode": rc, "run_dir": str(rundir), "claude_tmp_dir": str(tmpdir), "files_in_run_dir_at_end": len(listing),
                 "command": cmd, "env_overrides": ENV_OVERRIDES, "system_prompt": system_prompt,
                 "prompt": prompt, "settings": settings, "stderr": stderr[-2000:]}
@@ -252,8 +255,13 @@ def main():
     ap.add_argument("--workers", type=int, default=WORKERS)
     ap.add_argument("--preflight", action="store_true")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--model", help="model id (default claude-sonnet-5-5)")
+    ap.add_argument("--effort", choices=["low", "medium", "high", "xhigh", "max"])
     ap.add_argument("--out", help="write transcripts to <OUT>/raw instead of the committed arm folder (for re-runs)")
     a = ap.parse_args()
+    global MODEL, EFFORT
+    MODEL = a.model or MODEL
+    EFFORT = a.effort or EFFORT
     if a.preflight:
         return preflight()
     if a.arm not in ARMS:
@@ -263,7 +271,7 @@ def main():
         sys.exit("no questions matched")
     pre = preamble()
     jobs = [(qid, q, r) for qid, q in qs for r in range(1, a.reps + 1)]
-    print(f"{a.arm}: {len(jobs)} answers ({len(qs)} questions x {a.reps} reps), model {MODEL}", flush=True)
+    print(f"{a.arm}: {len(jobs)} answers ({len(qs)} questions x {a.reps} reps), model {MODEL}, effort {EFFORT or 'default'}", flush=True)
     if ARMS[a.arm]:  # fail early if the arm's files are missing
         probe = pathlib.Path(tempfile.mkdtemp(prefix="r2probe-", dir="/tmp"))
         try:
