@@ -8,12 +8,16 @@ import pathlib
 import statistics as st
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-ARMS = ["control", "raw", "folder"]
+import os
 ARM_DIRS = {"control": "control/raw", "raw": "raw-files/raw", "folder": "treatment/raw"}
-key = json.loads((ROOT / "grading" / "key.json").read_text())
+if os.environ.get("ARMS"):
+    ARM_DIRS = dict(x.split("=", 1) for x in os.environ["ARMS"].split(","))
+ARMS = list(ARM_DIRS)
+G = ROOT / os.environ.get("OUT", "grading")
+key = json.loads((G / "key.json").read_text())
 
 scores = {}
-for g in sorted((ROOT / "grading" / "grades").glob("*.json")):
+for g in sorted((G / "grades").glob("*.json")):
     d = json.loads(g.read_text())
     for label, v in d["grades"].items():
         scores.setdefault((d["qid"], key[label]["arm"]), []).append(v["score"])
@@ -21,16 +25,18 @@ for g in sorted((ROOT / "grading" / "grades").glob("*.json")):
 qids = sorted({q for q, _ in scores}, key=lambda q: (q[0] != "Q", int(q[1:])))
 print("| Q | " + " | ".join(ARMS) + " |\n|---|" + "---|" * len(ARMS))
 tot = {a: [0, 0] for a in ARMS}
+mx = {a: [0, 0] for a in ARMS}
 for q in qids:
     row = []
     for a in ARMS:
         s = scores.get((q, a), [])
         tot[a][q[0] != "Q"] += sum(s)
-        row.append(f"{sum(s)}/6 ({' '.join(map(str, s))})")
+        mx[a][q[0] != "Q"] += 2 * len(s)
+        row.append(f"{sum(s)}/{2 * len(s)} ({' '.join(map(str, s))})")
     print(f"| {q} | " + " | ".join(row) + " |")
-print("| **Q1-Q10** | " + " | ".join(f"**{tot[a][0]}/60**" for a in ARMS) + " |")
-print("| **H1-H5** | " + " | ".join(f"**{tot[a][1]}/30**" for a in ARMS) + " |")
-print("\nEach cell: total of three runs out of 6, then the three grades in blind-label order.\n")
+print("| **Q1-Q10** | " + " | ".join(f"**{tot[a][0]}/{mx[a][0]}**" for a in ARMS) + " |")
+print("| **H1-H5** | " + " | ".join(f"**{tot[a][1]}/{mx[a][1]}**" for a in ARMS) + " |")
+print("\nEach cell: total of the runs out of 2 per run, then each run's grade in blind-label order.\n")
 
 print("| Per answer (median unless noted) | " + " | ".join(ARMS) + " |\n|---|" + "---|" * len(ARMS))
 rows = {}
@@ -49,6 +55,6 @@ for a in ARMS:
     rows.setdefault("tokens (input incl. cache + output)", {})[a] = f"{st.median(tok):,.0f}"
     rows.setdefault("tool calls", {})[a] = f"{st.median(tools):g}"
     rows.setdefault("wall seconds", {})[a] = f"{st.median(wall):.0f}"
-    rows.setdefault("list-price cost, all 45 answers (not billed: subscription)", {})[a] = f"${sum(cost):.2f}"
+    rows.setdefault("list-price cost, every answer in the arm (not billed: subscription)", {})[a] = f"${sum(cost):.2f}"
 for name, v in rows.items():
     print(f"| {name} | " + " | ".join(v[a] for a in ARMS) + " |")

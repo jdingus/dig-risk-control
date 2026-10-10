@@ -1,0 +1,54 @@
+{
+ "qid": "Q8",
+ "grades": {
+  "Q8-01": {
+   "score": 2,
+   "parts": {
+    "count_ticket_escalation": "full",
+    "most_common_headline_penalty": "full"
+   },
+   "why": "446 cases, $1,500"
+  },
+  "Q8-02": {
+   "score": 2,
+   "parts": {
+    "count_ticket_escalation": "full",
+    "most_common_headline_penalty": "full"
+   },
+   "why": "446 cases, $1,500"
+  },
+  "Q8-03": {
+   "score": 2,
+   "parts": {
+    "count_ticket_escalation": "full",
+    "most_common_headline_penalty": "full"
+   },
+   "why": "446 cases, $1,500"
+  },
+  "Q8-04": {
+   "score": 2,
+   "parts": {
+    "count_ticket_escalation": "full",
+    "most_common_headline_penalty": "full"
+   },
+   "why": "446 cases, $1,500"
+  },
+  "Q8-05": {
+   "score": 2,
+   "parts": {
+    "count_ticket_escalation": "full",
+    "most_common_headline_penalty": "full"
+   },
+   "why": "446 cases, $1,500 (its 9,954 total is not a required number)"
+  },
+  "Q8-06": {
+   "score": 0,
+   "parts": {
+    "count_ticket_escalation": "zero",
+    "most_common_headline_penalty": "zero"
+   },
+   "why": "Refused; no data"
+  }
+ },
+ "notes": ""
+}

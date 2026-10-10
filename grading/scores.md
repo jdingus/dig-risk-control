@@ -18,11 +18,11 @@
 | **Q1-Q10** | **0/60** | **53/60** | **60/60** |
 | **H1-H5** | **0/30** | **30/30** | **30/30** |
 
-Each cell: total of three runs out of 6, then the three grades in blind-label order.
+Each cell: total of the runs out of 2 per run, then each run's grade in blind-label order.
 
 | Per answer (median unless noted) | control | raw | folder |
 |---|---|---|---|
 | tokens (input incl. cache + output) | 25,180 | 142,817 | 61,662 |
 | tool calls | 3 | 9 | 5 |
 | wall seconds | 7 | 30 | 12 |
-| list-price cost, all 45 answers (not billed: subscription) | $1.02 | $5.42 | $2.58 |
+| list-price cost, every answer in the arm (not billed: subscription) | $1.02 | $5.42 | $2.58 |

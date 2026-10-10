@@ -1,0 +1,362 @@
+{
+ "Q1-01": {
+  "arm": "rerun-folder",
+  "run": "Q1-r1"
+ },
+ "Q1-02": {
+  "arm": "folder-v2",
+  "run": "Q1-r3"
+ },
+ "Q1-03": {
+  "arm": "rerun-control",
+  "run": "Q1-r1"
+ },
+ "Q1-04": {
+  "arm": "folder-v2",
+  "run": "Q1-r2"
+ },
+ "Q1-05": {
+  "arm": "rerun-raw",
+  "run": "Q1-r1"
+ },
+ "Q1-06": {
+  "arm": "folder-v2",
+  "run": "Q1-r1"
+ },
+ "Q2-01": {
+  "arm": "rerun-raw",
+  "run": "Q2-r1"
+ },
+ "Q2-02": {
+  "arm": "rerun-folder",
+  "run": "Q2-r1"
+ },
+ "Q2-03": {
+  "arm": "folder-v2",
+  "run": "Q2-r2"
+ },
+ "Q2-04": {
+  "arm": "rerun-control",
+  "run": "Q2-r1"
+ },
+ "Q2-05": {
+  "arm": "folder-v2",
+  "run": "Q2-r1"
+ },
+ "Q2-06": {
+  "arm": "folder-v2",
+  "run": "Q2-r3"
+ },
+ "Q3-01": {
+  "arm": "folder-v2",
+  "run": "Q3-r3"
+ },
+ "Q3-02": {
+  "arm": "folder-v2",
+  "run": "Q3-r2"
+ },
+ "Q3-03": {
+  "arm": "folder-v2",
+  "run": "Q3-r1"
+ },
+ "Q3-04": {
+  "arm": "rerun-raw",
+  "run": "Q3-r1"
+ },
+ "Q3-05": {
+  "arm": "rerun-control",
+  "run": "Q3-r1"
+ },
+ "Q3-06": {
+  "arm": "rerun-folder",
+  "run": "Q3-r1"
+ },
+ "Q4-01": {
+  "arm": "folder-v2",
+  "run": "Q4-r1"
+ },
+ "Q4-02": {
+  "arm": "rerun-control",
+  "run": "Q4-r1"
+ },
+ "Q4-03": {
+  "arm": "rerun-folder",
+  "run": "Q4-r1"
+ },
+ "Q4-04": {
+  "arm": "rerun-raw",
+  "run": "Q4-r1"
+ },
+ "Q4-05": {
+  "arm": "folder-v2",
+  "run": "Q4-r3"
+ },
+ "Q4-06": {
+  "arm": "folder-v2",
+  "run": "Q4-r2"
+ },
+ "Q5-01": {
+  "arm": "folder-v2",
+  "run": "Q5-r3"
+ },
+ "Q5-02": {
+  "arm": "rerun-control",
+  "run": "Q5-r1"
+ },
+ "Q5-03": {
+  "arm": "folder-v2",
+  "run": "Q5-r1"
+ },
+ "Q5-04": {
+  "arm": "folder-v2",
+  "run": "Q5-r2"
+ },
+ "Q5-05": {
+  "arm": "rerun-raw",
+  "run": "Q5-r1"
+ },
+ "Q5-06": {
+  "arm": "rerun-folder",
+  "run": "Q5-r1"
+ },
+ "Q6-01": {
+  "arm": "folder-v2",
+  "run": "Q6-r3"
+ },
+ "Q6-02": {
+  "arm": "rerun-folder",
+  "run": "Q6-r1"
+ },
+ "Q6-03": {
+  "arm": "rerun-control",
+  "run": "Q6-r1"
+ },
+ "Q6-04": {
+  "arm": "rerun-raw",
+  "run": "Q6-r1"
+ },
+ "Q6-05": {
+  "arm": "folder-v2",
+  "run": "Q6-r1"
+ },
+ "Q6-06": {
+  "arm": "folder-v2",
+  "run": "Q6-r2"
+ },
+ "Q7-01": {
+  "arm": "rerun-control",
+  "run": "Q7-r1"
+ },
+ "Q7-02": {
+  "arm": "folder-v2",
+  "run": "Q7-r2"
+ },
+ "Q7-03": {
+  "arm": "rerun-raw",
+  "run": "Q7-r1"
+ },
+ "Q7-04": {
+  "arm": "folder-v2",
+  "run": "Q7-r3"
+ },
+ "Q7-05": {
+  "arm": "rerun-folder",
+  "run": "Q7-r1"
+ },
+ "Q7-06": {
+  "arm": "folder-v2",
+  "run": "Q7-r1"
+ },
+ "Q8-01": {
+  "arm": "folder-v2",
+  "run": "Q8-r2"
+ },
+ "Q8-02": {
+  "arm": "folder-v2",
+  "run": "Q8-r1"
+ },
+ "Q8-03": {
+  "arm": "folder-v2",
+  "run": "Q8-r3"
+ },
+ "Q8-04": {
+  "arm": "rerun-folder",
+  "run": "Q8-r1"
+ },
+ "Q8-05": {
+  "arm": "rerun-raw",
+  "run": "Q8-r1"
+ },
+ "Q8-06": {
+  "arm": "rerun-control",
+  "run": "Q8-r1"
+ },
+ "Q9-01": {
+  "arm": "folder-v2",
+  "run": "Q9-r2"
+ },
+ "Q9-02": {
+  "arm": "rerun-control",
+  "run": "Q9-r1"
+ },
+ "Q9-03": {
+  "arm": "rerun-raw",
+  "run": "Q9-r1"
+ },
+ "Q9-04": {
+  "arm": "folder-v2",
+  "run": "Q9-r3"
+ },
+ "Q9-05": {
+  "arm": "folder-v2",
+  "run": "Q9-r1"
+ },
+ "Q9-06": {
+  "arm": "rerun-folder",
+  "run": "Q9-r1"
+ },
+ "Q10-01": {
+  "arm": "folder-v2",
+  "run": "Q10-r1"
+ },
+ "Q10-02": {
+  "arm": "folder-v2",
+  "run": "Q10-r3"
+ },
+ "Q10-03": {
+  "arm": "rerun-raw",
+  "run": "Q10-r1"
+ },
+ "Q10-04": {
+  "arm": "folder-v2",
+  "run": "Q10-r2"
+ },
+ "Q10-05": {
+  "arm": "rerun-control",
+  "run": "Q10-r1"
+ },
+ "Q10-06": {
+  "arm": "rerun-folder",
+  "run": "Q10-r1"
+ },
+ "H1-01": {
+  "arm": "folder-v2",
+  "run": "H1-r1"
+ },
+ "H1-02": {
+  "arm": "folder-v2",
+  "run": "H1-r3"
+ },
+ "H1-03": {
+  "arm": "rerun-folder",
+  "run": "H1-r1"
+ },
+ "H1-04": {
+  "arm": "rerun-control",
+  "run": "H1-r1"
+ },
+ "H1-05": {
+  "arm": "folder-v2",
+  "run": "H1-r2"
+ },
+ "H1-06": {
+  "arm": "rerun-raw",
+  "run": "H1-r1"
+ },
+ "H2-01": {
+  "arm": "rerun-control",
+  "run": "H2-r1"
+ },
+ "H2-02": {
+  "arm": "folder-v2",
+  "run": "H2-r3"
+ },
+ "H2-03": {
+  "arm": "folder-v2",
+  "run": "H2-r2"
+ },
+ "H2-04": {
+  "arm": "rerun-raw",
+  "run": "H2-r1"
+ },
+ "H2-05": {
+  "arm": "rerun-folder",
+  "run": "H2-r1"
+ },
+ "H2-06": {
+  "arm": "folder-v2",
+  "run": "H2-r1"
+ },
+ "H3-01": {
+  "arm": "rerun-raw",
+  "run": "H3-r1"
+ },
+ "H3-02": {
+  "arm": "rerun-control",
+  "run": "H3-r1"
+ },
+ "H3-03": {
+  "arm": "folder-v2",
+  "run": "H3-r3"
+ },
+ "H3-04": {
+  "arm": "folder-v2",
+  "run": "H3-r2"
+ },
+ "H3-05": {
+  "arm": "rerun-folder",
+  "run": "H3-r1"
+ },
+ "H3-06": {
+  "arm": "folder-v2",
+  "run": "H3-r1"
+ },
+ "H4-01": {
+  "arm": "rerun-control",
+  "run": "H4-r1"
+ },
+ "H4-02": {
+  "arm": "folder-v2",
+  "run": "H4-r3"
+ },
+ "H4-03": {
+  "arm": "folder-v2",
+  "run": "H4-r2"
+ },
+ "H4-04": {
+  "arm": "rerun-folder",
+  "run": "H4-r1"
+ },
+ "H4-05": {
+  "arm": "rerun-raw",
+  "run": "H4-r1"
+ },
+ "H4-06": {
+  "arm": "folder-v2",
+  "run": "H4-r1"
+ },
+ "H5-01": {
+  "arm": "folder-v2",
+  "run": "H5-r1"
+ },
+ "H5-02": {
+  "arm": "folder-v2",
+  "run": "H5-r3"
+ },
+ "H5-03": {
+  "arm": "rerun-raw",
+  "run": "H5-r1"
+ },
+ "H5-04": {
+  "arm": "rerun-control",
+  "run": "H5-r1"
+ },
+ "H5-05": {
+  "arm": "folder-v2",
+  "run": "H5-r2"
+ },
+ "H5-06": {
+  "arm": "rerun-folder",
+  "run": "H5-r1"
+ }
+}

@@ -1,0 +1,54 @@
+{
+  "qid": "Q4",
+  "grades": {
+    "Q4-01": {
+      "score": 2,
+      "parts": {
+        "pct_utility_warning_letter": "full",
+        "pct_nonutility_warning_letter": "full"
+      },
+      "why": "0.0% and 28.1%."
+    },
+    "Q4-02": {
+      "score": 0,
+      "parts": {
+        "pct_utility_warning_letter": "zero",
+        "pct_nonutility_warning_letter": "zero"
+      },
+      "why": "Refused; no data found."
+    },
+    "Q4-03": {
+      "score": 2,
+      "parts": {
+        "pct_utility_warning_letter": "full",
+        "pct_nonutility_warning_letter": "full"
+      },
+      "why": "0.0% and 28.1% (stated headline; table notes 28.05%)."
+    },
+    "Q4-04": {
+      "score": 2,
+      "parts": {
+        "pct_utility_warning_letter": "full",
+        "pct_nonutility_warning_letter": "full"
+      },
+      "why": "0.0% and 28.0% (within 0.5 of 28.1)."
+    },
+    "Q4-05": {
+      "score": 2,
+      "parts": {
+        "pct_utility_warning_letter": "full",
+        "pct_nonutility_warning_letter": "full"
+      },
+      "why": "0.0% and 28.1%."
+    },
+    "Q4-06": {
+      "score": 2,
+      "parts": {
+        "pct_utility_warning_letter": "full",
+        "pct_nonutility_warning_letter": "full"
+      },
+      "why": "0.0% and 28.1%."
+    }
+  },
+  "notes": "Q4-03 and Q4-06 give 28.05x% unrounded then state 28.1%; taken as 28.1."
+}

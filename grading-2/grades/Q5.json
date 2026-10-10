@@ -1,0 +1,48 @@
+{
+  "qid": "Q5",
+  "grades": {
+    "Q5-01": {
+      "score": 2,
+      "parts": {
+        "pct_training": "full"
+      },
+      "why": "44.7% (3,532/7,899)."
+    },
+    "Q5-02": {
+      "score": 0,
+      "parts": {
+        "pct_training": "zero"
+      },
+      "why": "Refused; no data found."
+    },
+    "Q5-03": {
+      "score": 2,
+      "parts": {
+        "pct_training": "full"
+      },
+      "why": "44.7%."
+    },
+    "Q5-04": {
+      "score": 2,
+      "parts": {
+        "pct_training": "full"
+      },
+      "why": "44.7%."
+    },
+    "Q5-05": {
+      "score": 2,
+      "parts": {
+        "pct_training": "full"
+      },
+      "why": "44.7% (3,532/7,899, stated as 44.72%)."
+    },
+    "Q5-06": {
+      "score": 2,
+      "parts": {
+        "pct_training": "full"
+      },
+      "why": "44.7%."
+    }
+  },
+  "notes": ""
+}

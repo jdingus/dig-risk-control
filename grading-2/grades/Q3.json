@@ -1,0 +1,54 @@
+{
+  "qid": "Q3",
+  "grades": {
+    "Q3-01": {
+      "score": 2,
+      "parts": {
+        "mean_16h": "full",
+        "mean_20a2": "full"
+      },
+      "why": "$4,199 and $3,787 exact."
+    },
+    "Q3-02": {
+      "score": 2,
+      "parts": {
+        "mean_16h": "full",
+        "mean_20a2": "full"
+      },
+      "why": "$4,199 and $3,787 exact."
+    },
+    "Q3-03": {
+      "score": 2,
+      "parts": {
+        "mean_16h": "full",
+        "mean_20a2": "full"
+      },
+      "why": "$4,199 and $3,787 exact."
+    },
+    "Q3-04": {
+      "score": 2,
+      "parts": {
+        "mean_16h": "full",
+        "mean_20a2": "full"
+      },
+      "why": "$4,199 (4,198.68 rounded) and $3,787 exact."
+    },
+    "Q3-05": {
+      "score": 0,
+      "parts": {
+        "mean_16h": "zero",
+        "mean_20a2": "zero"
+      },
+      "why": "Refused; no data found."
+    },
+    "Q3-06": {
+      "score": 2,
+      "parts": {
+        "mean_16h": "full",
+        "mean_20a2": "full"
+      },
+      "why": "$4,199 and $3,787 exact."
+    }
+  },
+  "notes": ""
+}

@@ -1,0 +1,78 @@
+{
+  "qid": "Q2",
+  "grades": {
+    "Q2-01": {
+      "score": 2,
+      "parts": {
+        "cases_2021": "full",
+        "cases_2022": "full",
+        "cases_2023": "full",
+        "cases_2024": "full",
+        "cases_2025": "full",
+        "year_with_most": "full"
+      },
+      "why": "1603 (0.25% off), 2672 (0.04% off), 2107, 1897, 1684, most=2022; all within 1%."
+    },
+    "Q2-02": {
+      "score": 2,
+      "parts": {
+        "cases_2021": "full",
+        "cases_2022": "full",
+        "cases_2023": "full",
+        "cases_2024": "full",
+        "cases_2025": "full",
+        "year_with_most": "full"
+      },
+      "why": "1599, 2671, 2107, 1897, 1684; 2022."
+    },
+    "Q2-03": {
+      "score": 2,
+      "parts": {
+        "cases_2021": "full",
+        "cases_2022": "full",
+        "cases_2023": "full",
+        "cases_2024": "full",
+        "cases_2025": "full",
+        "year_with_most": "full"
+      },
+      "why": "1599, 2671, 2107, 1897, 1684; 2022."
+    },
+    "Q2-04": {
+      "score": 0,
+      "parts": {
+        "cases_2021": "zero",
+        "cases_2022": "zero",
+        "cases_2023": "zero",
+        "cases_2024": "zero",
+        "cases_2025": "zero",
+        "year_with_most": "zero"
+      },
+      "why": "Refused; no data found."
+    },
+    "Q2-05": {
+      "score": 2,
+      "parts": {
+        "cases_2021": "full",
+        "cases_2022": "full",
+        "cases_2023": "full",
+        "cases_2024": "full",
+        "cases_2025": "full",
+        "year_with_most": "full"
+      },
+      "why": "1599, 2671, 2107, 1897, 1684; 2022."
+    },
+    "Q2-06": {
+      "score": 2,
+      "parts": {
+        "cases_2021": "full",
+        "cases_2022": "full",
+        "cases_2023": "full",
+        "cases_2024": "full",
+        "cases_2025": "full",
+        "year_with_most": "full"
+      },
+      "why": "1599, 2671, 2107, 1897, 1684; 2022."
+    }
+  },
+  "notes": ""
+}
