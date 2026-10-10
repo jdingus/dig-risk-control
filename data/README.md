@@ -12,13 +12,16 @@ Source: 58 Indiana Utility Regulatory Commission (IURC) order PDFs (`originals/o
 | `text/<order>.txt` | Raw pypdf text per order, `=== page N` before each page. No cleaning. |
 | `cases.csv` | One row per case page (9,958 rows). Columns: order_file, order_date, page, case_number, respondent, other_party, advisory_meeting_date, damage_date, damage_location, violations, recommendation, abstentions, additional_info, scan. |
 | `dropped.csv` | Blank Recommendation Form template pages that are not cases (5 rows), with a reason. |
-| `corrections.csv` | The hand-correction ledger. Header only for now. Every change after parsing is a row here. |
-| `cases_clean.csv` | `cases.csv` with every ledger row applied. Equal to `cases.csv` while the ledger is empty. |
-| `VERIFY.md` | Output of the checks in step 4. |
+| `corrections.csv` | The hand-correction ledger: 24 rows (8 recommendation, 16 violations), each with the page image it was checked on. Every change after parsing is a row here. |
+| `cases_clean.csv` | `cases.csv` with every ledger row applied (24 cells differ from `cases.csv`). |
+| `evidence/<order>-p<page>.png` | Page images (PyMuPDF, 150 dpi) the ledger rows and the SCHEMA.md notes were checked on. |
+| `SCHEMA.md` | Data dictionary: one section per column, what a case is, what is not in the data, the 7 qualifiers, known defects with counts. |
+| `schema.json` | The same rules in machine-readable form. `verify.py` checks `cases_clean.csv` against it. |
+| `VERIFY.md` | Output of the checks in step 4, including the schema findings by column. |
 | `scripts/extract.py` | Step 1: writes text/. |
 | `scripts/parse.py` | Step 2: writes cases.csv and dropped.csv. |
 | `scripts/apply_corrections.py` | Step 3: writes cases_clean.csv from cases.csv and corrections.csv. |
-| `scripts/verify.py` | Step 4: writes VERIFY.md and exits 1 if a check fails. |
+| `scripts/verify.py` | Step 4: writes VERIFY.md and exits 1 if a check fails or a required schema column is violated. Other schema violations are findings, not failures. |
 
 Each script finds the `data/` folder from its own location, so no script takes a path argument.
 

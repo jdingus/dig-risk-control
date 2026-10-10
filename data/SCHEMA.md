@@ -2,7 +2,7 @@
 
 Both files have the same 14 columns in the same order. `cases.csv` is the raw parse. `cases_clean.csv` is `cases.csv` with every row of `corrections.csv` applied (see README.md). The machine-readable form of this page is `schema.json`; `scripts/verify.py` checks `cases_clean.csv` against it and reports the result in `VERIFY.md`.
 
-Counts below are for the raw parse (`cases.csv`) unless a line says otherwise. Defects that the corrections ledger fixes are marked "ledger". "Page image" means the page rendered from the original PDF and looked at.
+Counts below are for the raw parse (`cases.csv`) unless a line says otherwise. Defects that the corrections ledger fixes are marked "ledger"; `cases_clean.csv` has them fixed (see the last section). "Page image" means the page rendered from the original PDF and looked at.
 
 ## What a case is
 
@@ -176,3 +176,18 @@ This page does not say what the qualifiers or cites mean in law. That belongs in
 - **parse.py:** `yes` when one embedded image covers more than 60 percent of the page (PyMuPDF).
 - **Known defects:** none. 173 of the `yes` rows are in ord_PSD_110321.pdf, 8 in ord_PSD_042121.pdf (the checkbox pages) and 1 in ord_PSDNPT_040622.pdf.
 - **Treat as:** a warning flag. Scan pages were read from OCR text, so most of the OCR errors and the label-first layout errors above are on scan pages.
+
+## Corrections ledger outcome
+
+`corrections.csv` has 24 rows, each checked on the page image in `evidence/`:
+
+- 8 `recommendation` rows: the checkbox-form pages (ord_PSD_042121.pdf pages 149 to 156). Each now holds the one option that is ticked on the page, worded as on the form.
+- 16 `violations` rows: OCR errors in the cite (`lS`, `l` for `1`, `(a)(l)`, a missing space after `IC`, and `16(b)` where the page shows `16(h)`).
+
+Looked at on the page image and left as they are:
+
+- 7 `$$1000` rows and the `$3, 500` row: printed that way on the page.
+- The two duplicate `(order_file, case_number)` pairs: two real forms (case 25064) and one identical repeated page (case 33669). Not parse errors.
+- The blank `violations` row (ord_PSD_022322.pdf page 129): the violation line is empty on the page, as are `other_party`, both dates and the city of the location.
+
+After the ledger, `verify.py` reports 26 finding cells in 8 columns for `cases_clean.csv` (case_number 1, respondent 2, other_party 1, advisory_meeting_date 1, damage_location 4, recommendation 11, abstentions 2, and 4 rows on the `(order_file, case_number)` key) and no violation of a required column. `violations` has none.
