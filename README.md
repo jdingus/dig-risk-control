@@ -19,6 +19,12 @@ Sonnet on the raw orders. The folder's value was cost, and letting the cheap mod
 tables scored 55/60 and 30/30 at the lowest cost of the entry. Without code, the folder is what makes the answer.
 Everything, losses and wrong predictions included, is in **[results.md](results.md)**.
 
+![Results: the folder earned its place when the model couldn't write code](assets/results-hero.png)
+
+The full results page, with every question, every arm, cost and the predictions I got wrong:
+[assets/results.html](assets/results.html) (download and open; built from `assets/results-data.json`, which
+`grading/summary.py` generates from the committed grades).
+
 ## Order of events (check it in `git log`)
 
 | Commit | What |

@@ -144,6 +144,10 @@ no table or tool (578f3fc, after the predictions). Graded blind together (`gradi
 - **The folder has to fit the deployment.** The shipped folder relies on its Python tool; without code it barely
   beat raw files (36 vs 30). The folder built for no code nearly matched the with-Python results, and was the
   cheapest and fastest arm of the entry (60k tokens, 11 s per answer, $0.26 list for 45 answers).
+- **Where the folder lost to raw files** (the brief's "no folder got it right and the folder got it wrong"):
+  without Python, the shipped folder scored below raw files on **Q7** (0/6 vs 1/6) and **Q9** (0/6 vs 3/6). It could
+  not run its own tool and had no pre-built table for those cuts; the raw arm salvaged partial answers by searching
+  page text. These are the only questions in the whole entry where a folder arm scored below a raw-files arm.
 - **Where the pre-computed folder still missed:** cuts nobody pre-built. Q6 (repeat respondents, 4/6) uses the
   question's own name normalisation; the tables have exact and loose spellings. Q8 (escalation count, 3/6).
 - **Disclosure:** the pre-computed tables include cuts that match some sealed questions: top cities (H1), damage-to-

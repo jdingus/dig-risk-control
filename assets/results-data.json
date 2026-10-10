@@ -1,0 +1,938 @@
+{
+ "arms": [
+  {
+   "condition": "Sonnet 5.5 + Python",
+   "arm": "no folder, no files",
+   "runs_per_question": 3,
+   "main_score": 0,
+   "main_max": 60,
+   "heldout_score": 0,
+   "heldout_max": 30,
+   "per_question": {
+    "Q1": {
+     "score": 0,
+     "max": 6
+    },
+    "Q2": {
+     "score": 0,
+     "max": 6
+    },
+    "Q3": {
+     "score": 0,
+     "max": 6
+    },
+    "Q4": {
+     "score": 0,
+     "max": 6
+    },
+    "Q5": {
+     "score": 0,
+     "max": 6
+    },
+    "Q6": {
+     "score": 0,
+     "max": 6
+    },
+    "Q7": {
+     "score": 0,
+     "max": 6
+    },
+    "Q8": {
+     "score": 0,
+     "max": 6
+    },
+    "Q9": {
+     "score": 0,
+     "max": 6
+    },
+    "Q10": {
+     "score": 0,
+     "max": 6
+    },
+    "H1": {
+     "score": 0,
+     "max": 6
+    },
+    "H2": {
+     "score": 0,
+     "max": 6
+    },
+    "H3": {
+     "score": 0,
+     "max": 6
+    },
+    "H4": {
+     "score": 0,
+     "max": 6
+    },
+    "H5": {
+     "score": 0,
+     "max": 6
+    }
+   },
+   "median_tokens": 25180,
+   "median_seconds": 6.7
+  },
+  {
+   "condition": "Sonnet 5.5 + Python",
+   "arm": "raw files, no folder",
+   "runs_per_question": 3,
+   "main_score": 53,
+   "main_max": 60,
+   "heldout_score": 30,
+   "heldout_max": 30,
+   "per_question": {
+    "Q1": {
+     "score": 6,
+     "max": 6
+    },
+    "Q2": {
+     "score": 6,
+     "max": 6
+    },
+    "Q3": {
+     "score": 4,
+     "max": 6
+    },
+    "Q4": {
+     "score": 6,
+     "max": 6
+    },
+    "Q5": {
+     "score": 6,
+     "max": 6
+    },
+    "Q6": {
+     "score": 5,
+     "max": 6
+    },
+    "Q7": {
+     "score": 5,
+     "max": 6
+    },
+    "Q8": {
+     "score": 5,
+     "max": 6
+    },
+    "Q9": {
+     "score": 4,
+     "max": 6
+    },
+    "Q10": {
+     "score": 6,
+     "max": 6
+    },
+    "H1": {
+     "score": 6,
+     "max": 6
+    },
+    "H2": {
+     "score": 6,
+     "max": 6
+    },
+    "H3": {
+     "score": 6,
+     "max": 6
+    },
+    "H4": {
+     "score": 6,
+     "max": 6
+    },
+    "H5": {
+     "score": 6,
+     "max": 6
+    }
+   },
+   "median_tokens": 142817,
+   "median_seconds": 29.7
+  },
+  {
+   "condition": "Sonnet 5.5 + Python",
+   "arm": "folder",
+   "runs_per_question": 3,
+   "main_score": 60,
+   "main_max": 60,
+   "heldout_score": 30,
+   "heldout_max": 30,
+   "per_question": {
+    "Q1": {
+     "score": 6,
+     "max": 6
+    },
+    "Q2": {
+     "score": 6,
+     "max": 6
+    },
+    "Q3": {
+     "score": 6,
+     "max": 6
+    },
+    "Q4": {
+     "score": 6,
+     "max": 6
+    },
+    "Q5": {
+     "score": 6,
+     "max": 6
+    },
+    "Q6": {
+     "score": 6,
+     "max": 6
+    },
+    "Q7": {
+     "score": 6,
+     "max": 6
+    },
+    "Q8": {
+     "score": 6,
+     "max": 6
+    },
+    "Q9": {
+     "score": 6,
+     "max": 6
+    },
+    "Q10": {
+     "score": 6,
+     "max": 6
+    },
+    "H1": {
+     "score": 6,
+     "max": 6
+    },
+    "H2": {
+     "score": 6,
+     "max": 6
+    },
+    "H3": {
+     "score": 6,
+     "max": 6
+    },
+    "H4": {
+     "score": 6,
+     "max": 6
+    },
+    "H5": {
+     "score": 6,
+     "max": 6
+    }
+   },
+   "median_tokens": 61662,
+   "median_seconds": 11.7
+  },
+  {
+   "condition": "Haiku 5.5 + Python",
+   "arm": "no folder, no files",
+   "runs_per_question": 3,
+   "main_score": 0,
+   "main_max": 60,
+   "heldout_score": 0,
+   "heldout_max": 30,
+   "per_question": {
+    "Q1": {
+     "score": 0,
+     "max": 6
+    },
+    "Q2": {
+     "score": 0,
+     "max": 6
+    },
+    "Q3": {
+     "score": 0,
+     "max": 6
+    },
+    "Q4": {
+     "score": 0,
+     "max": 6
+    },
+    "Q5": {
+     "score": 0,
+     "max": 6
+    },
+    "Q6": {
+     "score": 0,
+     "max": 6
+    },
+    "Q7": {
+     "score": 0,
+     "max": 6
+    },
+    "Q8": {
+     "score": 0,
+     "max": 6
+    },
+    "Q9": {
+     "score": 0,
+     "max": 6
+    },
+    "Q10": {
+     "score": 0,
+     "max": 6
+    },
+    "H1": {
+     "score": 0,
+     "max": 6
+    },
+    "H2": {
+     "score": 0,
+     "max": 6
+    },
+    "H3": {
+     "score": 0,
+     "max": 6
+    },
+    "H4": {
+     "score": 0,
+     "max": 6
+    },
+    "H5": {
+     "score": 0,
+     "max": 6
+    }
+   },
+   "median_tokens": 16987,
+   "median_seconds": 5.3
+  },
+  {
+   "condition": "Haiku 5.5 + Python",
+   "arm": "raw files, no folder",
+   "runs_per_question": 3,
+   "main_score": 55,
+   "main_max": 60,
+   "heldout_score": 28,
+   "heldout_max": 30,
+   "per_question": {
+    "Q1": {
+     "score": 6,
+     "max": 6
+    },
+    "Q2": {
+     "score": 6,
+     "max": 6
+    },
+    "Q3": {
+     "score": 5,
+     "max": 6
+    },
+    "Q4": {
+     "score": 6,
+     "max": 6
+    },
+    "Q5": {
+     "score": 6,
+     "max": 6
+    },
+    "Q6": {
+     "score": 6,
+     "max": 6
+    },
+    "Q7": {
+     "score": 3,
+     "max": 6
+    },
+    "Q8": {
+     "score": 5,
+     "max": 6
+    },
+    "Q9": {
+     "score": 6,
+     "max": 6
+    },
+    "Q10": {
+     "score": 6,
+     "max": 6
+    },
+    "H1": {
+     "score": 4,
+     "max": 6
+    },
+    "H2": {
+     "score": 6,
+     "max": 6
+    },
+    "H3": {
+     "score": 6,
+     "max": 6
+    },
+    "H4": {
+     "score": 6,
+     "max": 6
+    },
+    "H5": {
+     "score": 6,
+     "max": 6
+    }
+   },
+   "median_tokens": 401098,
+   "median_seconds": 56.2
+  },
+  {
+   "condition": "Haiku 5.5 + Python",
+   "arm": "folder",
+   "runs_per_question": 3,
+   "main_score": 60,
+   "main_max": 60,
+   "heldout_score": 30,
+   "heldout_max": 30,
+   "per_question": {
+    "Q1": {
+     "score": 6,
+     "max": 6
+    },
+    "Q2": {
+     "score": 6,
+     "max": 6
+    },
+    "Q3": {
+     "score": 6,
+     "max": 6
+    },
+    "Q4": {
+     "score": 6,
+     "max": 6
+    },
+    "Q5": {
+     "score": 6,
+     "max": 6
+    },
+    "Q6": {
+     "score": 6,
+     "max": 6
+    },
+    "Q7": {
+     "score": 6,
+     "max": 6
+    },
+    "Q8": {
+     "score": 6,
+     "max": 6
+    },
+    "Q9": {
+     "score": 6,
+     "max": 6
+    },
+    "Q10": {
+     "score": 6,
+     "max": 6
+    },
+    "H1": {
+     "score": 6,
+     "max": 6
+    },
+    "H2": {
+     "score": 6,
+     "max": 6
+    },
+    "H3": {
+     "score": 6,
+     "max": 6
+    },
+    "H4": {
+     "score": 6,
+     "max": 6
+    },
+    "H5": {
+     "score": 6,
+     "max": 6
+    }
+   },
+   "median_tokens": 84870,
+   "median_seconds": 13.4
+  },
+  {
+   "condition": "Haiku 5.5, no Python",
+   "arm": "raw files, no folder",
+   "runs_per_question": 3,
+   "main_score": 30,
+   "main_max": 60,
+   "heldout_score": 18,
+   "heldout_max": 30,
+   "per_question": {
+    "Q1": {
+     "score": 6,
+     "max": 6
+    },
+    "Q2": {
+     "score": 6,
+     "max": 6
+    },
+    "Q3": {
+     "score": 0,
+     "max": 6
+    },
+    "Q4": {
+     "score": 4,
+     "max": 6
+    },
+    "Q5": {
+     "score": 2,
+     "max": 6
+    },
+    "Q6": {
+     "score": 0,
+     "max": 6
+    },
+    "Q7": {
+     "score": 1,
+     "max": 6
+    },
+    "Q8": {
+     "score": 2,
+     "max": 6
+    },
+    "Q9": {
+     "score": 3,
+     "max": 6
+    },
+    "Q10": {
+     "score": 6,
+     "max": 6
+    },
+    "H1": {
+     "score": 2,
+     "max": 6
+    },
+    "H2": {
+     "score": 0,
+     "max": 6
+    },
+    "H3": {
+     "score": 6,
+     "max": 6
+    },
+    "H4": {
+     "score": 4,
+     "max": 6
+    },
+    "H5": {
+     "score": 6,
+     "max": 6
+    }
+   },
+   "median_tokens": 193367,
+   "median_seconds": 43.6
+  },
+  {
+   "condition": "Haiku 5.5, no Python",
+   "arm": "shipped folder (cannot run its tool)",
+   "runs_per_question": 3,
+   "main_score": 36,
+   "main_max": 60,
+   "heldout_score": 23,
+   "heldout_max": 30,
+   "per_question": {
+    "Q1": {
+     "score": 6,
+     "max": 6
+    },
+    "Q2": {
+     "score": 6,
+     "max": 6
+    },
+    "Q3": {
+     "score": 0,
+     "max": 6
+    },
+    "Q4": {
+     "score": 6,
+     "max": 6
+    },
+    "Q5": {
+     "score": 6,
+     "max": 6
+    },
+    "Q6": {
+     "score": 0,
+     "max": 6
+    },
+    "Q7": {
+     "score": 0,
+     "max": 6
+    },
+    "Q8": {
+     "score": 6,
+     "max": 6
+    },
+    "Q9": {
+     "score": 0,
+     "max": 6
+    },
+    "Q10": {
+     "score": 6,
+     "max": 6
+    },
+    "H1": {
+     "score": 5,
+     "max": 6
+    },
+    "H2": {
+     "score": 0,
+     "max": 6
+    },
+    "H3": {
+     "score": 6,
+     "max": 6
+    },
+    "H4": {
+     "score": 6,
+     "max": 6
+    },
+    "H5": {
+     "score": 6,
+     "max": 6
+    }
+   },
+   "median_tokens": 132038,
+   "median_seconds": 25.7
+  },
+  {
+   "condition": "Haiku 5.5, no Python",
+   "arm": "pre-computed folder",
+   "runs_per_question": 3,
+   "main_score": 55,
+   "main_max": 60,
+   "heldout_score": 30,
+   "heldout_max": 30,
+   "per_question": {
+    "Q1": {
+     "score": 6,
+     "max": 6
+    },
+    "Q2": {
+     "score": 6,
+     "max": 6
+    },
+    "Q3": {
+     "score": 6,
+     "max": 6
+    },
+    "Q4": {
+     "score": 6,
+     "max": 6
+    },
+    "Q5": {
+     "score": 6,
+     "max": 6
+    },
+    "Q6": {
+     "score": 4,
+     "max": 6
+    },
+    "Q7": {
+     "score": 6,
+     "max": 6
+    },
+    "Q8": {
+     "score": 3,
+     "max": 6
+    },
+    "Q9": {
+     "score": 6,
+     "max": 6
+    },
+    "Q10": {
+     "score": 6,
+     "max": 6
+    },
+    "H1": {
+     "score": 6,
+     "max": 6
+    },
+    "H2": {
+     "score": 6,
+     "max": 6
+    },
+    "H3": {
+     "score": 6,
+     "max": 6
+    },
+    "H4": {
+     "score": 6,
+     "max": 6
+    },
+    "H5": {
+     "score": 6,
+     "max": 6
+    }
+   },
+   "median_tokens": 59924,
+   "median_seconds": 11.3
+  },
+  {
+   "condition": "Fresh-clone re-run (Sonnet + Python)",
+   "arm": "no folder, no files",
+   "runs_per_question": 1,
+   "main_score": 0,
+   "main_max": 20,
+   "heldout_score": 0,
+   "heldout_max": 10,
+   "per_question": {
+    "Q1": {
+     "score": 0,
+     "max": 2
+    },
+    "Q2": {
+     "score": 0,
+     "max": 2
+    },
+    "Q3": {
+     "score": 0,
+     "max": 2
+    },
+    "Q4": {
+     "score": 0,
+     "max": 2
+    },
+    "Q5": {
+     "score": 0,
+     "max": 2
+    },
+    "Q6": {
+     "score": 0,
+     "max": 2
+    },
+    "Q7": {
+     "score": 0,
+     "max": 2
+    },
+    "Q8": {
+     "score": 0,
+     "max": 2
+    },
+    "Q9": {
+     "score": 0,
+     "max": 2
+    },
+    "Q10": {
+     "score": 0,
+     "max": 2
+    },
+    "H1": {
+     "score": 0,
+     "max": 2
+    },
+    "H2": {
+     "score": 0,
+     "max": 2
+    },
+    "H3": {
+     "score": 0,
+     "max": 2
+    },
+    "H4": {
+     "score": 0,
+     "max": 2
+    },
+    "H5": {
+     "score": 0,
+     "max": 2
+    }
+   },
+   "median_tokens": 25323,
+   "median_seconds": 6.7
+  },
+  {
+   "condition": "Fresh-clone re-run (Sonnet + Python)",
+   "arm": "raw files, no folder",
+   "runs_per_question": 1,
+   "main_score": 18,
+   "main_max": 20,
+   "heldout_score": 10,
+   "heldout_max": 10,
+   "per_question": {
+    "Q1": {
+     "score": 2,
+     "max": 2
+    },
+    "Q2": {
+     "score": 2,
+     "max": 2
+    },
+    "Q3": {
+     "score": 2,
+     "max": 2
+    },
+    "Q4": {
+     "score": 2,
+     "max": 2
+    },
+    "Q5": {
+     "score": 2,
+     "max": 2
+    },
+    "Q6": {
+     "score": 1,
+     "max": 2
+    },
+    "Q7": {
+     "score": 2,
+     "max": 2
+    },
+    "Q8": {
+     "score": 2,
+     "max": 2
+    },
+    "Q9": {
+     "score": 1,
+     "max": 2
+    },
+    "Q10": {
+     "score": 2,
+     "max": 2
+    },
+    "H1": {
+     "score": 2,
+     "max": 2
+    },
+    "H2": {
+     "score": 2,
+     "max": 2
+    },
+    "H3": {
+     "score": 2,
+     "max": 2
+    },
+    "H4": {
+     "score": 2,
+     "max": 2
+    },
+    "H5": {
+     "score": 2,
+     "max": 2
+    }
+   },
+   "median_tokens": 127548,
+   "median_seconds": 27.9
+  },
+  {
+   "condition": "Fresh-clone re-run (Sonnet + Python)",
+   "arm": "folder",
+   "runs_per_question": 1,
+   "main_score": 20,
+   "main_max": 20,
+   "heldout_score": 10,
+   "heldout_max": 10,
+   "per_question": {
+    "Q1": {
+     "score": 2,
+     "max": 2
+    },
+    "Q2": {
+     "score": 2,
+     "max": 2
+    },
+    "Q3": {
+     "score": 2,
+     "max": 2
+    },
+    "Q4": {
+     "score": 2,
+     "max": 2
+    },
+    "Q5": {
+     "score": 2,
+     "max": 2
+    },
+    "Q6": {
+     "score": 2,
+     "max": 2
+    },
+    "Q7": {
+     "score": 2,
+     "max": 2
+    },
+    "Q8": {
+     "score": 2,
+     "max": 2
+    },
+    "Q9": {
+     "score": 2,
+     "max": 2
+    },
+    "Q10": {
+     "score": 2,
+     "max": 2
+    },
+    "H1": {
+     "score": 2,
+     "max": 2
+    },
+    "H2": {
+     "score": 2,
+     "max": 2
+    },
+    "H3": {
+     "score": 2,
+     "max": 2
+    },
+    "H4": {
+     "score": 2,
+     "max": 2
+    },
+    "H5": {
+     "score": 2,
+     "max": 2
+    }
+   },
+   "median_tokens": 63776,
+   "median_seconds": 11.2
+  }
+ ],
+ "predictions": [
+  {
+   "what": "Sonnet raw, my 10 (of 60)",
+   "low": 30,
+   "high": 42,
+   "source": "questions.md (10-14 of 20 per run)",
+   "actual": 53,
+   "hit": false
+  },
+  {
+   "what": "Sonnet folder, my 10 (of 60)",
+   "low": 51,
+   "high": 60,
+   "source": "questions.md (17-20 of 20 per run)",
+   "actual": 60,
+   "hit": true
+  },
+  {
+   "what": "Haiku raw, my 10 (of 60)",
+   "low": 20,
+   "high": 40,
+   "source": "predictions-haiku.md",
+   "actual": 55,
+   "hit": false
+  },
+  {
+   "what": "Haiku folder, my 10 (of 60)",
+   "low": 50,
+   "high": 60,
+   "source": "predictions-haiku.md",
+   "actual": 60,
+   "hit": true
+  },
+  {
+   "what": "No-Python raw, my 10 (of 60)",
+   "low": 5,
+   "high": 20,
+   "source": "predictions-nocode.md",
+   "actual": 30,
+   "hit": false
+  },
+  {
+   "what": "No-Python shipped folder, my 10 (of 60)",
+   "low": 5,
+   "high": 20,
+   "source": "predictions-nocode.md",
+   "actual": 36,
+   "hit": false
+  },
+  {
+   "what": "No-Python pre-computed folder, my 10 (of 60)",
+   "low": 30,
+   "high": 50,
+   "source": "predictions-nocode.md",
+   "actual": 55,
+   "hit": false
+  }
+ ]
+}
