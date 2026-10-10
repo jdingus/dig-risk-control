@@ -40,6 +40,9 @@ MAX_TURNS = None  # None = no cap; set an int to pass --max-turns
 # arm -> repo-relative paths (files or directories) copied into the run dir, keeping their
 # relative path. A glob (*) is allowed. "folder" does not exist in the repo yet: until it does,
 # running that arm stops with a clear message instead of running an empty folder arm.
+# Where each arm's transcripts go. The brief names the with-folder run "treatment/".
+OUT_DIR = {"folder": "treatment", "raw": "raw-files"}
+
 ARMS = {
     "control": [],
     "raw": ["data/originals/orders/*.pdf", "data/text/*.txt"],
@@ -268,7 +271,13 @@ def main():
             shutil.rmtree(probe, ignore_errors=True)
     if a.dry_run:
         return
-    outdir = HERE / a.arm / "raw"
+    outdir = HERE / OUT_DIR.get(a.arm, a.arm) / "raw"
+    # Never write inside any arm's input files: a later run would copy earlier answers (aborted/folder-arm-attempt-1).
+    for paths in ARMS.values():
+        for pat in paths:
+            top = (HERE / pat.split("/")[0]).resolve()
+            if top != HERE.resolve() and (outdir.resolve() == top or top in outdir.resolve().parents):
+                raise SystemExit(f"refusing to write output inside arm input {top}")
     with cf.ThreadPoolExecutor(a.workers) as ex:
         for msg in ex.map(lambda j: run_one(a.arm, j[0], j[2], build_prompt(pre, j[1]), outdir), jobs):
             print(msg, flush=True)
