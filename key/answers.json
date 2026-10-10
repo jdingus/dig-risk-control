@@ -1,0 +1,306 @@
+{
+  "cases_clean_sha256": "5a1ddf901efe33b98818820e159f7940701d95a746acea4066a0ce9023a7dedc",
+  "rows": 9958,
+  "answers": {
+    "Q1": {
+      "pct_16h": 39.6,
+      "pct_20a2": 22.9
+    },
+    "Q2": {
+      "cases_2021": 1599,
+      "cases_2022": 2671,
+      "cases_2023": 2107,
+      "cases_2024": 1897,
+      "cases_2025": 1684,
+      "year_with_most": 2022
+    },
+    "Q3": {
+      "mean_16h": 4199,
+      "mean_20a2": 3787
+    },
+    "Q4": {
+      "pct_utility_warning_letter": 0.0,
+      "pct_nonutility_warning_letter": 28.1
+    },
+    "Q5": {
+      "pct_training": 44.7
+    },
+    "Q6": {
+      "distinct_respondents_5plus": 187,
+      "pct_of_nonutility_cases": 24.3
+    },
+    "Q7": {
+      "mean_2021": 2375,
+      "mean_2025": 3041
+    },
+    "Q8": {
+      "count_ticket_escalation": 446,
+      "most_common_headline_penalty": 1500
+    },
+    "Q9": {
+      "most_common_other_party": "northern indiana public service company",
+      "pct_of_nonutility_cases": 41.6
+    },
+    "Q10": {
+      "pct_expire": 12.3,
+      "pct_prior": 6.0
+    }
+  },
+  "interpretations": {
+    "cases": "A case is one row of cases_clean.csv (9,958 rows). No de-duplication: the duplicate case numbers (e.g. 33669 twice in one order), the case-number '0' row and the blank-violation row all count as cases.",
+    "rounding": "Rounded values use Decimal ROUND_HALF_UP (a human's rounding) on the exact ratio, not Python's round() (half to even). Percentages are 100*numerator/denominator rounded to 1 decimal; Q7 means are rounded to whole dollars. supporting_counts records where half-even would differ.",
+    "year": "Year = the year of order_date (the order's date), as the preamble says; damage_date is not used.",
+    "base_section_qualifier": "Qualifier = a parenthesized group of 2+ letters (hyphens allowed), e.g. (expire), (locator-error), as the preamble now states; single-letter or digit groups such as (h), (i), (a)(2), (3)(b) are part of the base section, so 20(a)(3)(b) is its own base section, not 20(a)(2). Base section = cite minus 'IC 8-1-26-' minus the qualifier. Base section 16(h) therefore includes 16(h) with any qualifier; 16(i) is a different base section. The one blank-cite row has base '' and stays in 'all cases' denominators.",
+    "headline_penalty": "Headline penalty = the first '$' amount in the recommendation text as printed, no other arithmetic. 'Training or $5,000 if respondent fails to complete training' therefore has headline $5,000 (the first $ amount, even though the sentence is a fallback penalty). '$$1000' = 1000; '$3, 500' = 3500; '$1,500, respondent can complete training ...' = 1500; '$3,000+ training...' = 3000; '$1,500 fine plus ...' = 1500. Text with no '$' (Warning letter..., Training (completed ...), '3000', '0', '.5000', 'Other', 'Violation found; no penalty recommended', blank) = $0. Totals/parentheticals later in the text ('($4,500)') are ignored.",
+    "utility_respondent": "Utility respondent = respondent.lstrip(' ').lower().startswith(prefix.lower()) for any of the 13 prefixes; plain prefix test (no word boundary, no punctuation or inner-space normalising). A blank respondent is a non-utility respondent ('every other case').",
+    "contains_phrase": "'contains the words/word X (any capitalization)' = X.lower() is a substring of recommendation.lower(). Substring, not whole-word: 'Trainingalready completed' and 'trainingIt is very...' count for 'training'. Variants such as 'trained', 'Train' do not match. 'no ticket escalation' and 'No ticket escalation' both count for 'ticket escalation'. Whole-word counts are in supporting_counts for sensitivity.",
+    "Q1": "Denominator = all 9,958 cases (including the blank-cite row); numerators count 16(h) / 20(a)(2) with or without a qualifier.",
+    "Q2": "Year counts include every row (duplicates and unusable rows included). Year is order year.",
+    "Q3": "Mean (arithmetic) of headline penalties over cases with headline penalty > $0 and base section 16(h) (any qualifier) / 20(a)(2); sum / count, rounded half-up to whole dollars. statistics.median is no longer used.",
+    "Q5": "Denominator = cases with headline penalty > 0 (any respondent type); numerator = those whose recommendation contains 'training' (substring, case-insensitive).",
+    "Q6": "Normalisation exactly as worded: lowercase; delete every character that is not a letter, a digit or a space (str.isalnum() or ' '), no replacement, so 'C S U, Inc.' -> 'c s u inc'; collapse runs of spaces to one and trim; then once drop a final whole word if it is exactly inc/llc/co/corp/corporation/company ('x co inc' -> 'x co'; a name that is only a suffix word becomes ''). No other merging (spelling variants stay separate). Percent denominator = all non-utility cases (blank respondent included); numerator = non-utility cases whose normalized name has >= 5 non-utility cases. Counting is of case rows, not unique case numbers.",
+    "Q7": "Mean = sum of headline penalties (all non-utility cases of that order year, $0 cases included) / number of those cases; rounded half-up to whole dollars.",
+    "Q8": "Counts all respondent types and all years (no filter). Matches 'no ticket escalation' as well as any other mention (the question says 'containing'). Mode of the headline penalty (first $ amount) among those cases; a tie would be reported as a list.",
+    "Q9": "Key = other_party.strip().lower() only (no punctuation or inner-space changes). The answer is given lowercased; the printed capitalisations are in supporting_counts. Blank other_party is not a name (cannot win) but stays in the denominator (all non-utility cases). Percent = cases with that other party / all non-utility cases.",
+    "Q10": "Denominator = all base-16(h) cases, including those with no qualifier; 16(i) cases are excluded."
+  },
+  "supporting_counts": {
+    "Q1": {
+      "all_cases": 9958,
+      "base_16h": {
+        "numerator": 3941,
+        "denominator": 9958,
+        "exact_percent": "39.576220",
+        "half_even_differs": false
+      },
+      "base_20a2": {
+        "numerator": 2284,
+        "denominator": 9958,
+        "exact_percent": "22.936333",
+        "half_even_differs": false
+      }
+    },
+    "Q2": {
+      "counts_by_year": {
+        "2021": 1599,
+        "2022": 2671,
+        "2023": 2107,
+        "2024": 1897,
+        "2025": 1684
+      },
+      "total": 9958
+    },
+    "Q3": {
+      "16h": {
+        "sum_headline": 10505900,
+        "n_positive": 2502,
+        "exact_mean": "4199.0008",
+        "half_even_differs": false
+      },
+      "20a2": {
+        "sum_headline": 7150700,
+        "n_positive": 1888,
+        "exact_mean": "3787.4470",
+        "half_even_differs": false
+      },
+      "n_16h_all": 3941,
+      "n_20a2_all": 2284
+    },
+    "Q4": {
+      "utility": {
+        "numerator": 1,
+        "denominator": 2715,
+        "exact_percent": "0.036832",
+        "half_even_differs": false
+      },
+      "non_utility": {
+        "numerator": 2032,
+        "denominator": 7243,
+        "exact_percent": "28.054673",
+        "half_even_differs": false
+      },
+      "whole_word_warning_letter_utility": 1,
+      "whole_word_warning_letter_nonutility": 2032
+    },
+    "Q5": {
+      "training": {
+        "numerator": 3532,
+        "denominator": 7899,
+        "exact_percent": "44.714521",
+        "half_even_differs": false
+      },
+      "whole_word_training_numerator": 3532
+    },
+    "Q6": {
+      "nonutility_cases": 7243,
+      "distinct_normalized_nonutility": 4727,
+      "cases_in_5plus_groups": 1760,
+      "pct": {
+        "numerator": 1760,
+        "denominator": 7243,
+        "exact_percent": "24.299323",
+        "half_even_differs": false
+      },
+      "empty_normalized_name_cases": 1,
+      "top10_groups": [
+        [
+          "miller pipeline",
+          91
+        ],
+        [
+          "riethriley construction co",
+          54
+        ],
+        [
+          "calumet civil contractors",
+          48
+        ],
+        [
+          "milestone contractors lp",
+          46
+        ],
+        [
+          "milenium",
+          36
+        ],
+        [
+          "fox contractors",
+          28
+        ],
+        [
+          "always underground",
+          22
+        ],
+        [
+          "crider crider construction",
+          21
+        ],
+        [
+          "verita telecommunications",
+          21
+        ],
+        [
+          "crosby excavating",
+          20
+        ]
+      ]
+    },
+    "Q7": {
+      "2021": {
+        "sum_headline": 2912200,
+        "cases": 1226,
+        "exact_mean": "2375.3670",
+        "half_even_differs": false
+      },
+      "2025": {
+        "sum_headline": 3731000,
+        "cases": 1227,
+        "exact_mean": "3040.7498",
+        "half_even_differs": false
+      }
+    },
+    "Q8": {
+      "cases": 446,
+      "headline_penalty_distribution": {
+        "1000": 2,
+        "1500": 291,
+        "3000": 56,
+        "3500": 23,
+        "4000": 15,
+        "4500": 11,
+        "5000": 47,
+        "6000": 1
+      },
+      "mode_count": 291,
+      "whole_word_count": 446
+    },
+    "Q9": {
+      "count": 3015,
+      "nonutility_cases": 7243,
+      "pct": {
+        "numerator": 3015,
+        "denominator": 7243,
+        "exact_percent": "41.626398",
+        "half_even_differs": false
+      },
+      "blank_other_party_nonutility_cases": 27,
+      "printed_forms_of_winner": {
+        "Northern Indiana Public Service Company": 3015
+      },
+      "top5_other_party": [
+        [
+          "northern indiana public service company",
+          3015
+        ],
+        [
+          "centerpoint energy indiana",
+          2489
+        ],
+        [
+          "citizens gas",
+          923
+        ],
+        [
+          "vectren energy delivery",
+          202
+        ],
+        [
+          "midwest natural gas corporation",
+          117
+        ]
+      ]
+    },
+    "Q10": {
+      "base_16h_cases": 3941,
+      "expire": {
+        "numerator": 483,
+        "denominator": 3941,
+        "exact_percent": "12.255773",
+        "half_even_differs": false
+      },
+      "prior": {
+        "numerator": 236,
+        "denominator": 3941,
+        "exact_percent": "5.988328",
+        "half_even_differs": false
+      },
+      "qualifier_counts_16h": {
+        "(none)": 3023,
+        "expire": 483,
+        "other": 19,
+        "out": 180,
+        "prior": 236
+      }
+    },
+    "general": {
+      "rows": 9958,
+      "utility_cases": 2715,
+      "nonutility_cases": 7243,
+      "cases_headline_penalty_gt0": 7899,
+      "cases_headline_penalty_0": 2059,
+      "base_section_counts": {
+        "": 1,
+        "16(h)": 3941,
+        "16(i)": 240,
+        "18(h)": 2439,
+        "18(j)": 207,
+        "19(c)": 26,
+        "20(a)(1)": 554,
+        "20(a)(2)": 2284,
+        "20(a)(3)(a)": 27,
+        "20(a)(3)(b)": 239
+      },
+      "qualifier_counts": {
+        "(none)": 8056,
+        "expire": 518,
+        "locator-error": 600,
+        "no-response": 52,
+        "other": 20,
+        "out": 191,
+        "prior": 272,
+        "records": 249
+      },
+      "rounded_values_where_half_even_differs": []
+    }
+  }
+}

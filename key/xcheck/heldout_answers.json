@@ -1,0 +1,74 @@
+{
+  "H1": {
+    "top_city": "indianapolis",
+    "top_city_cases": 1153,
+    "cases_with_city": 9943,
+    "top5_share_pct": 26.2,
+    "top5": [
+      [
+        "indianapolis",
+        1153
+      ],
+      [
+        "fort wayne",
+        529
+      ],
+      [
+        "evansville",
+        445
+      ],
+      [
+        "south bend",
+        295
+      ],
+      [
+        "bloomington",
+        184
+      ]
+    ],
+    "tie_at_5_6": false,
+    "tie_at_1_2": false
+  },
+  "H2": {
+    "mean_lag_2023": 227,
+    "mean_lag_2024": 188,
+    "n_2023": 2107,
+    "n_2024": 1897,
+    "n_parseable_all": 9957,
+    "pct_lag_gt_365": 12.6,
+    "negative_lags": 0
+  },
+  "H3": {
+    "2021": 41.4,
+    "2024": 54.0,
+    "2025": 49.8
+  },
+  "H4": {
+    "expire": {
+      "n": 518,
+      "pct_zero": 35.7
+    },
+    "prior": {
+      "n": 272,
+      "pct_zero": 21.7
+    },
+    "out": {
+      "n": 191,
+      "pct_zero": 18.3
+    }
+  },
+  "H5": {
+    "2023": {
+      "n_all": 2107,
+      "n_nonutility": 1502,
+      "a_pct_nonutil_headline_ge_5000": 41.5,
+      "b_pct_all_utility": 28.7
+    },
+    "2024": {
+      "n_all": 1897,
+      "n_nonutility": 1421,
+      "a_pct_nonutil_headline_ge_5000": 48.3,
+      "b_pct_all_utility": 25.1
+    }
+  }
+}

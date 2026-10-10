@@ -1,0 +1,203 @@
+{
+  "Q1": {
+    "16(h)_pct": "39.6",
+    "20(a)(2)_pct": "22.9",
+    "counts": {
+      "16(h)": 3941,
+      "20(a)(2)": 2284,
+      "total_cases": 9958
+    }
+  },
+  "Q2": {
+    "per_year": {
+      "2021": 1599,
+      "2022": 2671,
+      "2023": 2107,
+      "2024": 1897,
+      "2025": 1684
+    },
+    "most_cases_year": [
+      2022
+    ]
+  },
+  "Q3": {
+    "16(h)_mean": "4199",
+    "16(h)_n": 2502,
+    "20(a)(2)_mean": "3787",
+    "20(a)(2)_n": 1888
+  },
+  "Q4": {
+    "utility_pct": "0.0",
+    "nonutility_pct": "28.1",
+    "counts": {
+      "utility": [
+        1,
+        2715
+      ],
+      "nonutility": [
+        2032,
+        7243
+      ]
+    }
+  },
+  "Q5": {
+    "pct": "44.7",
+    "counts": {
+      "training": 3532,
+      "penalty_gt0": 7899
+    }
+  },
+  "Q6": {
+    "distinct_respondents_5plus": 187,
+    "pct_of_nonutility": "24.3",
+    "counts": {
+      "cases_in_those": 1760,
+      "nonutility_total": 7243
+    },
+    "top": [
+      [
+        "miller pipeline",
+        91
+      ],
+      [
+        "riethriley construction co",
+        54
+      ],
+      [
+        "calumet civil contractors",
+        48
+      ],
+      [
+        "milestone contractors lp",
+        46
+      ],
+      [
+        "milenium",
+        36
+      ],
+      [
+        "fox contractors",
+        28
+      ],
+      [
+        "always underground",
+        22
+      ],
+      [
+        "crider crider construction",
+        21
+      ]
+    ]
+  },
+  "Q7": {
+    "2021_mean_dollars": "2375",
+    "2025_mean_dollars": "3041",
+    "counts": {
+      "2021": 1226,
+      "2025": 1227
+    }
+  },
+  "Q8": {
+    "count": 446,
+    "most_common_headline": "1500",
+    "tied_modes": [
+      "1500"
+    ],
+    "distribution": [
+      [
+        "1500",
+        291
+      ],
+      [
+        "3000",
+        56
+      ],
+      [
+        "5000",
+        47
+      ],
+      [
+        "3500",
+        23
+      ],
+      [
+        "4000",
+        15
+      ],
+      [
+        "4500",
+        11
+      ],
+      [
+        "1000",
+        2
+      ],
+      [
+        "6000",
+        1
+      ]
+    ]
+  },
+  "Q9": {
+    "other_party": "Northern Indiana Public Service Company",
+    "count": 3015,
+    "pct_of_nonutility": "41.6"
+  },
+  "Q10": {
+    "expire_pct": "12.3",
+    "prior_pct": "6.0",
+    "counts": {
+      "16(h)_total": 3941,
+      "expire": 483,
+      "prior": 236
+    }
+  },
+  "_diagnostics": {
+    "rows": 9958,
+    "utility_rows": 2715,
+    "nonutility_rows": 7243,
+    "base_values": [
+      [
+        "16(h)",
+        3941
+      ],
+      [
+        "18(h)",
+        2439
+      ],
+      [
+        "20(a)(2)",
+        2284
+      ],
+      [
+        "20(a)(1)",
+        554
+      ],
+      [
+        "16(i)",
+        240
+      ],
+      [
+        "20(a)(3)(b)",
+        239
+      ],
+      [
+        "18(j)",
+        207
+      ],
+      [
+        "20(a)(3)(a)",
+        27
+      ],
+      [
+        "19(c)",
+        26
+      ],
+      [
+        "",
+        1
+      ]
+    ],
+    "duplicate_case_numbers": 25
+  }
+}

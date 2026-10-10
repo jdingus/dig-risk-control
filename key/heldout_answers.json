@@ -1,0 +1,133 @@
+{
+  "cases_clean_csv_sha256": "5a1ddf901efe33b98818820e159f7940701d95a746acea4066a0ce9023a7dedc",
+  "rows": 9958,
+  "rounding": "half up (Decimal ROUND_HALF_UP)",
+  "answers": {
+    "H1": {
+      "top_city": "indianapolis",
+      "top_city_cases": 1153,
+      "top5_combined_percent": 26.2
+    },
+    "H2": {
+      "mean_lag_days_2023": 227,
+      "mean_lag_days_2024": 188,
+      "percent_lag_over_365_all_years": 12.6
+    },
+    "H3": {
+      "percent_with_abstention_2021": 41.4,
+      "percent_with_abstention_2024": 54.0,
+      "percent_with_abstention_2025": 49.8
+    },
+    "H4": {
+      "percent_zero_penalty_expire": 35.7,
+      "percent_zero_penalty_prior": 21.7,
+      "percent_zero_penalty_out": 18.3
+    },
+    "H5": {
+      "percent_nonutility_penalty_5000plus_2023": 41.5,
+      "percent_nonutility_penalty_5000plus_2024": 48.3,
+      "percent_utility_respondent_cases_2023": 28.7,
+      "percent_utility_respondent_cases_2024": 25.1
+    }
+  },
+  "interpretation_notes": {
+    "H1": "City = text after the last comma of damage_location, trimmed and lowercased, spelling variants not merged. Rows with no comma or an empty city are excluded from numerator and denominator. Rank 5 vs 6 is not a tie.",
+    "H2": "Lag = order_date minus damage_date in calendar days. Year = order year. Rows whose damage_date does not parse (1 blank row) are excluded. 'Over 365' means strictly more than 365 days.",
+    "H3": "A case counts if abstentions has text left after trimming and after deleting any leaked label text 'Additional Infonnation:' / 'Additional Information:' (2 rows, both 2021; one is label-only and is not counted, the other still has 'Smith').",
+    "H4": "Qualifier is the parenthesized word at the end of the cite, any base section. Cases with no qualifier are not in any group.",
+    "H5": "Headline penalty and utility respondent per the preamble. 'At least $5,000' means headline penalty >= 5000. Denominators include $0 cases."
+  },
+  "supporting_counts": {
+    "H1": {
+      "cases_with_city": 9943,
+      "top5_cases": 2606,
+      "top6": [
+        [
+          "indianapolis",
+          1153
+        ],
+        [
+          "fort wayne",
+          529
+        ],
+        [
+          "evansville",
+          445
+        ],
+        [
+          "south bend",
+          295
+        ],
+        [
+          "bloomington",
+          184
+        ],
+        [
+          "elkhart",
+          179
+        ]
+      ],
+      "distinct_cities": 589
+    },
+    "H2": {
+      "n_2023": 2107,
+      "n_2024": 1897,
+      "n_all": 9957,
+      "over_365": 1259,
+      "unparseable_damage_date_rows": 1,
+      "negative_lags": 0,
+      "exact_mean_2023": 227.3374466065496,
+      "exact_mean_2024": 187.6663152345809
+    },
+    "H3": {
+      "2021": {
+        "with_abstention": 662,
+        "cases": 1599
+      },
+      "2024": {
+        "with_abstention": 1025,
+        "cases": 1897
+      },
+      "2025": {
+        "with_abstention": 838,
+        "cases": 1684
+      }
+    },
+    "H4": {
+      "expire": {
+        "cases": 518,
+        "zero_penalty": 185
+      },
+      "prior": {
+        "cases": 272,
+        "zero_penalty": 59
+      },
+      "out": {
+        "cases": 191,
+        "zero_penalty": 35
+      }
+    },
+    "H5": {
+      "nonutility_5000plus": {
+        "2023": [
+          623,
+          1502
+        ],
+        "2024": [
+          687,
+          1421
+        ]
+      },
+      "utility_share": {
+        "2023": [
+          605,
+          2107
+        ],
+        "2024": [
+          476,
+          1897
+        ]
+      }
+    }
+  }
+}
