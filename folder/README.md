@@ -1,9 +1,5 @@
 # Indiana dig-damage enforcement desk
 
-**Start here, in this order.** 1) `python3 reference/tools/cases.py fields` to see what you can filter and group on.
-2) Answer with the tool (`count`, `group`, `stat`, `repeat`, `receipts`). Never `head`, `cat` or `grep` `reference/cases.csv`:
-to see example rows, use `python3 reference/tools/cases.py receipts [filters]`. Read `rules.md` before you answer.
-
 Ask an actuarial question about the Indiana Utility Regulatory Commission (IURC) orders that approve the
 Underground Plant Protection Advisory Committee's penalty recommendations under IC 8-1-26. You get a number
 you can recheck: the command that produced it, the numerator and denominator, and example case receipts.
