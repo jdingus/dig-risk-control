@@ -32,6 +32,7 @@ REPO = pathlib.Path(os.environ.get("DIG_REPO") or HERE).resolve()  # the repo ro
 
 MODEL = "claude-sonnet-5-5"
 EFFORT = None  # set by --effort; None = the CLI default
+TOOLS = "Read,Grep,Glob,Bash"  # set by --tools; "Read,Grep,Glob" = no Python/shell
 REPS = 3
 WORKERS = 4
 TIMEOUT_S = 1200
@@ -48,6 +49,7 @@ ARMS = {
     "control": [],
     "raw": ["data/originals/orders/*.pdf", "data/text/*.txt"],
     "folder": ["folder"],
+    "folder-nocode": ["folder-nocode"],  # pre-computed tables for a model with no shell (see predictions-nocode.md)
 }
 
 SYSTEM_PROMPT = (
@@ -156,7 +158,7 @@ ENV_OVERRIDES = {"CLAUDE_CODE_DISABLE_CLAUDE_MDS": "1", "CLAUDE_CODE_DISABLE_AUT
 
 def make_command(settings_path, system_prompt, prompt, permission_mode=None):
     cmd = ["claude", "-p", "--model", MODEL, "--output-format", "stream-json", "--verbose",
-           "--tools", "Read,Grep,Glob,Bash", "--allowedTools", "Read,Grep,Glob,Bash",
+           "--tools", TOOLS, "--allowedTools", TOOLS,
            "--setting-sources", "", "--settings", str(settings_path),
            "--strict-mcp-config", "--no-session-persistence", "--disable-slash-commands",
            "--permission-mode", permission_mode or PERMISSION_MODE]
@@ -202,7 +204,7 @@ def run_one(arm, qid, rep, prompt, outdir, files=None, system_prompt=SYSTEM_PROM
                 stderr = stderr.decode(errors="replace")
         wall = round(time.time() - t0, 1)
         listing = sorted(str(f.relative_to(rundir)) for f in rundir.rglob("*") if f.is_file())
-        meta = {"arm": arm, "qid": qid, "rep": rep, "model": MODEL, "effort": EFFORT, "wall_s": wall,
+        meta = {"arm": arm, "qid": qid, "rep": rep, "model": MODEL, "effort": EFFORT, "tools": TOOLS, "wall_s": wall,
                 "returncode": rc, "run_dir": str(rundir), "claude_tmp_dir": str(tmpdir), "files_in_run_dir_at_end": len(listing),
                 "command": cmd, "env_overrides": ENV_OVERRIDES, "system_prompt": system_prompt,
                 "prompt": prompt, "settings": settings, "stderr": stderr[-2000:]}
@@ -256,12 +258,14 @@ def main():
     ap.add_argument("--preflight", action="store_true")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--model", help="model id (default claude-sonnet-5-5)")
+    ap.add_argument("--tools", help='tool list, default "Read,Grep,Glob,Bash"; "Read,Grep,Glob" removes the shell and Python')
     ap.add_argument("--effort", choices=["low", "medium", "high", "xhigh", "max"])
     ap.add_argument("--out", help="write transcripts to <OUT>/raw instead of the committed arm folder (for re-runs)")
     a = ap.parse_args()
-    global MODEL, EFFORT
+    global MODEL, EFFORT, TOOLS
     MODEL = a.model or MODEL
     EFFORT = a.effort or EFFORT
+    TOOLS = a.tools or TOOLS
     if a.preflight:
         return preflight()
     if a.arm not in ARMS:
@@ -271,7 +275,7 @@ def main():
         sys.exit("no questions matched")
     pre = preamble()
     jobs = [(qid, q, r) for qid, q in qs for r in range(1, a.reps + 1)]
-    print(f"{a.arm}: {len(jobs)} answers ({len(qs)} questions x {a.reps} reps), model {MODEL}, effort {EFFORT or 'default'}", flush=True)
+    print(f"{a.arm}: {len(jobs)} answers ({len(qs)} questions x {a.reps} reps), model {MODEL}, effort {EFFORT or 'default'}, tools {TOOLS}", flush=True)
     if ARMS[a.arm]:  # fail early if the arm's files are missing
         probe = pathlib.Path(tempfile.mkdtemp(prefix="r2probe-", dir="/tmp"))
         try:
