@@ -1,0 +1,96 @@
+{
+ "qid": "H5",
+ "grades": {
+  "H5-01": {
+   "score": 2,
+   "parts": {
+    "nonutil_5000plus_2023": "full",
+    "nonutil_5000plus_2024": "full",
+    "utility_share_2023": "full",
+    "utility_share_2024": "full"
+   },
+   "why": "41.5, 48.3, 28.7, 25.1."
+  },
+  "H5-02": {
+   "score": 0,
+   "parts": {
+    "nonutil_5000plus_2023": "zero",
+    "nonutil_5000plus_2024": "zero",
+    "utility_share_2023": "zero",
+    "utility_share_2024": "zero"
+   },
+   "why": "Refusal: no data in working directory, no numbers given."
+  },
+  "H5-03": {
+   "score": 2,
+   "parts": {
+    "nonutil_5000plus_2023": "full",
+    "nonutil_5000plus_2024": "full",
+    "utility_share_2023": "full",
+    "utility_share_2024": "full"
+   },
+   "why": "41.5, 48.3, 28.7, 25.1."
+  },
+  "H5-04": {
+   "score": 0,
+   "parts": {
+    "nonutil_5000plus_2023": "zero",
+    "nonutil_5000plus_2024": "zero",
+    "utility_share_2023": "zero",
+    "utility_share_2024": "zero"
+   },
+   "why": "Refusal: no data in working directory, no numbers given."
+  },
+  "H5-05": {
+   "score": 2,
+   "parts": {
+    "nonutil_5000plus_2023": "full",
+    "nonutil_5000plus_2024": "full",
+    "utility_share_2023": "full",
+    "utility_share_2024": "full"
+   },
+   "why": "41.5, 48.3, 28.7, 25.1."
+  },
+  "H5-06": {
+   "score": 2,
+   "parts": {
+    "nonutil_5000plus_2023": "full",
+    "nonutil_5000plus_2024": "full",
+    "utility_share_2023": "full",
+    "utility_share_2024": "full"
+   },
+   "why": "41.5, 48.3, 28.7, 25.1."
+  },
+  "H5-07": {
+   "score": 0,
+   "parts": {
+    "nonutil_5000plus_2023": "zero",
+    "nonutil_5000plus_2024": "zero",
+    "utility_share_2023": "zero",
+    "utility_share_2024": "zero"
+   },
+   "why": "Refusal: no data in working directory, no numbers given."
+  },
+  "H5-08": {
+   "score": 2,
+   "parts": {
+    "nonutil_5000plus_2023": "full",
+    "nonutil_5000plus_2024": "full",
+    "utility_share_2023": "full",
+    "utility_share_2024": "full"
+   },
+   "why": "41.5, 48.3, 28.7, 25.1."
+  },
+  "H5-09": {
+   "score": 2,
+   "parts": {
+    "nonutil_5000plus_2023": "full",
+    "nonutil_5000plus_2024": "full",
+    "utility_share_2023": "full",
+    "utility_share_2024": "full"
+   },
+   "why": "41.5, 48.3, 28.7, 25.1."
+  }
+ },
+ "notes": "H5-06 adds an alternative-denominator caveat (6.1/4.8) but commits to 28.7/25.1 as its answer; scored on those."
+}

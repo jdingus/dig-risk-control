@@ -1,0 +1,87 @@
+{
+ "qid": "H2",
+ "grades": {
+  "H2-01": {
+   "score": 0,
+   "parts": {
+    "mean_lag_2023": "zero",
+    "mean_lag_2024": "zero",
+    "pct_over_365": "zero"
+   },
+   "why": "Refusal: no data in working directory, no numbers given."
+  },
+  "H2-02": {
+   "score": 2,
+   "parts": {
+    "mean_lag_2023": "full",
+    "mean_lag_2024": "full",
+    "pct_over_365": "full"
+   },
+   "why": "227 days, 188 days, 12.6%."
+  },
+  "H2-03": {
+   "score": 0,
+   "parts": {
+    "mean_lag_2023": "zero",
+    "mean_lag_2024": "zero",
+    "pct_over_365": "zero"
+   },
+   "why": "Refusal: no data in working directory, no numbers given."
+  },
+  "H2-04": {
+   "score": 2,
+   "parts": {
+    "mean_lag_2023": "full",
+    "mean_lag_2024": "full",
+    "pct_over_365": "full"
+   },
+   "why": "227 days, 188 days, 12.6%."
+  },
+  "H2-05": {
+   "score": 0,
+   "parts": {
+    "mean_lag_2023": "zero",
+    "mean_lag_2024": "zero",
+    "pct_over_365": "zero"
+   },
+   "why": "Refusal: no data in working directory, no numbers given."
+  },
+  "H2-06": {
+   "score": 2,
+   "parts": {
+    "mean_lag_2023": "full",
+    "mean_lag_2024": "full",
+    "pct_over_365": "full"
+   },
+   "why": "227 days, 188 days, 12.6%."
+  },
+  "H2-07": {
+   "score": 2,
+   "parts": {
+    "mean_lag_2023": "full",
+    "mean_lag_2024": "full",
+    "pct_over_365": "full"
+   },
+   "why": "227 days, 188 days, 12.6%."
+  },
+  "H2-08": {
+   "score": 2,
+   "parts": {
+    "mean_lag_2023": "full",
+    "mean_lag_2024": "full",
+    "pct_over_365": "full"
+   },
+   "why": "227 days, 188 days, 12.6%."
+  },
+  "H2-09": {
+   "score": 2,
+   "parts": {
+    "mean_lag_2023": "full",
+    "mean_lag_2024": "full",
+    "pct_over_365": "full"
+   },
+   "why": "227 days, 188 days, 12.6%."
+  }
+ },
+ "notes": ""
+}

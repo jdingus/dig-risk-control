@@ -1,0 +1,87 @@
+{
+ "qid": "H1",
+ "grades": {
+  "H1-01": {
+   "score": 0,
+   "parts": {
+    "top_city": "zero",
+    "top_city_cases": "zero",
+    "top5_combined_percent": "zero"
+   },
+   "why": "Refusal: no data in working directory, no numbers given."
+  },
+  "H1-02": {
+   "score": 1,
+   "parts": {
+    "top_city": "full",
+    "top_city_cases": "half",
+    "top5_combined_percent": "full"
+   },
+   "why": "indianapolis, 1,124 is 2.5% below 1153 (half), 26.1 within 0.5 of 26.2."
+  },
+  "H1-03": {
+   "score": 0,
+   "parts": {
+    "top_city": "zero",
+    "top_city_cases": "zero",
+    "top5_combined_percent": "zero"
+   },
+   "why": "Refusal: no data in working directory, no numbers given."
+  },
+  "H1-04": {
+   "score": 0,
+   "parts": {
+    "top_city": "zero",
+    "top_city_cases": "zero",
+    "top5_combined_percent": "zero"
+   },
+   "why": "Refusal: no data in working directory, no numbers given."
+  },
+  "H1-05": {
+   "score": 2,
+   "parts": {
+    "top_city": "full",
+    "top_city_cases": "full",
+    "top5_combined_percent": "full"
+   },
+   "why": "indianapolis, 1,153, 26.2%."
+  },
+  "H1-06": {
+   "score": 2,
+   "parts": {
+    "top_city": "full",
+    "top_city_cases": "full",
+    "top5_combined_percent": "full"
+   },
+   "why": "indianapolis, 1,153, 26.2%."
+  },
+  "H1-07": {
+   "score": 2,
+   "parts": {
+    "top_city": "full",
+    "top_city_cases": "full",
+    "top5_combined_percent": "full"
+   },
+   "why": "indianapolis, 1,153, 26.2%."
+  },
+  "H1-08": {
+   "score": 1,
+   "parts": {
+    "top_city": "full",
+    "top_city_cases": "half",
+    "top5_combined_percent": "full"
+   },
+   "why": "indianapolis, 1,139 is 1.2% below 1153 (outside 1%, half), 26.1 full."
+  },
+  "H1-09": {
+   "score": 2,
+   "parts": {
+    "top_city": "full",
+    "top_city_cases": "full",
+    "top5_combined_percent": "full"
+   },
+   "why": "indianapolis, 1,153, 26.2%."
+  }
+ },
+ "notes": ""
+}

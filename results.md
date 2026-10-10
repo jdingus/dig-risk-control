@@ -93,6 +93,37 @@ used a subscription, so nothing was billed.
 4. **The folder fails one structural check.** icm-builder's `icm-check.py` wants AGENTS.md and a CLAUDE.md pointer
    at the folder root (rule 1). Adding them would break the brief's five-item shape, so I didn't (`folder-build/README.md`).
 
+## The Haiku pair: where the folder pays (pre-registered in predictions-haiku.md, a1c6ce6)
+
+Same questions, key, preamble, sandbox and arms; only `--model claude-haiku-5-5 --effort low`. Graded blind,
+mixed across the three Haiku arms (`grading-haiku/scores.md`).
+
+| Haiku 5.5, low effort | control | raw | folder |
+|---|---|---|---|
+| my 10 questions | 0/60 | 55/60 | **60/60** |
+| held-out | 0/30 | 28/30 | **30/30** |
+| tokens per answer (median) | 16,987 | **401,098** | 84,870 |
+| seconds per answer (median) | 5 | 56 | 13 |
+| list price, all 45 answers | $0.06 | $0.75 | **$0.20** |
+
+- **The cheap model plus the folder matched the expensive model, for a fraction of the cost.** Haiku with the
+  folder scored 60/60 and 30/30, the same as Sonnet with the folder ($2.58) and better than Sonnet with the raw
+  orders (53/60, $5.42). List price for the 45 answers: $0.20.
+- **Without the folder, Haiku stayed accurate but got expensive.** Haiku's raw arm scored 55/60 (slightly above
+  Sonnet's raw arm) by brute force: a median 16 tool calls and 401,098 tokens per answer, 4.7× the folder.
+- **On the held-out set the folder's advantage held for Haiku, barely:** 30 vs 28, both points on H1 (the city
+  count: 1,124 and 1,139 against 1,153).
+
+**My Haiku predictions, scored:**
+
+| Prediction | Result |
+|---|---|
+| raw 20–40 of 60, held-out raw 10–20 of 30 | **wrong**: 55 and 28. Haiku brute-forced the raw pages far better than I expected |
+| folder 50–60, held-out 25–30 | right: 60 and 30 |
+| the folder's advantage holds on the held-out set | right, but by 2 points of 30 |
+| every Haiku arm faster than the same Sonnet arm | **wrong**: raw 56 s vs 30 s, folder 13 s vs 12 s; only the empty control was faster |
+| Haiku folder uses at most half the Haiku raw tokens | right: about a fifth |
+
 ## Reproduction
 
 - **Fresh clone, same commands a judge runs** (`rerun-fresh-clone/`): cloned from GitHub at bec716b, preflight,

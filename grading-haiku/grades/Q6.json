@@ -1,0 +1,78 @@
+{
+ "qid": "Q6",
+ "grades": {
+  "Q6-01": {
+   "score": 2,
+   "parts": {
+    "distinct_respondents_5plus": "full",
+    "pct_of_nonutility_cases": "full"
+   },
+   "why": "187 and 24.3% match"
+  },
+  "Q6-02": {
+   "score": 0,
+   "parts": {
+    "distinct_respondents_5plus": "zero",
+    "pct_of_nonutility_cases": "zero"
+   },
+   "why": "refusal; no number given"
+  },
+  "Q6-03": {
+   "score": 2,
+   "parts": {
+    "distinct_respondents_5plus": "full",
+    "pct_of_nonutility_cases": "full"
+   },
+   "why": "187 and 24.3% match"
+  },
+  "Q6-04": {
+   "score": 2,
+   "parts": {
+    "distinct_respondents_5plus": "full",
+    "pct_of_nonutility_cases": "full"
+   },
+   "why": "187 and 24.3% match"
+  },
+  "Q6-05": {
+   "score": 2,
+   "parts": {
+    "distinct_respondents_5plus": "full",
+    "pct_of_nonutility_cases": "full"
+   },
+   "why": "187 and 24.3% (1,760 of 7,242)"
+  },
+  "Q6-06": {
+   "score": 0,
+   "parts": {
+    "distinct_respondents_5plus": "zero",
+    "pct_of_nonutility_cases": "zero"
+   },
+   "why": "refusal; no number given"
+  },
+  "Q6-07": {
+   "score": 2,
+   "parts": {
+    "distinct_respondents_5plus": "full",
+    "pct_of_nonutility_cases": "full"
+   },
+   "why": "187 and 24.3% match"
+  },
+  "Q6-08": {
+   "score": 2,
+   "parts": {
+    "distinct_respondents_5plus": "full",
+    "pct_of_nonutility_cases": "full"
+   },
+   "why": "187 and 24.3% (1,759 of 7,243)"
+  },
+  "Q6-09": {
+   "score": 0,
+   "parts": {
+    "distinct_respondents_5plus": "zero",
+    "pct_of_nonutility_cases": "zero"
+   },
+   "why": "refusal; no number given"
+  }
+ },
+ "notes": ""
+}

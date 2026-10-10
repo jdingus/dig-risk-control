@@ -11,9 +11,11 @@ prints the numbers with case-number receipts.
 script-computed answer key before any folder file or run. Three arms, same model (Claude Sonnet 5.5), three
 runs each, sandboxed, graded blind.
 
-**The result:** no data 0/60 · the raw state orders 53/60 · the folder 60/60. On the held-out questions the raw
-orders tied the folder, 30/30. The folder's lasting advantage was cost: about 2.3× fewer tokens and 2.5× faster.
-Everything, losses included, is in **[results.md](results.md)**.
+**The result (Sonnet 5.5):** no data 0/60 · the raw state orders 53/60 · the folder 60/60. On the held-out
+questions the raw orders tied the folder, 30/30. **With Haiku 5.5** the raw orders scored 55/60 but used 4.7× the
+tokens; Haiku with the folder scored 60/60 and 30/30 for $0.20 per 45 answers at list price, against $5.42 for
+Sonnet on the raw orders. The folder's value was cost, and letting the cheap model match the expensive one.
+Everything, losses and wrong predictions included, is in **[results.md](results.md)**.
 
 ## Order of events (check it in `git log`)
 
@@ -29,6 +31,7 @@ Everything, losses included, is in **[results.md](results.md)**.
 | d0ba5c2, ea75841 | treatment run (folder), raw-files run |
 | 5a2c2de | blind grading |
 | 5cec281 … 8f50ad0 | folder v2 (failed its prediction), fresh-clone re-run, their grading, v1 restored |
+| a1c6ce6 … | the Haiku pair: predictions first, then runs (4eb5f43), then blind grading |
 
 ## Run it yourself
 
@@ -59,7 +62,8 @@ We did not run this route; our numbers come from `run.py`.
 | `key/` | the answer-key scripts, their outputs, the independent cross-checks, `compare.py` |
 | `folder/` | the folder under test (README, identity, rules, examples, reference/) |
 | `control/`, `raw-files/`, `treatment/` | raw stream-json transcripts per answer, settings and exact command, `AUDIT.txt` |
-| `treatment-v2/`, `rerun-fresh-clone/` | the failed v2 change; the fresh-clone re-run |
+| `treatment-v2/`, `rerun-fresh-clone/`, `haiku/` | the failed v2 change; the fresh-clone re-run; the Haiku pair |
+| `grading-haiku/`, `predictions-haiku.md` | the Haiku pair's predictions and blind grades |
 | `grading/`, `grading-2/` | blind packets, the hidden key, every grade with its reason, `scores.md` |
 | `data/` | originals, every cleaning step, schema, corrections ledger with evidence. Start at `data/README.md` |
 | `harness/`, `folder-build/`, `aborted/` | sandbox test report; how the folder was built; the aborted run |

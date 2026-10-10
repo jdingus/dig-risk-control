@@ -1,0 +1,78 @@
+{
+ "qid": "Q3",
+ "grades": {
+  "Q3-01": {
+   "score": 1,
+   "parts": {
+    "mean_16h": "half",
+    "mean_20a2": "half"
+   },
+   "why": "4192 vs 4199 and 3795 vs 3787 are not exact, within 10%: half each (1 of 2 credit)."
+  },
+  "Q3-02": {
+   "score": 2,
+   "parts": {
+    "mean_16h": "full",
+    "mean_20a2": "full"
+   },
+   "why": "4199 and 3787 exact."
+  },
+  "Q3-03": {
+   "score": 0,
+   "parts": {
+    "mean_16h": "zero",
+    "mean_20a2": "zero"
+   },
+   "why": "Refusal: no numbers given."
+  },
+  "Q3-04": {
+   "score": 0,
+   "parts": {
+    "mean_16h": "zero",
+    "mean_20a2": "zero"
+   },
+   "why": "Refusal: no numbers given."
+  },
+  "Q3-05": {
+   "score": 2,
+   "parts": {
+    "mean_16h": "full",
+    "mean_20a2": "full"
+   },
+   "why": "4199 and 3787 exact."
+  },
+  "Q3-06": {
+   "score": 2,
+   "parts": {
+    "mean_16h": "full",
+    "mean_20a2": "full"
+   },
+   "why": "4199 and 3787 exact."
+  },
+  "Q3-07": {
+   "score": 0,
+   "parts": {
+    "mean_16h": "zero",
+    "mean_20a2": "zero"
+   },
+   "why": "Refusal: no numbers given."
+  },
+  "Q3-08": {
+   "score": 2,
+   "parts": {
+    "mean_16h": "full",
+    "mean_20a2": "full"
+   },
+   "why": "Final answers 4199 (unrounded 4198.68) and 3787 exact."
+  },
+  "Q3-09": {
+   "score": 2,
+   "parts": {
+    "mean_16h": "full",
+    "mean_20a2": "full"
+   },
+   "why": "Final answers 4199 (unrounded 4198.68) and 3787 exact."
+  }
+ },
+ "notes": "Q3-01 dollar rule is exact for full; answer was off by $7 and $8."
+}

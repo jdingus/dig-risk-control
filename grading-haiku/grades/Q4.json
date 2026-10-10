@@ -1,0 +1,78 @@
+{
+ "qid": "Q4",
+ "grades": {
+  "Q4-01": {
+   "score": 0,
+   "parts": {
+    "pct_utility_warning_letter": "zero",
+    "pct_nonutility_warning_letter": "zero"
+   },
+   "why": "Refusal: no numbers given."
+  },
+  "Q4-02": {
+   "score": 2,
+   "parts": {
+    "pct_utility_warning_letter": "full",
+    "pct_nonutility_warning_letter": "full"
+   },
+   "why": "0.0 and 28.1."
+  },
+  "Q4-03": {
+   "score": 2,
+   "parts": {
+    "pct_utility_warning_letter": "full",
+    "pct_nonutility_warning_letter": "full"
+   },
+   "why": "0.0 and 27.8 (0.3 off, within 0.5)."
+  },
+  "Q4-04": {
+   "score": 2,
+   "parts": {
+    "pct_utility_warning_letter": "full",
+    "pct_nonutility_warning_letter": "full"
+   },
+   "why": "0.0 and 28.1."
+  },
+  "Q4-05": {
+   "score": 2,
+   "parts": {
+    "pct_utility_warning_letter": "full",
+    "pct_nonutility_warning_letter": "full"
+   },
+   "why": "0.0 and 28.1."
+  },
+  "Q4-06": {
+   "score": 2,
+   "parts": {
+    "pct_utility_warning_letter": "full",
+    "pct_nonutility_warning_letter": "full"
+   },
+   "why": "0.0 and 28.1."
+  },
+  "Q4-07": {
+   "score": 2,
+   "parts": {
+    "pct_utility_warning_letter": "full",
+    "pct_nonutility_warning_letter": "full"
+   },
+   "why": "0.0 and 28.1."
+  },
+  "Q4-08": {
+   "score": 0,
+   "parts": {
+    "pct_utility_warning_letter": "zero",
+    "pct_nonutility_warning_letter": "zero"
+   },
+   "why": "Refusal: no numbers given."
+  },
+  "Q4-09": {
+   "score": 0,
+   "parts": {
+    "pct_utility_warning_letter": "zero",
+    "pct_nonutility_warning_letter": "zero"
+   },
+   "why": "Refusal: no numbers given."
+  }
+ },
+ "notes": ""
+}

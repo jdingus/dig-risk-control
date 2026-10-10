@@ -1,0 +1,78 @@
+{
+ "qid": "Q9",
+ "grades": {
+  "Q9-01": {
+   "score": 0,
+   "parts": {
+    "most_common_other_party": "zero",
+    "pct_of_nonutility_cases": "zero"
+   },
+   "why": "refusal; no number given"
+  },
+  "Q9-02": {
+   "score": 0,
+   "parts": {
+    "most_common_other_party": "zero",
+    "pct_of_nonutility_cases": "zero"
+   },
+   "why": "refusal; no number given"
+  },
+  "Q9-03": {
+   "score": 2,
+   "parts": {
+    "most_common_other_party": "full",
+    "pct_of_nonutility_cases": "full"
+   },
+   "why": "Northern Indiana Public Service Company, 41.6% (2,941 of 7,063)"
+  },
+  "Q9-04": {
+   "score": 2,
+   "parts": {
+    "most_common_other_party": "full",
+    "pct_of_nonutility_cases": "full"
+   },
+   "why": "Northern Indiana Public Service Company, 41.6%"
+  },
+  "Q9-05": {
+   "score": 2,
+   "parts": {
+    "most_common_other_party": "full",
+    "pct_of_nonutility_cases": "full"
+   },
+   "why": "Northern Indiana Public Service Company, 41.6%"
+  },
+  "Q9-06": {
+   "score": 2,
+   "parts": {
+    "most_common_other_party": "full",
+    "pct_of_nonutility_cases": "full"
+   },
+   "why": "Northern Indiana Public Service Company, 41.6%"
+  },
+  "Q9-07": {
+   "score": 2,
+   "parts": {
+    "most_common_other_party": "full",
+    "pct_of_nonutility_cases": "full"
+   },
+   "why": "Northern Indiana Public Service Company, 41.6%"
+  },
+  "Q9-08": {
+   "score": 2,
+   "parts": {
+    "most_common_other_party": "full",
+    "pct_of_nonutility_cases": "full"
+   },
+   "why": "Northern Indiana Public Service Company, 41.6%"
+  },
+  "Q9-09": {
+   "score": 0,
+   "parts": {
+    "most_common_other_party": "zero",
+    "pct_of_nonutility_cases": "zero"
+   },
+   "why": "refusal; no number given"
+  }
+ },
+ "notes": ""
+}
