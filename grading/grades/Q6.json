@@ -1,0 +1,78 @@
+{
+ "qid": "Q6",
+ "grades": {
+  "Q6-01": {
+   "score": 2,
+   "parts": {
+    "distinct_respondents_5plus": "full",
+    "pct_of_nonutility_cases": "full"
+   },
+   "why": "187 and 24.3%"
+  },
+  "Q6-02": {
+   "score": 0,
+   "parts": {
+    "distinct_respondents_5plus": "zero",
+    "pct_of_nonutility_cases": "zero"
+   },
+   "why": "Refuses; no numbers given."
+  },
+  "Q6-03": {
+   "score": 2,
+   "parts": {
+    "distinct_respondents_5plus": "full",
+    "pct_of_nonutility_cases": "full"
+   },
+   "why": "187 and 24.3%"
+  },
+  "Q6-04": {
+   "score": 2,
+   "parts": {
+    "distinct_respondents_5plus": "full",
+    "pct_of_nonutility_cases": "full"
+   },
+   "why": "187 and 24.3%"
+  },
+  "Q6-05": {
+   "score": 1,
+   "parts": {
+    "distinct_respondents_5plus": "half",
+    "pct_of_nonutility_cases": "full"
+   },
+   "why": "180 is 3.7% below 187 (half band); 24.1% within 0.5 of 24.3 (full)"
+  },
+  "Q6-06": {
+   "score": 0,
+   "parts": {
+    "distinct_respondents_5plus": "zero",
+    "pct_of_nonutility_cases": "zero"
+   },
+   "why": "Refuses; no numbers given."
+  },
+  "Q6-07": {
+   "score": 2,
+   "parts": {
+    "distinct_respondents_5plus": "full",
+    "pct_of_nonutility_cases": "full"
+   },
+   "why": "187 and 24.3%"
+  },
+  "Q6-08": {
+   "score": 2,
+   "parts": {
+    "distinct_respondents_5plus": "full",
+    "pct_of_nonutility_cases": "full"
+   },
+   "why": "187 and 24.3%"
+  },
+  "Q6-09": {
+   "score": 0,
+   "parts": {
+    "distinct_respondents_5plus": "zero",
+    "pct_of_nonutility_cases": "zero"
+   },
+   "why": "Refuses; no numbers given."
+  }
+ },
+ "notes": "Q6-07 contains a muddled aside about 'riethriley construction co' but the committed numbers are 187 and 24.3. Q6-05 excluded 186 blank-template forms (its 9,777 cases), producing 180 / 24.1."
+}

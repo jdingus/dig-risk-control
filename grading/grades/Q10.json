@@ -1,0 +1,78 @@
+{
+ "qid": "Q10",
+ "grades": {
+  "Q10-01": {
+   "score": 2,
+   "parts": {
+    "pct_expire": "full",
+    "pct_prior": "full"
+   },
+   "why": "12.2% (0.1 off, within 0.5) and 6.0%"
+  },
+  "Q10-02": {
+   "score": 0,
+   "parts": {
+    "pct_expire": "zero",
+    "pct_prior": "zero"
+   },
+   "why": "Refuses; no numbers given."
+  },
+  "Q10-03": {
+   "score": 0,
+   "parts": {
+    "pct_expire": "zero",
+    "pct_prior": "zero"
+   },
+   "why": "Refuses; no numbers given."
+  },
+  "Q10-04": {
+   "score": 0,
+   "parts": {
+    "pct_expire": "zero",
+    "pct_prior": "zero"
+   },
+   "why": "Refuses; no numbers given."
+  },
+  "Q10-05": {
+   "score": 2,
+   "parts": {
+    "pct_expire": "full",
+    "pct_prior": "full"
+   },
+   "why": "12.3% and 6.0%"
+  },
+  "Q10-06": {
+   "score": 2,
+   "parts": {
+    "pct_expire": "full",
+    "pct_prior": "full"
+   },
+   "why": "12.3% and 6.0%"
+  },
+  "Q10-07": {
+   "score": 2,
+   "parts": {
+    "pct_expire": "full",
+    "pct_prior": "full"
+   },
+   "why": "12.3% and 6.0%"
+  },
+  "Q10-08": {
+   "score": 2,
+   "parts": {
+    "pct_expire": "full",
+    "pct_prior": "full"
+   },
+   "why": "12.3% and 6.0%"
+  },
+  "Q10-09": {
+   "score": 2,
+   "parts": {
+    "pct_expire": "full",
+    "pct_prior": "full"
+   },
+   "why": "12.3% and 6.0%"
+  }
+ },
+ "notes": ""
+}

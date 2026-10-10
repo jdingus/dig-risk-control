@@ -1,0 +1,78 @@
+{
+ "qid": "Q7",
+ "grades": {
+  "Q7-01": {
+   "score": 0,
+   "parts": {
+    "mean_2021": "zero",
+    "mean_2025": "zero"
+   },
+   "why": "Refuses; no numbers given."
+  },
+  "Q7-02": {
+   "score": 2,
+   "parts": {
+    "mean_2021": "full",
+    "mean_2025": "full"
+   },
+   "why": "$2,375 and $3,041"
+  },
+  "Q7-03": {
+   "score": 0,
+   "parts": {
+    "mean_2021": "zero",
+    "mean_2025": "zero"
+   },
+   "why": "Refuses; no numbers given."
+  },
+  "Q7-04": {
+   "score": 2,
+   "parts": {
+    "mean_2021": "full",
+    "mean_2025": "full"
+   },
+   "why": "$2,375 and $3,041"
+  },
+  "Q7-05": {
+   "score": 1,
+   "parts": {
+    "mean_2021": "half",
+    "mean_2025": "full"
+   },
+   "why": "2021 $2,368 is 0.3% off (half, not exact); 2025 $3,041 exact"
+  },
+  "Q7-06": {
+   "score": 0,
+   "parts": {
+    "mean_2021": "zero",
+    "mean_2025": "zero"
+   },
+   "why": "Refuses; no numbers given."
+  },
+  "Q7-07": {
+   "score": 2,
+   "parts": {
+    "mean_2021": "full",
+    "mean_2025": "full"
+   },
+   "why": "$2,375 and $3,041"
+  },
+  "Q7-08": {
+   "score": 2,
+   "parts": {
+    "mean_2021": "full",
+    "mean_2025": "full"
+   },
+   "why": "$2,375 and $3,041"
+  },
+  "Q7-09": {
+   "score": 2,
+   "parts": {
+    "mean_2021": "full",
+    "mean_2025": "full"
+   },
+   "why": "'about $2,375' (computed 2,374.65, rounds to 2,375) and 'about $3,041'"
+  }
+ },
+ "notes": "Q7-09 says 'about' and its 2021 total ($2,913,700 over 1,227) differs slightly from others, but the rounded committed answer is $2,375, so graded full."
+}

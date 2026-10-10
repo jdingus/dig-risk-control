@@ -1,0 +1,78 @@
+{
+ "qid": "Q1",
+ "grades": {
+  "Q1-01": {
+   "score": 2,
+   "parts": {
+    "pct_16h": "full",
+    "pct_20a2": "full"
+   },
+   "why": "39.6% and 22.9%."
+  },
+  "Q1-02": {
+   "score": 0,
+   "parts": {
+    "pct_16h": "zero",
+    "pct_20a2": "zero"
+   },
+   "why": "Refuses; gives no numbers."
+  },
+  "Q1-03": {
+   "score": 2,
+   "parts": {
+    "pct_16h": "full",
+    "pct_20a2": "full"
+   },
+   "why": "39.6% and 22.9%."
+  },
+  "Q1-04": {
+   "score": 2,
+   "parts": {
+    "pct_16h": "full",
+    "pct_20a2": "full"
+   },
+   "why": "39.6% and 22.9%."
+  },
+  "Q1-05": {
+   "score": 2,
+   "parts": {
+    "pct_16h": "full",
+    "pct_20a2": "full"
+   },
+   "why": "39.6% and 22.9%."
+  },
+  "Q1-06": {
+   "score": 2,
+   "parts": {
+    "pct_16h": "full",
+    "pct_20a2": "full"
+   },
+   "why": "39.6% and 22.9%."
+  },
+  "Q1-07": {
+   "score": 0,
+   "parts": {
+    "pct_16h": "zero",
+    "pct_20a2": "zero"
+   },
+   "why": "Refuses; gives no numbers."
+  },
+  "Q1-08": {
+   "score": 2,
+   "parts": {
+    "pct_16h": "full",
+    "pct_20a2": "full"
+   },
+   "why": "39.6% and 22.9%."
+  },
+  "Q1-09": {
+   "score": 0,
+   "parts": {
+    "pct_16h": "zero",
+    "pct_20a2": "zero"
+   },
+   "why": "Refuses; gives no numbers."
+  }
+ },
+ "notes": ""
+}
