@@ -252,6 +252,7 @@ def main():
     ap.add_argument("--workers", type=int, default=WORKERS)
     ap.add_argument("--preflight", action="store_true")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--out", help="write transcripts to <OUT>/raw instead of the committed arm folder (for re-runs)")
     a = ap.parse_args()
     if a.preflight:
         return preflight()
@@ -271,7 +272,7 @@ def main():
             shutil.rmtree(probe, ignore_errors=True)
     if a.dry_run:
         return
-    outdir = HERE / OUT_DIR.get(a.arm, a.arm) / "raw"
+    outdir = (pathlib.Path(a.out) / "raw") if a.out else HERE / OUT_DIR.get(a.arm, a.arm) / "raw"
     # Never write inside any arm's input files: a later run would copy earlier answers (aborted/folder-arm-attempt-1).
     for paths in ARMS.values():
         for pat in paths:
