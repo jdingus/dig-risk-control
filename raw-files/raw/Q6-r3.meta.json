@@ -1,0 +1,86 @@
+{
+ "arm": "raw",
+ "qid": "Q6",
+ "rep": 3,
+ "model": "claude-sonnet-5-5",
+ "wall_s": 47.8,
+ "returncode": 0,
+ "run_dir": "/tmp/r2run-jppurluh",
+ "claude_tmp_dir": "/tmp/r2tmp-39z0v_5i",
+ "files_in_run_dir_at_end": 116,
+ "command": [
+  "claude",
+  "-p",
+  "--model",
+  "claude-sonnet-5-5",
+  "--output-format",
+  "stream-json",
+  "--verbose",
+  "--tools",
+  "Read,Grep,Glob,Bash",
+  "--allowedTools",
+  "Read,Grep,Glob,Bash",
+  "--setting-sources",
+  "",
+  "--settings",
+  "/home/claude/projects/dig-risk-control/raw-files/raw/Q6-r3.settings.json",
+  "--strict-mcp-config",
+  "--no-session-persistence",
+  "--disable-slash-commands",
+  "--permission-mode",
+  "default",
+  "--system-prompt",
+  "You are a careful analyst. You can use the Read, Grep, Glob and Bash tools (Bash has Python 3). Your working directory is the only place you may look for files; use only files in it. Show the number or answer each question asks for in your final reply.",
+  "You are answering an actuarial question about Indiana's dig-damage enforcement record: the Indiana\nUtility Regulatory Commission's orders approving the Underground Plant Protection Advisory Committee's\nrecommendations under Indiana Code chapter 8-1-26, for the 58 orders dated 2021-01-01 through 2025-12-31.\nDefinitions used in every question:\n- **Case:** one recommendation form in an order (one case number on one page).\n- **Year:** the year of the order's date, not the damage date, unless the question says otherwise.\n- **Cite:** the IC 8-1-26 citation under \"finds the following violation(s)\". Every case has exactly one.\n  **Base section:** the cite without \"IC 8-1-26-\" and without any parenthesized word. Example:\n  \"IC 8-1-26-16(h)(expire)\" has base section \"16(h)\" and qualifier \"expire\". A parenthesized word is\n  two or more letters (hyphens allowed); single letters or digits in parentheses, like (h) or (a)(2), are\n  part of the base section, so \"20(a)(3)(b)\" is its own base section, not \"20(a)(2)\".\n- **Headline penalty:** the first dollar amount in the committee's recommendation, read as printed but\n  ignoring a doubled \"$\" and any space after a thousands comma (\"$$1000\" is $1,000; \"$3, 500\" is $3,500).\n  A recommendation with no \"$\" amount has a headline penalty of $0.\n- **Utility respondent:** a case whose respondent name, ignoring case and leading spaces, starts with one of:\n  \"CenterPoint\", \"Northern Indiana Public Service\", \"NIPSCO\", \"Citizens Gas\", \"Citizens Energy\",\n  \"Vectren\", \"Indiana American Water\", \"Ohio Valley Gas\", \"American Electric Power\", \"Duke Energy\",\n  \"Community Natural Gas\", \"Midwest Natural Gas\", \"Frontier Communications\". Every other case is a\n  **non-utility respondent**.\nGive each number exactly as the question asks (rounding stated). If you cannot compute it from data you\nhave, say so and give your best estimate, labelled as an estimate.\n\nRepeat concentration: take non-utility-respondent cases only. Normalize each respondent name, in this order: lowercase; delete every character that is not a letter, a digit or a space (no replacement); collapse runs of spaces to one and trim; then, once, drop a final whole word if it is exactly \"inc\", \"llc\", \"co\", \"corp\", \"corporation\" or \"company\". How many distinct normalized respondents have 5 or more cases, and what percentage of non-utility-respondent cases do they account for? Round the percentage to one decimal."
+ ],
+ "env_overrides": {
+  "CLAUDE_CODE_DISABLE_CLAUDE_MDS": "1",
+  "CLAUDE_CODE_DISABLE_AUTO_MEMORY": "1",
+  "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1"
+ },
+ "system_prompt": "You are a careful analyst. You can use the Read, Grep, Glob and Bash tools (Bash has Python 3). Your working directory is the only place you may look for files; use only files in it. Show the number or answer each question asks for in your final reply.",
+ "prompt": "You are answering an actuarial question about Indiana's dig-damage enforcement record: the Indiana\nUtility Regulatory Commission's orders approving the Underground Plant Protection Advisory Committee's\nrecommendations under Indiana Code chapter 8-1-26, for the 58 orders dated 2021-01-01 through 2025-12-31.\nDefinitions used in every question:\n- **Case:** one recommendation form in an order (one case number on one page).\n- **Year:** the year of the order's date, not the damage date, unless the question says otherwise.\n- **Cite:** the IC 8-1-26 citation under \"finds the following violation(s)\". Every case has exactly one.\n  **Base section:** the cite without \"IC 8-1-26-\" and without any parenthesized word. Example:\n  \"IC 8-1-26-16(h)(expire)\" has base section \"16(h)\" and qualifier \"expire\". A parenthesized word is\n  two or more letters (hyphens allowed); single letters or digits in parentheses, like (h) or (a)(2), are\n  part of the base section, so \"20(a)(3)(b)\" is its own base section, not \"20(a)(2)\".\n- **Headline penalty:** the first dollar amount in the committee's recommendation, read as printed but\n  ignoring a doubled \"$\" and any space after a thousands comma (\"$$1000\" is $1,000; \"$3, 500\" is $3,500).\n  A recommendation with no \"$\" amount has a headline penalty of $0.\n- **Utility respondent:** a case whose respondent name, ignoring case and leading spaces, starts with one of:\n  \"CenterPoint\", \"Northern Indiana Public Service\", \"NIPSCO\", \"Citizens Gas\", \"Citizens Energy\",\n  \"Vectren\", \"Indiana American Water\", \"Ohio Valley Gas\", \"American Electric Power\", \"Duke Energy\",\n  \"Community Natural Gas\", \"Midwest Natural Gas\", \"Frontier Communications\". Every other case is a\n  **non-utility respondent**.\nGive each number exactly as the question asks (rounding stated). If you cannot compute it from data you\nhave, say so and give your best estimate, labelled as an estimate.\n\nRepeat concentration: take non-utility-respondent cases only. Normalize each respondent name, in this order: lowercase; delete every character that is not a letter, a digit or a space (no replacement); collapse runs of spaces to one and trim; then, once, drop a final whole word if it is exactly \"inc\", \"llc\", \"co\", \"corp\", \"corporation\" or \"company\". How many distinct normalized respondents have 5 or more cases, and what percentage of non-utility-respondent cases do they account for? Round the percentage to one decimal.",
+ "settings": {
+  "sandbox": {
+   "enabled": true,
+   "failIfUnavailable": true,
+   "allowUnsandboxedCommands": false,
+   "autoAllowBashIfSandboxed": true,
+   "filesystem": {
+    "denyRead": [
+     "/home",
+     "/home/claude",
+     "/home/claude/projects/dig-risk-control",
+     "/root",
+     "/tmp",
+     "/tmp/claude",
+     "/tmp/claude-1000"
+    ],
+    "allowRead": [
+     "/tmp/r2run-jppurluh"
+    ]
+   },
+   "network": {
+    "allowedDomains": [],
+    "strictAllowlist": true
+   }
+  },
+  "permissions": {
+   "blockReadsOutsideWorkingDirectories": true,
+   "deny": [
+    "WebFetch",
+    "WebSearch",
+    "Read(//home/**)",
+    "Read(//root/**)",
+    "Read(//Users/**)",
+    "Read(//private/tmp/**)",
+    "Read(//tmp/claude/**)",
+    "Read(//tmp/claude-1000/**)",
+    "Read(~/**)",
+    "Read(//home/claude/projects/dig-risk-control/**)",
+    "Read(//home/claude/projects/dig-risk-control/**)"
+   ]
+  }
+ },
+ "stderr": ""
+}
