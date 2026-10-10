@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "applies_to": [
+    "cases.csv",
+    "cases_clean.csv"
+  ],
+  "notes": "required=true: a violation fails verify.py. required=false: a violation is a finding, reported in VERIFY.md and not a failure. nullable=true: an empty cell is allowed. A pattern is matched against the whole cell (re.fullmatch). A check is a named pattern that must NOT occur anywhere in the cell (re.search). Date type: the cell must match the pattern and parse with format (strptime). Meaning of each column: SCHEMA.md.",
+  "columns": [
+    {
+      "name": "order_file",
+      "type": "string",
+      "nullable": false,
+      "required": true,
+      "pattern": "ord_PSD(?:NPT)?_(?:\\d{6}|\\d{2}\\.\\d{2}\\.\\d{2})\\.pdf",
+      "description": "File name of the order PDF the page is in."
+    },
+    {
+      "name": "order_date",
+      "type": "date",
+      "nullable": false,
+      "required": true,
+      "format": "%Y-%m-%d",
+      "pattern": "\\d{4}-\\d{2}-\\d{2}",
+      "description": "Date of the order, taken from the file name."
+    },
+    {
+      "name": "page",
+      "type": "int",
+      "nullable": false,
+      "required": true,
+      "pattern": "[1-9]\\d*",
+      "min": 1,
+      "description": "Page number in the order PDF, counting the cover page as 1."
+    },
+    {
+      "name": "case_number",
+      "type": "string",
+      "nullable": false,
+      "required": false,
+      "pattern": "\\d{5}",
+      "description": "Case number printed on the form: five digits."
+    },
+    {
+      "name": "respondent",
+      "type": "string",
+      "nullable": true,
+      "required": false,
+      "checks": [
+        {
+          "name": "label_or_form_text_in_value",
+          "not_pattern": "Date\\s+(?:of|nf)\\s|Dam\\.age|Damage\\s+Location|Advisory\\s+Meeting|IURC|violation\\(s\\)"
+        }
+      ],
+      "description": "Respondent as printed."
+    },
+    {
+      "name": "other_party",
+      "type": "string",
+      "nullable": true,
+      "required": false,
+      "checks": [
+        {
+          "name": "label_or_form_text_in_value",
+          "not_pattern": "Date\\s+(?:of|nf)\\s|Dam\\.age|Damage\\s+Location|Advisory\\s+Meeting|IURC|violation\\(s\\)"
+        }
+      ],
+      "description": "Other Party as printed."
+    },
+    {
+      "name": "advisory_meeting_date",
+      "type": "date",
+      "nullable": true,
+      "required": false,
+      "format": "%m/%d/%Y",
+      "pattern": "\\d{1,2}/\\d{1,2}/\\d{4}",
+      "description": "Date of Advisory Meeting as printed, month/day/year."
+    },
+    {
+      "name": "damage_date",
+      "type": "date",
+      "nullable": true,
+      "required": false,
+      "format": "%m/%d/%Y",
+      "pattern": "\\d{1,2}/\\d{1,2}/\\d{4}",
+      "description": "Date of Damage as printed, month/day/year."
+    },
+    {
+      "name": "damage_location",
+      "type": "string",
+      "nullable": true,
+      "required": false,
+      "pattern": "[^,]+,\\s*\\S.*",
+      "checks": [
+        {
+          "name": "label_or_form_text_in_value",
+          "not_pattern": "IC\\s?8-|Date\\s+of|violation|##"
+        }
+      ],
+      "description": "Damage Location as printed: street address, then a comma, then the city."
+    },
+    {
+      "name": "violations",
+      "type": "string",
+      "nullable": true,
+      "required": false,
+      "pattern": "IC 8-1-26-(?:16\\((?:h|i)\\)|18\\((?:h|j)\\)|19\\(c\\)|20\\(a\\)(?:\\(1\\)|\\(2\\)|\\(3\\)\\((?:a|b)\\)))(?:\\((?:locator-error|no-response|expire|prior|records|out|other)\\))?(?:; IC 8-1-26-(?:16\\((?:h|i)\\)|18\\((?:h|j)\\)|19\\(c\\)|20\\(a\\)(?:\\(1\\)|\\(2\\)|\\(3\\)\\((?:a|b)\\)))(?:\\((?:locator-error|no-response|expire|prior|records|out|other)\\))?)*",
+      "description": "Cite(s) found by the Pipeline Safety Division, joined with '; ', each with its printed qualifier."
+    },
+    {
+      "name": "recommendation",
+      "type": "string",
+      "nullable": true,
+      "required": false,
+      "checks": [
+        {
+          "name": "doubled_dollar_sign",
+          "not_pattern": "\\$\\$"
+        },
+        {
+          "name": "checkbox_form_not_resolved",
+          "not_pattern": "[\u25a1\u2610]|^D "
+        },
+        {
+          "name": "amount_without_dollar_sign",
+          "not_pattern": "^\\.?\\d+$"
+        },
+        {
+          "name": "amount_split_by_space",
+          "not_pattern": "\\$\\d{1,2}(?:,\\s|\\s|$)"
+        }
+      ],
+      "description": "Recommendation as printed (free text)."
+    },
+    {
+      "name": "abstentions",
+      "type": "string",
+      "nullable": true,
+      "required": false,
+      "checks": [
+        {
+          "name": "label_text_in_value",
+          "not_pattern": "Additional|Infonnation|Information"
+        }
+      ],
+      "description": "Abstentions as printed: names of members who abstained; empty when none printed."
+    },
+    {
+      "name": "additional_info",
+      "type": "string",
+      "nullable": true,
+      "required": false,
+      "description": "Additional Information as printed; empty when none printed."
+    },
+    {
+      "name": "scan",
+      "type": "enum",
+      "nullable": false,
+      "required": true,
+      "values": [
+        "yes",
+        "no"
+      ],
+      "description": "yes when one embedded image covers more than 60 percent of the page."
+    }
+  ],
+  "keys": [
+    {
+      "name": "order_file+page",
+      "columns": [
+        "order_file",
+        "page"
+      ],
+      "unique": true,
+      "required": true
+    },
+    {
+      "name": "order_file+case_number",
+      "columns": [
+        "order_file",
+        "case_number"
+      ],
+      "unique": true,
+      "required": false
+    }
+  ]
+}

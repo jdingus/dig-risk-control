@@ -5,8 +5,10 @@ Usage (from the repo root):
 Exits 1 if any check fails (the report is still written).
 """
 import csv
+import datetime
 import glob
 import hashlib
+import json
 import os
 import re
 import sys
@@ -98,11 +100,83 @@ scan_yes = sum(1 for r in cases if r["scan"] == "yes")
 check(f"scan=yes count equals the AUDIT.md expectation ({EXPECTED_SCAN_YES})", scan_yes == EXPECTED_SCAN_YES,
       f"scan=yes: {scan_yes}")
 
-# 7. cases_clean.csv matches cases.csv while the ledger is empty
+# 7. cases_clean.csv is cases.csv plus the ledger and nothing else
 ledger = read_csv(os.path.join(DATA, "corrections.csv"))
 clean = read_csv(os.path.join(DATA, "cases_clean.csv"))
-check("cases_clean.csv has the same rows as cases.csv", len(clean) == len(cases) and (ledger or clean == cases),
-      f"corrections: {len(ledger)}; cases_clean rows: {len(clean)}")
+expected = {}
+for e in ledger:
+    expected[(e["order_file"], e["page"], e["field"])] = e["new_value"]
+stray = []
+same_shape = len(clean) == len(cases)
+if same_shape:
+    for a, b in zip(cases, clean):
+        for c in CASE_COLS:
+            want = expected.get((a["order_file"], a["page"], c), a[c])
+            if b[c] != want:
+                stray.append((a["order_file"], a["page"], c))
+check("cases_clean.csv equals cases.csv with the ledger applied, and nothing else",
+      same_shape and not stray and len(expected) == len(ledger),
+      f"corrections: {len(ledger)}; cases_clean rows: {len(clean)}; cells that differ from cases.csv plus ledger: {len(stray)}")
+
+# 7b. ledger rows carry evidence that exists in the repo and a checker
+bad_ev = [e["evidence"] for e in ledger
+          if not e["evidence"] or not os.path.exists(os.path.join(DATA, "..", e["evidence"])) or not e["checked_by"]]
+check("every ledger row has an existing evidence file and a checked_by", not bad_ev,
+      f"{len(ledger)} ledger rows checked" + (f"; bad: {bad_ev[:3]}" if bad_ev else ""))
+
+# 8. cases_clean.csv against schema.json
+with open(os.path.join(DATA, "schema.json"), encoding="utf-8") as f:
+    SCHEMA = json.load(f)
+check("schema.json columns match the cases.csv header", [c["name"] for c in SCHEMA["columns"]] == CASE_COLS,
+      f"{len(SCHEMA['columns'])} columns in schema.json")
+findings = {}   # (column, rule) -> list of (order_file, page)
+required_fail = set()  # columns with a required-rule violation
+
+
+def finding(col, rule, row, required):
+    findings.setdefault((col, rule), []).append((row["order_file"], row["page"]))
+    if required:
+        required_fail.add(col)
+
+
+for row in clean:
+    for col in SCHEMA["columns"]:
+        name, v = col["name"], row[col["name"]]
+        req = col["required"]
+        if v == "":
+            if not col["nullable"]:
+                finding(name, "empty but not nullable", row, req)
+            continue
+        if "pattern" in col and not re.fullmatch(col["pattern"], v):
+            finding(name, "pattern", row, req)
+            continue
+        if col["type"] == "enum" and v not in col["values"]:
+            finding(name, "enum", row, req)
+        elif col["type"] == "int":
+            if int(v) < col.get("min", 0):
+                finding(name, "below min", row, req)
+        elif col["type"] == "date":
+            try:
+                datetime.datetime.strptime(v, col["format"])
+            except ValueError:
+                finding(name, "not a real date", row, req)
+        for ch in col.get("checks", []):
+            if re.search(ch["not_pattern"], v):
+                finding(name, ch["name"], row, req)
+for key in SCHEMA["keys"]:
+    seen = {}
+    for row in clean:
+        seen.setdefault(tuple(row[c] for c in key["columns"]), []).append((row["order_file"], row["page"]))
+    for k, where in seen.items():
+        if len(where) > 1:
+            for w in where:
+                findings.setdefault(("(key " + key["name"] + ")", "duplicate key"), []).append(w)
+            if key["required"]:
+                required_fail.add("(key " + key["name"] + ")")
+check("cases_clean.csv: required schema columns and keys have no violation", not required_fail,
+      "required violations: " + (", ".join(sorted(required_fail)) if required_fail else "none")
+      + f"; findings (non-required): {sum(len(v) for v in findings.values())} cells in "
+      f"{len({k[0] for k in findings})} columns, see Schema findings")
 
 # write VERIFY.md
 failed = [r for r in results if not r[1]]
@@ -121,6 +195,23 @@ lines += ["", "## Counts", "",
           "| column | empty rows |", "|---|---|"]
 for c in CASE_COLS:
     lines.append(f"| {c} | {empty[c]} |")
+lines += ["", "## Schema findings (cases_clean.csv against schema.json)", "",
+          "A finding is a value that breaks a schema rule where the column is not marked required. "
+          "It is reported, not fixed here. Rows per column count each row once. "
+          "Examples are order_file page.", ""]
+if findings:
+    lines += ["| column | rows with a finding | rule | rows | examples |", "|---|---|---|---|---|"]
+    by_col = {}
+    for (c, rule), where in findings.items():
+        by_col.setdefault(c, []).append((rule, where))
+    order = {c: i for i, c in enumerate(CASE_COLS)}
+    for c in sorted(by_col, key=lambda x: order.get(x, 99)):
+        distinct_rows = len({w for _, where in by_col[c] for w in where})
+        for rule, where in sorted(by_col[c]):
+            ex = ", ".join(f"{o[:-4]} p{p}" for o, p in where[:3])
+            lines.append(f"| {c} | {distinct_rows} | {rule} | {len(where)} | {ex}{', ...' if len(where) > 3 else ''} |")
+else:
+    lines.append("No findings.")
 lines.append("")
 with open(os.path.join(DATA, "VERIFY.md"), "w", encoding="utf-8") as f:
     f.write("\n".join(lines))
