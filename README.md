@@ -15,6 +15,8 @@ runs each, sandboxed, graded blind.
 questions the raw orders tied the folder, 30/30. **With Haiku 5.5** the raw orders scored 55/60 but used 4.7× the
 tokens; Haiku with the folder scored 60/60 and 30/30 for $0.20 per 45 answers at list price, against $5.42 for
 Sonnet on the raw orders. The folder's value was cost, and letting the cheap model match the expensive one.
+**With no Python at all** (read and search only), raw files fell to 30/60 and 18/30, while a folder of pre-computed
+tables scored 55/60 and 30/30 at the lowest cost of the entry. Without code, the folder is what makes the answer.
 Everything, losses and wrong predictions included, is in **[results.md](results.md)**.
 
 ## Order of events (check it in `git log`)
@@ -64,6 +66,7 @@ We did not run this route; our numbers come from `run.py`.
 | `control/`, `raw-files/`, `treatment/` | raw stream-json transcripts per answer, settings and exact command, `AUDIT.txt` |
 | `treatment-v2/`, `rerun-fresh-clone/`, `haiku/` | the failed v2 change; the fresh-clone re-run; the Haiku pair |
 | `grading-haiku/`, `predictions-haiku.md` | the Haiku pair's predictions and blind grades |
+| `nocode/`, `folder-nocode/`, `grading-nocode/`, `predictions-nocode.md` | the no-Python test: runs, the pre-computed folder (and `folder-nocode-build/`), grades, predictions |
 | `grading/`, `grading-2/` | blind packets, the hidden key, every grade with its reason, `scores.md` |
 | `data/` | originals, every cleaning step, schema, corrections ledger with evidence. Start at `data/README.md` |
 | `harness/`, `folder-build/`, `aborted/` | sandbox test report; how the folder was built; the aborted run |

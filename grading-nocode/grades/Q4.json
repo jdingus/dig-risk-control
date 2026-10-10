@@ -1,0 +1,78 @@
+{
+ "qid": "Q4",
+ "grades": {
+  "Q4-01": {
+   "score": 0,
+   "parts": {
+    "utility": "zero",
+    "nonutility": "zero"
+   },
+   "why": "Refused to compute either percentage."
+  },
+  "Q4-02": {
+   "score": 2,
+   "parts": {
+    "utility": "full",
+    "nonutility": "full"
+   },
+   "why": "0.0% (1/2,715) and 28.1% (2,032/7,243)."
+  },
+  "Q4-03": {
+   "score": 2,
+   "parts": {
+    "utility": "full",
+    "nonutility": "full"
+   },
+   "why": "0.0% and 28.1%."
+  },
+  "Q4-04": {
+   "score": 2,
+   "parts": {
+    "utility": "full",
+    "nonutility": "full"
+   },
+   "why": "0.0% and 28.1%."
+  },
+  "Q4-05": {
+   "score": 2,
+   "parts": {
+    "utility": "full",
+    "nonutility": "full"
+   },
+   "why": "0.0% and 28.1%."
+  },
+  "Q4-06": {
+   "score": 2,
+   "parts": {
+    "utility": "full",
+    "nonutility": "full"
+   },
+   "why": "0.0% and 28.1%."
+  },
+  "Q4-07": {
+   "score": 2,
+   "parts": {
+    "utility": "full",
+    "nonutility": "full"
+   },
+   "why": "0.0% and 28.1%."
+  },
+  "Q4-08": {
+   "score": 2,
+   "parts": {
+    "utility": "full",
+    "nonutility": "full"
+   },
+   "why": "0.0% and 28.1% (2,033/7,243)."
+  },
+  "Q4-09": {
+   "score": 2,
+   "parts": {
+    "utility": "full",
+    "nonutility": "full"
+   },
+   "why": "0.0% and 28.0%, within 0.5 of key 28.1."
+  }
+ },
+ "notes": ""
+}

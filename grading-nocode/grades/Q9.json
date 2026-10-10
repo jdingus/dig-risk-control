@@ -1,0 +1,78 @@
+{
+ "qid": "Q9",
+ "grades": {
+  "Q9-01": {
+   "score": 1,
+   "parts": {
+    "most_common_other_party": "full",
+    "pct_of_nonutility_cases": "half"
+   },
+   "why": "Name correct; 40.6% is 1.0 point off 41.6 (half)."
+  },
+  "Q9-02": {
+   "score": 1,
+   "parts": {
+    "most_common_other_party": "full",
+    "pct_of_nonutility_cases": "half"
+   },
+   "why": "Name correct; 40.6% (half)."
+  },
+  "Q9-03": {
+   "score": 0,
+   "parts": {
+    "most_common_other_party": "zero",
+    "pct_of_nonutility_cases": "zero"
+   },
+   "why": "No answer."
+  },
+  "Q9-04": {
+   "score": 0,
+   "parts": {
+    "most_common_other_party": "zero",
+    "pct_of_nonutility_cases": "zero"
+   },
+   "why": "No answer."
+  },
+  "Q9-05": {
+   "score": 2,
+   "parts": {
+    "most_common_other_party": "full",
+    "pct_of_nonutility_cases": "full"
+   },
+   "why": "NIPSCO, 41.6% (3,015 of 7,243)."
+  },
+  "Q9-06": {
+   "score": 2,
+   "parts": {
+    "most_common_other_party": "full",
+    "pct_of_nonutility_cases": "full"
+   },
+   "why": "NIPSCO, 41.6% (3,015 of 7,243)."
+  },
+  "Q9-07": {
+   "score": 0,
+   "parts": {
+    "most_common_other_party": "zero",
+    "pct_of_nonutility_cases": "zero"
+   },
+   "why": "No answer."
+  },
+  "Q9-08": {
+   "score": 2,
+   "parts": {
+    "most_common_other_party": "full",
+    "pct_of_nonutility_cases": "full"
+   },
+   "why": "NIPSCO, 41.6% (3,015 of 7,243)."
+  },
+  "Q9-09": {
+   "score": 1,
+   "parts": {
+    "most_common_other_party": "full",
+    "pct_of_nonutility_cases": "half"
+   },
+   "why": "Name correct; 'about 40.6%' (half)."
+  }
+ },
+ "notes": ""
+}

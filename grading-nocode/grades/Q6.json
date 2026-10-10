@@ -1,0 +1,78 @@
+{
+ "qid": "Q6",
+ "grades": {
+  "Q6-01": {
+   "score": 1,
+   "parts": {
+    "distinct_respondents_5plus": "half",
+    "pct_of_nonutility_cases": "full"
+   },
+   "why": "Count given as 'about 187 to 189' (ambiguous, take worse 189 = 1.07% off, half); best single estimate 24.2% is within 0.5 of 24.3."
+  },
+  "Q6-02": {
+   "score": 0,
+   "parts": {
+    "distinct_respondents_5plus": "zero",
+    "pct_of_nonutility_cases": "zero"
+   },
+   "why": "No number given; refused."
+  },
+  "Q6-03": {
+   "score": 0,
+   "parts": {
+    "distinct_respondents_5plus": "zero",
+    "pct_of_nonutility_cases": "zero"
+   },
+   "why": "No number given; refused."
+  },
+  "Q6-04": {
+   "score": 2,
+   "parts": {
+    "distinct_respondents_5plus": "full",
+    "pct_of_nonutility_cases": "full"
+   },
+   "why": "Estimate about 186 respondents (0.5% off 187) and 24.1% (within 0.5 of 24.3)."
+  },
+  "Q6-05": {
+   "score": 0,
+   "parts": {
+    "distinct_respondents_5plus": "zero",
+    "pct_of_nonutility_cases": "zero"
+   },
+   "why": "Explicitly no answer or estimate."
+  },
+  "Q6-06": {
+   "score": 0,
+   "parts": {
+    "distinct_respondents_5plus": "zero",
+    "pct_of_nonutility_cases": "zero"
+   },
+   "why": "No answer; only a non-utility case estimate of about 7,250."
+  },
+  "Q6-07": {
+   "score": 1,
+   "parts": {
+    "distinct_respondents_5plus": "half",
+    "pct_of_nonutility_cases": "full"
+   },
+   "why": "Estimate roughly 186-189 names (ambiguous, take worse 189 = half); about 24% is within 0.5 of 24.3."
+  },
+  "Q6-08": {
+   "score": 0,
+   "parts": {
+    "distinct_respondents_5plus": "zero",
+    "pct_of_nonutility_cases": "zero"
+   },
+   "why": "Not computed; script only."
+  },
+  "Q6-09": {
+   "score": 0,
+   "parts": {
+    "distinct_respondents_5plus": "zero",
+    "pct_of_nonutility_cases": "zero"
+   },
+   "why": "No number given; refused."
+  }
+ },
+ "notes": "Q6-01 and Q6-07 give a count range spanning the full (+-1%) boundary (188.87); scored on the worse end per rule."
+}

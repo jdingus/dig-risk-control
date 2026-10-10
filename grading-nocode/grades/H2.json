@@ -1,0 +1,87 @@
+{
+ "qid": "H2",
+ "grades": {
+  "H2-01": {
+   "score": 0,
+   "parts": {
+    "mean_lag_days_2023": "zero",
+    "mean_lag_days_2024": "zero",
+    "percent_lag_over_365_all_years": "zero"
+   },
+   "why": "Only vague ranges (150-250 days, single digits); no committed numbers."
+  },
+  "H2-02": {
+   "score": 2,
+   "parts": {
+    "mean_lag_days_2023": "full",
+    "mean_lag_days_2024": "full",
+    "percent_lag_over_365_all_years": "full"
+   },
+   "why": "227, 188, 12.6%."
+  },
+  "H2-03": {
+   "score": 0,
+   "parts": {
+    "mean_lag_days_2023": "zero",
+    "mean_lag_days_2024": "zero",
+    "percent_lag_over_365_all_years": "zero"
+   },
+   "why": "Refuses; partial counts only."
+  },
+  "H2-04": {
+   "score": 0,
+   "parts": {
+    "mean_lag_days_2023": "zero",
+    "mean_lag_days_2024": "zero",
+    "percent_lag_over_365_all_years": "zero"
+   },
+   "why": "Refuses; gives commands only."
+  },
+  "H2-05": {
+   "score": 0,
+   "parts": {
+    "mean_lag_days_2023": "zero",
+    "mean_lag_days_2024": "zero",
+    "percent_lag_over_365_all_years": "zero"
+   },
+   "why": "Refuses."
+  },
+  "H2-06": {
+   "score": 0,
+   "parts": {
+    "mean_lag_days_2023": "zero",
+    "mean_lag_days_2024": "zero",
+    "percent_lag_over_365_all_years": "zero"
+   },
+   "why": "Refuses; not computed."
+  },
+  "H2-07": {
+   "score": 2,
+   "parts": {
+    "mean_lag_days_2023": "full",
+    "mean_lag_days_2024": "full",
+    "percent_lag_over_365_all_years": "full"
+   },
+   "why": "227, 188, 12.6%."
+  },
+  "H2-08": {
+   "score": 0,
+   "parts": {
+    "mean_lag_days_2023": "zero",
+    "mean_lag_days_2024": "zero",
+    "percent_lag_over_365_all_years": "zero"
+   },
+   "why": "Refuses; gives commands only."
+  },
+  "H2-09": {
+   "score": 2,
+   "parts": {
+    "mean_lag_days_2023": "full",
+    "mean_lag_days_2024": "full",
+    "percent_lag_over_365_all_years": "full"
+   },
+   "why": "227, 188, 12.6%."
+  }
+ },
+ "notes": ""
+}

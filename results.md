@@ -125,6 +125,44 @@ mixed across the three Haiku arms (`grading-haiku/scores.md`).
 | every Haiku arm faster than the same Sonnet arm | **wrong**: raw 56 s vs 30 s, folder 13 s vs 12 s; only the empty control was faster |
 | Haiku folder uses at most half the Haiku raw tokens | right: about a fifth |
 
+## Take the Python away (pre-registered in predictions-nocode.md, 4820967)
+
+Is the folder's edge the folder, or the Python it lets the model run? Same questions, key and sandbox; Haiku 5.5 at
+low effort; tools `Read,Grep,Glob` only (0 shell calls in all 135 transcripts). A third folder, `folder-nocode/`,
+was built for this by a sealed agent: the same five-item shape with ~37k tokens of pre-computed summary tables and
+no table or tool (578f3fc, after the predictions). Graded blind together (`grading-nocode/scores.md`).
+
+**The 2×2 (Haiku):** my 10 questions / held-out / tokens per answer (median)
+
+| | raw files, no folder | folder |
+|---|---|---|
+| **with Python** | 55/60 · 28/30 · 401,098 | 60/60 · 30/30 · 84,870 |
+| **no Python** | 30/60 · 18/30 · 193,367 | shipped folder: 36/60 · 23/30 · 132,038 · **pre-computed folder: 55/60 · 30/30 · 59,924** |
+
+- **Without code, the folder makes the difference, and it holds on questions I did not write:** pre-computed folder
+  55/60 and 30/30, raw files 30/60 and 18/30. This is the clearest folder advantage in the whole entry.
+- **The folder has to fit the deployment.** The shipped folder relies on its Python tool; without code it barely
+  beat raw files (36 vs 30). The folder built for no code nearly matched the with-Python results, and was the
+  cheapest and fastest arm of the entry (60k tokens, 11 s per answer, $0.26 list for 45 answers).
+- **Where the pre-computed folder still missed:** cuts nobody pre-built. Q6 (repeat respondents, 4/6) uses the
+  question's own name normalisation; the tables have exact and loose spellings. Q8 (escalation count, 3/6).
+- **Disclosure:** the pre-computed tables include cuts that match some sealed questions: top cities (H1), damage-to-
+  order lag (H2), abstentions by year (H3), names with k+ cases (Q6). The builder never saw the questions; these are
+  ordinary actuarial cuts. It is also exactly the trade this test measures: a no-code folder wins where it pre-built
+  the cut, and loses where it did not.
+
+**My no-Python predictions, scored: every row wrong, in the same direction.**
+
+| Arm | Predicted (my 10 / held-out) | Result |
+|---|---|---|
+| raw files, no folder | 5–20 / 0–10 | **30 / 18** |
+| shipped folder | 5–20 / 0–10 | **36 / 23** |
+| pre-computed folder | 30–50 / 10–25 | **55 / 30** |
+
+I underestimated read-and-search: `grep -c` answers plain counting questions (Q1, Q2, Q10 were full marks in
+every arm) without any code. What failed without code were means and medians (Q3, Q7), name grouping (Q6) and
+custom cuts (H2): the things a folder can carry pre-computed.
+
 ## Reproduction
 
 - **Fresh clone, same commands a judge runs** (`rerun-fresh-clone/`): cloned from GitHub at bec716b, preflight,

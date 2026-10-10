@@ -1,0 +1,78 @@
+{
+ "qid": "Q7",
+ "grades": {
+  "Q7-01": {
+   "score": 0,
+   "parts": {
+    "mean_2021": "zero",
+    "mean_2025": "zero"
+   },
+   "why": "Only a one-file mean of $2,625 (not a year figure, 10.5% off) and a vague 'low-to-mid thousands'; no 2025 value."
+  },
+  "Q7-02": {
+   "score": 2,
+   "parts": {
+    "mean_2021": "full",
+    "mean_2025": "full"
+   },
+   "why": "$2,375 and $3,041 exact."
+  },
+  "Q7-03": {
+   "score": 0,
+   "parts": {
+    "mean_2021": "half",
+    "mean_2025": "zero"
+   },
+   "why": "Estimate about $2,400 for 2021 (within 10%, half); no 2025 value."
+  },
+  "Q7-04": {
+   "score": 0,
+   "parts": {
+    "mean_2021": "zero",
+    "mean_2025": "zero"
+   },
+   "why": "Not computed."
+  },
+  "Q7-05": {
+   "score": 0,
+   "parts": {
+    "mean_2021": "zero",
+    "mean_2025": "zero"
+   },
+   "why": "Not computed."
+  },
+  "Q7-06": {
+   "score": 1,
+   "parts": {
+    "mean_2021": "half",
+    "mean_2025": "half"
+   },
+   "why": "Best figures: 2021 six-order mean $2,378 (within 10%, half) and 2025 estimate roughly $2,800 (7.9% off, half)."
+  },
+  "Q7-07": {
+   "score": 2,
+   "parts": {
+    "mean_2021": "full",
+    "mean_2025": "full"
+   },
+   "why": "$2,375 and $3,041 exact."
+  },
+  "Q7-08": {
+   "score": 2,
+   "parts": {
+    "mean_2021": "full",
+    "mean_2025": "full"
+   },
+   "why": "$2,375 and $3,041 exact."
+  },
+  "Q7-09": {
+   "score": 0,
+   "parts": {
+    "mean_2021": "zero",
+    "mean_2025": "zero"
+   },
+   "why": "Not computed; explicitly no estimate."
+  }
+ },
+ "notes": "Q7-06's 2021 figure is a partial (six of ten orders) but presented as best figure; 2025 is labelled estimate."
+}
