@@ -11,11 +11,12 @@ of every question in every arm. Graded blind against an answer key computed by s
 
 | Arm | What the model had | Folder? | Transcripts |
 |---|---|---|---|
-| **control** | nothing | no | `control/raw/` |
-| **raw** | the 58 orders as published (PDF) and their page text | no | `raw-files/raw/` |
+| **control: no folder, no files** | nothing (the brief's required "no folder" run) | no | `control/raw/` |
+| **raw files, no folder** | the 58 orders as published (PDF) and their page text | no | `raw-files/raw/` |
 | **folder** | `folder/`: README, identity, rules, examples, reference/ (the cleaned table, schema, glossary, law text, a query tool) | yes | `treatment/raw/` |
 
-`control` is the literal "no folder" run the brief asks for. `raw` is the control that matters: the same data
+"No folder, no files" is the literal "no folder" run the brief asks for: here the folder is where the data lives, so
+this arm has nothing to compute from and scores 0 by construction. "Raw files, no folder" is the control that matters: the same data
 with no map, no definitions and no cleaning. That is the comparison that tests the folder.
 
 ## Correctness
@@ -23,7 +24,7 @@ with no map, no definitions and no cleaning. That is the comparison that tests t
 0 = wrong or refused, 1 = partial, 2 = full, per the tolerances in `questions.md`. Three runs, so 6 is the
 maximum per question. From `grading/scores.md`.
 
-| Q | Topic | control | raw | folder |
+| Q | Topic | no folder, no files | raw files, no folder | folder |
 |---|---|---|---|---|
 | Q1 | share of 16(h) and 20(a)(2) cases | 0 | 6 | 6 |
 | Q2 | cases per year, busiest year | 0 | 6 | 6 |
@@ -44,7 +45,7 @@ maximum per question. From `grading/scores.md`.
 Medians per answer, from the transcripts (`grading/scores.md`). List price as reported by Claude Code; the runs
 used a subscription, so nothing was billed.
 
-| | control | raw | folder |
+| | no folder, no files | raw files, no folder | folder |
 |---|---|---|---|
 | tokens (input incl. cache + output) | 25,180 | 142,817 | 61,662 |
 | tool calls | 3 | 9 | 5 |
@@ -53,7 +54,7 @@ used a subscription, so nothing was billed.
 
 ## What the folder actually won, and why
 
-- **Against no data: everything.** 0 vs 60. Not informative: the control had nothing to compute from. Every control answer said
+- **Against "no folder, no files": everything.** 0 vs 60. Not informative: that arm had nothing to compute from. Every control answer said
   it had no data; 38 of 45 mention an estimate, and some declined to give one.
 - **Against the raw orders: 7 points of 60, all near-misses on one number.** Every raw-arm miss was a number
   just outside tolerance, never a wrong method or a refusal. The one I traced to the bottom: Q8. The raw arm
@@ -98,7 +99,7 @@ used a subscription, so nothing was billed.
 Same questions, key, preamble, sandbox and arms; only `--model claude-haiku-5-5 --effort low`. Graded blind,
 mixed across the three Haiku arms (`grading-haiku/scores.md`).
 
-| Haiku 5.5, low effort | control | raw | folder |
+| Haiku 5.5, low effort | no folder, no files | raw files, no folder | folder |
 |---|---|---|---|
 | my 10 questions | 0/60 | 55/60 | **60/60** |
 | held-out | 0/30 | 28/30 | **30/30** |

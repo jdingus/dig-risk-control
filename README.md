@@ -11,7 +11,7 @@ prints the numbers with case-number receipts.
 script-computed answer key before any folder file or run. Three arms, same model (Claude Sonnet 5.5), three
 runs each, sandboxed, graded blind.
 
-**The result (Sonnet 5.5):** no data 0/60 · the raw state orders 53/60 · the folder 60/60. On the held-out
+**The result (Sonnet 5.5):** no folder, no files 0/60 · raw files, no folder 53/60 · the folder 60/60. On the held-out
 questions the raw orders tied the folder, 30/30. **With Haiku 5.5** the raw orders scored 55/60 but used 4.7× the
 tokens; Haiku with the folder scored 60/60 and 30/30 for $0.20 per 45 answers at list price, against $5.42 for
 Sonnet on the raw orders. The folder's value was cost, and letting the cheap model match the expensive one.
