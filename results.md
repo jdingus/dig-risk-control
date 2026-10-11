@@ -76,11 +76,13 @@ used a subscription, so nothing was billed.
    there is cost: on the held-out set the raw arm used a median 126,166 tokens and 26 s per answer, the folder
    58,427 and 12 s (2.2×; on my questions, 149,002 vs 62,360).
 2. **The folder's own v2 change failed.** After the first run, only 4 of 45 folder answers read the README in
-   their first two commands, and 32 paged through `cases.csv` with `head` or `cat`. I added a "Start here" block
+   their first two commands, and they paged through `cases.csv` with `head` 32 times (counting commands; counting
+   answers, 33 of 45 did it at least once). I added a "Start here" block
    at the top of the README telling it not to (commit 5cec281, prediction in the commit message: tokens down 15%,
-   peeks down to 10 or fewer). Result (`treatment-v2/`): **tokens up 22%** (75,183 vs 61,662), **peeks unchanged
-   at 32**, correctness unchanged (60/60, 30/30). The README-reading, peek and never-used-the-tool counts are
-   recomputed from the transcripts by `python3 grading/claims.py`. An instruction in a file did not change what the model did, and
+   peeks down to 10 or fewer). Result (`treatment-v2/`): **tokens up 22%** (75,183 vs 61,662), **peeks unchanged**
+   (32 commands again; 33 of 45 answers again), correctness unchanged (60/60, 30/30). The README-reading, peek and never-used-the-tool counts are
+   recomputed from the transcripts by `python3 grading/claims.py` (it counts answers, which is why it reports 33).
+   The prediction in 5cec281 used the command count (32). An instruction in a file did not change what the model did, and
    the extra text cost tokens. I restored v1 (8f50ad0). The shipped folder is v1.
 3. **My predictions, scored** (from `questions.md`, written before any run):
 
@@ -212,8 +214,9 @@ custom cuts (H2): the things a folder can carry pre-computed.
 - **A harness bug, caught and kept.** The first folder-arm attempt wrote its transcripts inside `folder/`, where
   later answers could have seen them. Stopped within a minute, kept in `aborted/` with an explanation, fixed in
   b39ad40, re-run from scratch.
-- **Sandbox, audited.** `python3 audit_strict.py`: across 225 transcripts, **0 tool calls named a path outside
-  their own run** (no /home, no repo, no key, no other run). `audit.py`'s broader flags are page text and the
+- **Sandbox, audited.** `python3 audit_strict.py`: across all 495 transcripts, **0 tool calls reached a path outside
+  their own run** (no /home, no repo, no key, no other run); 2 tried (the model reading Claude Code's own saved-output
+  file) and were DENIED by the sandbox. `audit.py`'s broader flags are page text and the
   model's own arithmetic; each arm's `AUDIT.txt` says which.
 - **Scope.** Orders 2021–2025 only. The orders carry no company size, number of digs, trade or payment status, so
   none of the questions are true rates per dig. Indiana does not publish yearly ticket totals that we could find
