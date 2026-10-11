@@ -1,9 +1,7 @@
 {
   "permissions": {
     "deny": [
-      "Read(./key/**)",
-      "Grep(./key/**)",
-      "Glob(./key/**)"
+      "Read(./key/**)"
     ]
   }
 }
