@@ -3,8 +3,8 @@
 ## What this is
 An entry for Clief Notes Weekly Comp #14, "The Control". Can a folder help a model answer actuarial questions
 (frequency, severity, repeat rate, trend) about 9,958 Indiana dig-damage enforcement cases (state orders,
-2021-2025)? That is about 1.9M tokens, too big to paste into one prompt. Round 1, the pilot on the dig law
-itself, is a separate repo: indiana-dig-law-control.
+2021-2025)? That is about 1.9M tokens, too big to paste into one prompt. A pilot on the dig law itself
+ran first in a separate, unpublished repo.
 
 ## Stack
 Python 3 scripts. The data steps use pypdf and PyMuPDF via `uv run --with`. Answers come from the Claude Code

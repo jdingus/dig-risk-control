@@ -146,6 +146,7 @@ this clone, and an anonymous (logged-out) clone.
 | `data/` | originals, every cleaning step, schema, corrections ledger with evidence. Start at `data/README.md` | Support |
 | `harness/`, `assets/`, `.claude/settings.json` | sandbox test report; images and results page; denies reading `key/` for plain `claude` | Support |
 
-Round 1, a pilot on the dig law itself (where the whole document fits in one prompt), is the separate repo
-`indiana-dig-law-control`. Public record: the orders and the law come from in.gov. This is a test of a folder,
+Before this, a pilot ran the same method on the dig law itself (one 52 KB document, which fits in one prompt): the
+folder scored 90/90 and so did the law text pasted alone, so the test hit a ceiling. That is why this entry uses
+data too big to paste. The pilot is not published. Public record: the orders and the law come from in.gov. This is a test of a folder,
 not legal or actuarial advice.
