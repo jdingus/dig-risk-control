@@ -4,6 +4,10 @@
   python3 run.py <arm> [--only Q1] [--reps N] [--workers N]
   python3 run.py --preflight          prove the sandbox starts and denies (tiny model call)
   python3 run.py <arm> --dry-run      print the jobs and the estimated cost, run nothing
+  python3 run.py <arm> --no-sandbox --out DIR
+                                      UNSANDBOXED route for machines that cannot install bubblewrap/socat.
+                                      Same command, same fresh empty temp dir outside the clone, but no
+                                      OS sandbox: run `python3 audit_strict.py DIR` afterwards.
 
 Arms (ARMS below) are lists of repo-relative paths copied into an empty temp dir. A session
 can use Read/Grep/Glob/Bash (Python) and can see ONLY that temp dir: Bash runs in the
@@ -38,6 +42,8 @@ WORKERS = 4
 TIMEOUT_S = 1200
 PERMISSION_MODE = "default"  # pinned so a run does not inherit the caller's mode (it was auto)
 MAX_TURNS = None  # None = no cap; set an int to pass --max-turns
+SANDBOX = True  # --no-sandbox sets False: the UNSANDBOXED route (see settings_for and the warning in main)
+TMP_ROOT = "/tmp" if os.path.isdir("/tmp") else tempfile.gettempdir()  # where run dirs are created, outside the clone
 
 # arm -> repo-relative paths (files or directories) copied into the run dir, keeping their
 # relative path. A glob (*) is allowed. "folder" does not exist in the repo yet: until it does,
@@ -108,6 +114,13 @@ def copy_arm_files(arm, dest):
 def settings_for(rundir):
     """Per-run settings. Key names are from code.claude.com/docs/en/sandboxing and
     settings-reference (checked 2026-10-10, Claude Code 2.1.296)."""
+    if not SANDBOX:
+        # UNSANDBOXED: no OS sandbox. Only the file tools (Read/Grep/Glob) are fenced, by permission rules;
+        # Bash can read anything the user can. Web tools stay denied. Same command otherwise.
+        return {
+            "sandbox": {"enabled": False},
+            "permissions": {"blockReadsOutsideWorkingDirectories": True, "deny": ["WebFetch", "WebSearch"]},
+        }
     rd = str(pathlib.Path(rundir).resolve())
     home = str(pathlib.Path.home().resolve())
     uid = os.getuid() if hasattr(os, "getuid") else 0
@@ -116,6 +129,14 @@ def settings_for(rundir):
     # macOS: realpath of /tmp is /private/tmp; Linux: same path. Keep both spellings of the run dir.
     allow_read = sorted({rd, str(rundir)})
     deny_read = sorted({p for p in deny_read if os.path.exists(p)})
+    # Permission deny list. On macOS /tmp resolves to /private/tmp, so a blanket Read(//private/tmp/**)
+    # would also deny the run's OWN directory; there the "everything else in /tmp" fence is
+    # blockReadsOutsideWorkingDirectories (plus sandbox.filesystem denyRead/allowRead above), and only
+    # Claude Code's own scratch dirs are denied by name. On Linux the list is unchanged.
+    if sys.platform == "darwin":
+        tmp_rules = ["Read(//private/tmp/claude/**)", f"Read(//private/tmp/claude-{uid}/**)"]
+    else:
+        tmp_rules = ["Read(//private/tmp/**)"]
     return {
         "sandbox": {
             "enabled": True,
@@ -131,7 +152,7 @@ def settings_for(rundir):
                 "WebFetch", "WebSearch",
                 # Read deny rules also cover Grep and Glob; // = absolute path.
                 "Read(//home/**)", "Read(//root/**)", "Read(//Users/**)",
-                "Read(//private/tmp/**)", "Read(//tmp/claude/**)", f"Read(//tmp/claude-{uid}/**)",
+                *tmp_rules, "Read(//tmp/claude/**)", f"Read(//tmp/claude-{uid}/**)",
                 "Read(~/**)",
                 f"Read(//{HERE.as_posix().lstrip('/')}/**)",
                 f"Read(//{REPO.as_posix().lstrip('/')}/**)",
@@ -178,8 +199,8 @@ def run_one(arm, qid, rep, prompt, outdir, files=None, system_prompt=SYSTEM_PROM
     out, meta_p, set_p = outdir / f"{stem}.jsonl", outdir / f"{stem}.meta.json", outdir / f"{stem}.settings.json"
     if out.exists() and not force:
         return f"{out.name} (kept)"
-    rundir = pathlib.Path(tempfile.mkdtemp(prefix="r2run-", dir="/tmp")).resolve()
-    tmpdir = pathlib.Path(tempfile.mkdtemp(prefix="r2tmp-", dir="/tmp")).resolve()
+    rundir = pathlib.Path(tempfile.mkdtemp(prefix="r2run-", dir=TMP_ROOT)).resolve()
+    tmpdir = pathlib.Path(tempfile.mkdtemp(prefix="r2tmp-", dir=TMP_ROOT)).resolve()
     try:
         if files is None:
             copy_arm_files(arm, rundir)
@@ -208,6 +229,8 @@ def run_one(arm, qid, rep, prompt, outdir, files=None, system_prompt=SYSTEM_PROM
                 "returncode": rc, "run_dir": str(rundir), "claude_tmp_dir": str(tmpdir), "files_in_run_dir_at_end": len(listing),
                 "command": cmd, "env_overrides": ENV_OVERRIDES, "system_prompt": system_prompt,
                 "prompt": prompt, "settings": settings, "stderr": stderr[-2000:]}
+        if not SANDBOX:
+            meta["sandboxed"] = False  # only present on the unsandboxed route
         meta_p.write_text(json.dumps(meta, indent=1))
         out.write_text(stdout)  # every event, untouched
         ok = rc == 0 and '"type":"result"' in stdout.replace('": "', '":"')
@@ -215,6 +238,35 @@ def run_one(arm, qid, rep, prompt, outdir, files=None, system_prompt=SYSTEM_PROM
     finally:
         shutil.rmtree(rundir, ignore_errors=True)
         shutil.rmtree(tmpdir, ignore_errors=True)
+
+
+# ---------- login ----------
+def check_login():
+    """Either a logged-in claude CLI or ANTHROPIC_API_KEY in the environment is enough."""
+    if shutil.which("claude") is None:
+        sys.exit("claude CLI not found (install Claude Code 2.1.296 or later)")
+    if os.environ.get("ANTHROPIC_API_KEY"):
+        return "ANTHROPIC_API_KEY"
+    try:
+        p = subprocess.run(["claude", "auth", "status"], capture_output=True, text=True, timeout=60)
+        if re.search(r'"loggedIn"\s*:\s*true', p.stdout):
+            return "logged-in CLI"
+    except (OSError, subprocess.TimeoutExpired):
+        pass
+    sys.exit("not logged in: run `claude auth login`, or set ANTHROPIC_API_KEY in the environment")
+
+
+UNSANDBOXED_WARNING = """
+################################################################################
+# UNSANDBOXED RUN (--no-sandbox). NOTHING STOPS THE MODEL FROM READING OUTSIDE
+# ITS OWN FOLDER with its shell: your home directory, this clone, key/ (the
+# answer key). Only the Read/Grep/Glob tools are fenced, by permission rules.
+# Each answer still runs in a fresh empty temp dir outside the clone, so the
+# model has no reason to look, but this route does not prove it did not.
+# Run `python3 audit_strict.py {out}` afterwards and read what it reports.
+# A run whose audit shows a call that SUCCEEDED outside its folder is void.
+################################################################################
+"""
 
 
 # ---------- preflight ----------
@@ -260,13 +312,19 @@ def main():
     ap.add_argument("--model", help="model id (default claude-sonnet-5-5)")
     ap.add_argument("--tools", help='tool list, default "Read,Grep,Glob,Bash"; "Read,Grep,Glob" removes the shell and Python')
     ap.add_argument("--effort", choices=["low", "medium", "high", "xhigh", "max"])
+    ap.add_argument("--no-sandbox", action="store_true", help="UNSANDBOXED route for machines without bubblewrap/socat; "
+                    "requires --out; see the warning it prints and run audit_strict.py afterwards")
     ap.add_argument("--out", help="write transcripts to <OUT>/raw instead of the committed arm folder (for re-runs)")
     a = ap.parse_args()
-    global MODEL, EFFORT, TOOLS
+    global MODEL, EFFORT, TOOLS, SANDBOX
+    SANDBOX = not a.no_sandbox
     MODEL = a.model or MODEL
     EFFORT = a.effort or EFFORT
     TOOLS = a.tools or TOOLS
     if a.preflight:
+        if a.no_sandbox:
+            sys.exit("--preflight tests the sandbox; it does not apply with --no-sandbox")
+        check_login()
         return preflight()
     if a.arm not in ARMS:
         sys.exit(f"arm must be one of {list(ARMS)}")
@@ -284,6 +342,11 @@ def main():
             shutil.rmtree(probe, ignore_errors=True)
     if a.dry_run:
         return
+    if a.no_sandbox and not a.out:
+        sys.exit("--no-sandbox requires --out DIR (it never writes into the committed arm folders)")
+    print(f"login: {check_login()}", flush=True)
+    if a.no_sandbox:
+        print(UNSANDBOXED_WARNING.format(out=a.out), file=sys.stderr, flush=True)
     outdir = (pathlib.Path(a.out) / "raw") if a.out else HERE / OUT_DIR.get(a.arm, a.arm) / "raw"
     # Never write inside any arm's input files: a later run would copy earlier answers (aborted/folder-arm-attempt-1).
     for paths in ARMS.values():
@@ -294,6 +357,8 @@ def main():
     with cf.ThreadPoolExecutor(a.workers) as ex:
         for msg in ex.map(lambda j: run_one(a.arm, j[0], j[2], build_prompt(pre, j[1]), outdir), jobs):
             print(msg, flush=True)
+    if a.no_sandbox:
+        print(UNSANDBOXED_WARNING.format(out=a.out), file=sys.stderr, flush=True)
 
 
 if __name__ == "__main__":

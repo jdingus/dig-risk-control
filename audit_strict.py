@@ -6,13 +6,28 @@ model asked a tool to do: /home paths, this repo, a clone of it, key/, answers.j
 run's directory. Each flagged call is reported with its result: DENIED (the sandbox or permissions refused it)
 or SUCCEEDED. Exit 1 only if a flagged call SUCCEEDED.
 
-  python3 audit_strict.py
+  python3 audit_strict.py              every <something>/raw/*.jsonl under this repo (the committed runs)
+  python3 audit_strict.py DIR [DIR..]  only the transcripts under DIR (a re-run written with --out DIR)
 """
 import json, pathlib, re, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent
 bad = denied = n = 0
-for f in sorted(ROOT.glob("**/raw/*.jsonl")):
+if sys.argv[1:]:
+    files = sorted({f for d in map(pathlib.Path, sys.argv[1:])
+                    for f in list(d.glob("**/raw/*.jsonl")) + (list(d.glob("*.jsonl")) if d.name == "raw" else [])})
+else:
+    files = sorted(ROOT.glob("**/raw/*.jsonl"))
+
+
+def shown(f):
+    try:
+        return f.resolve().relative_to(ROOT)
+    except ValueError:
+        return f
+
+
+for f in files:
     if "aborted" in f.parts:
         continue
     n += 1
@@ -39,6 +54,6 @@ for f in sorted(ROOT.glob("**/raw/*.jsonl")):
                     ok = not r.get("is_error") and not re.search(r"denied|not permitted|No such file", text, re.I)
                     bad += ok
                     denied += not ok
-                    print(f.relative_to(ROOT), name, hits, "SUCCEEDED" if ok else "DENIED")
+                    print(shown(f), name, hits, "SUCCEEDED" if ok else "DENIED")
 print(f"{n} transcripts; {bad} tool calls reached a path outside their own run; {denied} tried and were DENIED")
 sys.exit(1 if bad else 0)
