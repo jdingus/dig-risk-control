@@ -55,7 +55,8 @@ used a subscription, so nothing was billed.
 ## What the folder actually won, and why
 
 - **Against "no folder, no files": everything.** 0 vs 60. Not informative: that arm had nothing to compute from. Every control answer said
-  it had no data; 38 of 45 mention an estimate, and some declined to give one.
+  it had no data; 38 of 45 mention an estimate, and some declined to give one (`python3 grading/claims.py`
+  recomputes this count from the transcripts).
 - **Against the raw orders: 7 points of 60, all near-misses on one number.** Every raw-arm miss was a number
   just outside tolerance, never a wrong method or a refusal. The one I traced to the bottom: Q8. The raw arm
   counted **452** "ticket escalation" cases; the key says **446**. The uncorrected parse gives exactly 452. The
@@ -78,7 +79,8 @@ used a subscription, so nothing was billed.
    their first two commands, and 32 paged through `cases.csv` with `head` or `cat`. I added a "Start here" block
    at the top of the README telling it not to (commit 5cec281, prediction in the commit message: tokens down 15%,
    peeks down to 10 or fewer). Result (`treatment-v2/`): **tokens up 22%** (75,183 vs 61,662), **peeks unchanged
-   at 32**, correctness unchanged (60/60, 30/30). An instruction in a file did not change what the model did, and
+   at 32**, correctness unchanged (60/60, 30/30). The README-reading, peek and never-used-the-tool counts are
+   recomputed from the transcripts by `python3 grading/claims.py`. An instruction in a file did not change what the model did, and
    the extra text cost tokens. I restored v1 (8f50ad0). The shipped folder is v1.
 3. **My predictions, scored** (from `questions.md`, written before any run):
 
@@ -128,7 +130,8 @@ mixed across the three Haiku arms (`grading-haiku/scores.md`).
 ## Take the Python away (pre-registered in predictions-nocode.md, 4820967)
 
 Is the folder's edge the folder, or the Python it lets the model run? Same questions, key and sandbox; Haiku 5.5 at
-low effort; tools `Read,Grep,Glob` only (0 shell calls in all 135 transcripts). A third folder, `folder-nocode/`,
+low effort; tools `Read,Grep,Glob` only (0 shell calls ran in all 135 transcripts: the models tried Bash 71 times and every attempt was refused as an
+unavailable tool; counted by `grading/claims.py`). A third folder, `folder-nocode/`,
 was built for this by a sealed agent: the same five-item shape with ~37k tokens of pre-computed summary tables and
 no table or tool (578f3fc, after the predictions). Graded blind together (`grading-nocode/scores.md`).
 
@@ -143,7 +146,10 @@ no table or tool (578f3fc, after the predictions). Graded blind together (`gradi
   55/60 and 30/30, raw files 30/60 and 18/30. This is the clearest folder advantage in the whole entry.
 - **The folder has to fit the deployment.** The shipped folder relies on its Python tool; without code it barely
   beat raw files (36 vs 30). The folder built for no code nearly matched the with-Python results, and was the
-  cheapest and fastest arm of the entry (60k tokens, 11 s per answer, $0.26 list for 45 answers).
+  cheapest and fastest of the no-Python arms (60k tokens, 11 s per answer, $0.26 list for 45 answers, against
+  132,038 tokens, 26 s and $0.45 for the shipped folder and 193,367, 44 s and $1.34 for raw files). It is not the
+  cheapest arm of the entry: Haiku with the shipped folder and Python scored 60/60 and 30/30 for $0.20, and the
+  control arms cost less still but score 0.
 - **Where the folder lost to raw files** (the brief's "no folder got it right and the folder got it wrong"):
   without Python, the shipped folder scored below raw files on **Q7** (0/6 vs 1/6) and **Q9** (0/6 vs 3/6). It could
   not run its own tool and had no pre-built table for those cuts; the raw arm salvaged partial answers by searching
@@ -184,6 +190,13 @@ custom cuts (H2): the things a folder can carry pre-computed.
 - **One grader per answer** (Claude Sonnet 5.5), blind to the arm, but folder answers are easy to spot (they cite
   the tool). Graders followed numeric tolerances, so there was little room for taste. I checked every judgment
   call in the `notes` of `grading/grades/*.json` and changed no grade.
+- **The answer key and the folder share one table.** `data/cases_clean.csv`, the table the key is computed from, and
+  `folder/reference/cases.csv` have the same sha256. So a shared parsing or cleaning error would sit in the key and
+  the folder alike, and the folder arm cannot expose it. The raw-files arm, which parsed the PDFs itself, is the only
+  independent check on the cleaning (where it disagreed, Q3 and Q6 to Q9, I traced only Q8).
+- **The held-out questions were written by a model agent that I, the orchestrating session, directed and saw.**
+  They are not questions from a stranger, and I do not claim that. They were committed before the folder and before
+  any run, and the folder's builder never saw them.
 - **The answer key** was computed twice, by two scripts from two agents who could not see each other's
   (`key/compute_answers.py`, `key/xcheck/`); `python3 key/compare.py` confirms all 31 values agree.
 - **The folder was built blind to the questions.** A separate agent built it from the shared definitions and the
